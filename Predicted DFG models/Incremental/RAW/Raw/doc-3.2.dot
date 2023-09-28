@@ -1,0 +1,14 @@
+strict digraph "doc-3.2" {
+	graph [name="doc-3.2"];
+	"check files for court hearing"	[attrs="{'type': 'Activity', 'label': 'check files for court hearing'}"];
+	"initiate search for missing files"	[attrs="{'type': 'Activity', 'label': 'initiate search for missing files'}"];
+	"check files for court hearing" -> "initiate search for missing files"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"physically track files to intended location"	[attrs="{'type': 'Activity', 'label': 'physically track files to intended location'}"];
+	"initiate search for missing files" -> "physically track files to intended location"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"hand files to associate"	[attrs="{'type': 'Activity', 'label': 'hand files to associate'}"];
+	"physically track files to intended location" -> "hand files to associate"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"distribute judge's lawlist to relevant people"	[attrs="{'type': 'Activity', 'label': \"distribute judge's lawlist to relevant people\"}"];
+	"hand files to associate" -> "distribute judge's lawlist to relevant people"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"conduct directions hearings"	[attrs="{'type': 'Activity', 'label': 'conduct directions hearings'}"];
+	"distribute judge's lawlist to relevant people" -> "conduct directions hearings"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

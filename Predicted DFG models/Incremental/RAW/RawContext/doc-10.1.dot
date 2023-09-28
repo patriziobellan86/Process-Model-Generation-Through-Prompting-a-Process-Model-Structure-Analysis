@@ -1,0 +1,10 @@
+strict digraph "doc-10.1" {
+	graph [name="doc-10.1"];
+	"sending the dismissal from mpon to mpoo"	[attrs="{'type': 'Activity', 'label': 'sending the dismissal from mpon to mpoo'}"];
+	"reviewing the dismissal by mpoo"	[attrs="{'type': 'Activity', 'label': 'reviewing the dismissal by mpoo'}"];
+	"sending the dismissal from mpon to mpoo" -> "reviewing the dismissal by mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"opposing the dismissal of mpon by mpoo"	[attrs="{'type': 'Activity', 'label': 'opposing the dismissal of mpon by mpoo'}"];
+	"reviewing the dismissal by mpoo" -> "opposing the dismissal of mpon by mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirming the dismissal of mpon by mpoo"	[attrs="{'type': 'Activity', 'label': 'confirming the dismissal of mpon by mpoo'}"];
+	"opposing the dismissal of mpon by mpoo" -> "confirming the dismissal of mpon by mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

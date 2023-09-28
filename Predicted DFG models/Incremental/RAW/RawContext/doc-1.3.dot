@@ -1,0 +1,20 @@
+strict digraph "doc-1.3" {
+	graph [name="doc-1.3"];
+	"take down order"	[attrs="{'type': 'Activity', 'label': 'take down order'}"];
+	"submit order ticket to kitchen"	[attrs="{'type': 'Activity', 'label': 'submit order ticket to kitchen'}"];
+	"take down order" -> "submit order ticket to kitchen"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"give order to sommelier"	[attrs="{'type': 'Activity', 'label': 'give order to sommelier'}"];
+	"submit order ticket to kitchen" -> "give order to sommelier"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign order to waiter"	[attrs="{'type': 'Activity', 'label': 'assign order to waiter'}"];
+	"give order to sommelier" -> "assign order to waiter"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"prepare cart"	[attrs="{'type': 'Activity', 'label': 'prepare cart'}"];
+	"assign order to waiter" -> "prepare cart"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"prepare nonalcoholic drinks"	[attrs="{'type': 'Activity', 'label': 'prepare nonalcoholic drinks'}"];
+	"prepare cart" -> "prepare nonalcoholic drinks"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deliver food, wine, and cart to guest's room"	[attrs="{'type': 'Activity', 'label': \"deliver food, wine, and cart to guest's room\"}"];
+	"prepare nonalcoholic drinks" -> "deliver food, wine, and cart to guest's room"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"debit guest's account"	[attrs="{'type': 'Activity', 'label': \"debit guest's account\"}"];
+	"deliver food, wine, and cart to guest's room" -> "debit guest's account"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait to do billing if another order to prepare or deliver"	[attrs="{'type': 'Activity', 'label': 'wait to do billing if another order to prepare or deliver'}"];
+	"debit guest's account" -> "wait to do billing if another order to prepare or deliver"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

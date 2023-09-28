@@ -1,0 +1,15 @@
+Q: Considering the context of Business Process Management, list all the process model activities described in this process description:
+"""{example1_process_description}"""
+A:
+{example1_activitylist}
+
+
+Q: Considering the context of Business Process Management, list all the process model activities described in this process description:
+"""{example2_process_description}"""
+A:
+{example2_activitylist}
+
+
+Q: Considering the context of Business Process Management, list all the process model activities described in this process description:
+"""{text}"""
+A:

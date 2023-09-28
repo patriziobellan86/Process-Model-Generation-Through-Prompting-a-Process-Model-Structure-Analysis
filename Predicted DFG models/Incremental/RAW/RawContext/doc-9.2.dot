@@ -1,0 +1,15 @@
+strict digraph "doc-9.2" {
+	graph [name="doc-9.2"];
+	"send mortgage offer"	[attrs="{'type': 'Activity', 'label': 'send mortgage offer'}"];
+	"update case details"	[attrs="{'type': 'Activity', 'label': 'update case details'}"];
+	"send mortgage offer" -> "update case details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"archive work"	[attrs="{'type': 'Activity', 'label': 'archive work'}"];
+	"update case details" -> "archive work"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"archive and cancel"	[attrs="{'type': 'Activity', 'label': 'archive and cancel'}"];
+	"update case details" -> "archive and cancel"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"move case to administration"	[attrs="{'type': 'Activity', 'label': 'move case to administration'}"];
+	"archive work" -> "move case to administration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate message to customer"	[attrs="{'type': 'Activity', 'label': 'generate message to customer'}"];
+	"move case to administration" -> "generate message to customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate message to customer" -> "update case details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

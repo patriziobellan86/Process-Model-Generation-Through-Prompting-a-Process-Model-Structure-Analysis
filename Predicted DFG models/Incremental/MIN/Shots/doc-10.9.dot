@@ -1,0 +1,16 @@
+strict digraph "doc-10.9" {
+	graph [name="doc-10.9"];
+	"request changes to the mpo"	[attrs="{'type': 'Activity', 'label': 'request changes to the mpo'}"];
+	"review the change request"	[attrs="{'type': 'Activity', 'label': 'review the change request'}"];
+	"request changes to the mpo" -> "review the change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the change of the measuring point"	[attrs="{'type': 'Activity', 'label': 'reject the change of the measuring point'}"];
+	"review the change request" -> "reject the change of the measuring point"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the request of the sp/pu/go"	[attrs="{'type': 'Activity', 'label': 'confirm the request of the sp/pu/go'}"];
+	"reject the change of the measuring point" -> "confirm the request of the sp/pu/go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform the measuring point change"	[attrs="{'type': 'Activity', 'label': 'perform the measuring point change'}"];
+	"confirm the request of the sp/pu/go" -> "perform the measuring point change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"report the implementation"	[attrs="{'type': 'Activity', 'label': 'report the implementation'}"];
+	"perform the measuring point change" -> "report the implementation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"notify the sp/pu/go about the failure of the changes"	[attrs="{'type': 'Activity', 'label': 'notify the sp/pu/go about the failure of the changes'}"];
+	"report the implementation" -> "notify the sp/pu/go about the failure of the changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

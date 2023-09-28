@@ -1,0 +1,19 @@
+strict digraph "doc-3.3" {
+	graph [name="doc-3.3"];
+	"register a claim"	[attrs="{'type': 'Activity', 'label': 'register a claim'}"];
+	"examine the claim"	[attrs="{'type': 'Activity', 'label': 'examine the claim'}"];
+	"register a claim" -> "examine the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"write a settlement recommendation"	[attrs="{'type': 'Activity', 'label': 'write a settlement recommendation'}"];
+	"examine the claim" -> "write a settlement recommendation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the recommendation"	[attrs="{'type': 'Activity', 'label': 'check the recommendation'}"];
+	"write a settlement recommendation" -> "check the recommendation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mark the claim as ok or not ok"	[attrs="{'type': 'Activity', 'label': 'mark the claim as ok or not ok'}"];
+	"check the recommendation" -> "mark the claim as ok or not ok"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send back the claim"	[attrs="{'type': 'Activity', 'label': 'send back the claim'}"];
+	"mark the claim as ok or not ok" -> "send back the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"proceed the claim handling process"	[attrs="{'type': 'Activity', 'label': 'proceed the claim handling process'}"];
+	"mark the claim as ok or not ok" -> "proceed the claim handling process"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"repeat the recommendation"	[attrs="{'type': 'Activity', 'label': 'repeat the recommendation'}"];
+	"send back the claim" -> "repeat the recommendation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"repeat the recommendation" -> "check the recommendation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

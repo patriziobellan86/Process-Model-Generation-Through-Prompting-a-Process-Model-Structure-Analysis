@@ -1,0 +1,20 @@
+strict digraph "doc-9.5" {
+	graph [name="doc-9.5"];
+	"create a new account"	[attrs="{'type': 'Activity', 'label': 'create a new account'}"];
+	"review the report for automatic approval"	[attrs="{'type': 'Activity', 'label': 'review the report for automatic approval'}"];
+	"create a new account" -> "review the report for automatic approval"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve amounts under $200"	[attrs="{'type': 'Activity', 'label': 'approve amounts under $200'}"];
+	"review the report for automatic approval" -> "approve amounts under $200"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"require approval of the supervisor for amounts equal to or over $200"	[attrs="{'type': 'Activity', 'label': 'require approval of the supervisor for amounts equal to or over $200'}"];
+	"approve amounts under $200" -> "require approval of the supervisor for amounts equal to or over $200"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive a rejection notice by email"	[attrs="{'type': 'Activity', 'label': 'receive a rejection notice by email'}"];
+	"require approval of the supervisor for amounts equal to or over $200" -> "receive a rejection notice by email"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reimburse the employee's direct deposit bank account"	[attrs="{'type': 'Activity', 'label': \"reimburse the employee's direct deposit bank account\"}"];
+	"receive a rejection notice by email" -> "reimburse the employee's direct deposit bank account"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive an approval in progress email if not completed in 7 days"	[attrs="{'type': 'Activity', 'label': 'receive an approval in progress email if not completed in 7 days'}"];
+	"reimburse the employee's direct deposit bank account" -> "receive an approval in progress email if not completed in 7 days"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"stop the process and receive an email cancellation notice if not finished within 30 days"	[attrs="{'type': 'Activity', 'label': 'stop the process and receive an email cancellation notice if not finished within 30 days'}"];
+	"receive an approval in progress email if not completed in 7 days" -> "stop the process and receive an email cancellation notice if not finished within 30 days"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"re-submit the expense report"	[attrs="{'type': 'Activity', 'label': 're-submit the expense report'}"];
+	"stop the process and receive an email cancellation notice if not finished within 30 days" -> "re-submit the expense report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

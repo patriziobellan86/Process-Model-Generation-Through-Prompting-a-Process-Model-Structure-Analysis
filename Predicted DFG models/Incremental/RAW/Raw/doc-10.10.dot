@@ -1,0 +1,18 @@
+strict digraph "doc-10.10" {
+	graph [name="doc-10.10"];
+	"fault detector reports failure to mpo or mpo has suspicion of own fault"	[attrs="{'type': 'Activity', 'label': 'fault detector reports failure to mpo or mpo has suspicion of own fault'}"];
+	"mpo examines failure"	[attrs="{'type': 'Activity', 'label': 'mpo examines failure'}"];
+	"fault detector reports failure to mpo or mpo has suspicion of own fault" -> "mpo examines failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpo rejects or confirms failure of fault detector"	[attrs="{'type': 'Activity', 'label': 'mpo rejects or confirms failure of fault detector'}"];
+	"mpo rejects or confirms failure of fault detector" -> "mpo examines failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpo informs go and msp if confirms failure"	[attrs="{'type': 'Activity', 'label': 'mpo informs go and msp if confirms failure'}"];
+	"mpo informs go and msp if confirms failure" -> "mpo rejects or confirms failure of fault detector"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpo fixes fault at measuring device"	[attrs="{'type': 'Activity', 'label': 'mpo fixes fault at measuring device'}"];
+	"mpo fixes fault at measuring device" -> "mpo informs go and msp if confirms failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpo shares results of repairs with fault detector"	[attrs="{'type': 'Activity', 'label': 'mpo shares results of repairs with fault detector'}"];
+	"mpo shares results of repairs with fault detector" -> "mpo fixes fault at measuring device"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpo informs go about resolution of interference"	[attrs="{'type': 'Activity', 'label': 'mpo informs go about resolution of interference'}"];
+	"mpo informs go about resolution of interference" -> "mpo shares results of repairs with fault detector"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpo informs msp about resolution of interference"	[attrs="{'type': 'Activity', 'label': 'mpo informs msp about resolution of interference'}"];
+	"mpo informs msp about resolution of interference" -> "mpo informs go about resolution of interference"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

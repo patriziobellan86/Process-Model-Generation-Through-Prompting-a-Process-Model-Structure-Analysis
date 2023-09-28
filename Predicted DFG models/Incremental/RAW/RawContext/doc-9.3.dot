@@ -1,0 +1,18 @@
+strict digraph "doc-9.3" {
+	graph [name="doc-9.3"];
+	"drafting a schedule of meetings"	[attrs="{'type': 'Activity', 'label': 'drafting a schedule of meetings'}"];
+	"checking the dates"	[attrs="{'type': 'Activity', 'label': 'checking the dates'}"];
+	"drafting a schedule of meetings" -> "checking the dates"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"suggesting modifications"	[attrs="{'type': 'Activity', 'label': 'suggesting modifications'}"];
+	"checking the dates" -> "suggesting modifications"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"rechecking all dates"	[attrs="{'type': 'Activity', 'label': 'rechecking all dates'}"];
+	"suggesting modifications" -> "rechecking all dates"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"looking for potential conflicts"	[attrs="{'type': 'Activity', 'label': 'looking for potential conflicts'}"];
+	"rechecking all dates" -> "looking for potential conflicts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"sending the final schedule of meeting dates to all committee members"	[attrs="{'type': 'Activity', 'label': 'sending the final schedule of meeting dates to all committee members'}"];
+	"looking for potential conflicts" -> "sending the final schedule of meeting dates to all committee members"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"checking diaries for conflicts"	[attrs="{'type': 'Activity', 'label': 'checking diaries for conflicts'}"];
+	"sending the final schedule of meeting dates to all committee members" -> "checking diaries for conflicts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"advising the coordination unit of any conflicts"	[attrs="{'type': 'Activity', 'label': 'advising the coordination unit of any conflicts'}"];
+	"checking diaries for conflicts" -> "advising the coordination unit of any conflicts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

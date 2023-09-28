@@ -1,0 +1,15 @@
+strict digraph "doc-5.1" {
+	graph [name="doc-5.1"];
+	"receive a customer request for a loan amount"	[attrs="{'type': 'Activity', 'label': 'receive a customer request for a loan amount'}"];
+	"assess the request"	[attrs="{'type': 'Activity', 'label': 'assess the request'}"];
+	"receive a customer request for a loan amount" -> "assess the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve the loan"	[attrs="{'type': 'Activity', 'label': 'approve the loan'}"];
+	"assess the request" -> "approve the loan"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny the loan"	[attrs="{'type': 'Activity', 'label': 'deny the loan'}"];
+	"assess the request" -> "deny the loan"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the request"	[attrs="{'type': 'Activity', 'label': 'send the request'}"];
+	"approve the loan" -> "send the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny the loan" -> "send the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive feedback"	[attrs="{'type': 'Activity', 'label': 'receive feedback'}"];
+	"send the request" -> "receive feedback"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

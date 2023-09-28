@@ -1,0 +1,22 @@
+strict digraph "doc-9.4" {
+	graph [name="doc-9.4"];
+	"finalize the dates"	[attrs="{'type': 'Activity', 'label': 'finalize the dates'}"];
+	"update all group calendars"	[attrs="{'type': 'Activity', 'label': 'update all group calendars'}"];
+	"finalize the dates" -> "update all group calendars"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"create meeting folders"	[attrs="{'type': 'Activity', 'label': 'create meeting folders'}"];
+	"update all group calendars" -> "create meeting folders"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ensure all appropriate documents are uploaded"	[attrs="{'type': 'Activity', 'label': 'ensure all appropriate documents are uploaded'}"];
+	"create meeting folders" -> "ensure all appropriate documents are uploaded"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"advise the committee members"	[attrs="{'type': 'Activity', 'label': 'advise the committee members'}"];
+	"ensure all appropriate documents are uploaded" -> "advise the committee members"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"hold the meeting"	[attrs="{'type': 'Activity', 'label': 'hold the meeting'}"];
+	"advise the committee members" -> "hold the meeting"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"produce minutes"	[attrs="{'type': 'Activity', 'label': 'produce minutes'}"];
+	"hold the meeting" -> "produce minutes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"conduct a qa check"	[attrs="{'type': 'Activity', 'label': 'conduct a qa check'}"];
+	"produce minutes" -> "conduct a qa check"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the minutes"	[attrs="{'type': 'Activity', 'label': 'send the minutes'}"];
+	"conduct a qa check" -> "send the minutes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"update all departmental records"	[attrs="{'type': 'Activity', 'label': 'update all departmental records'}"];
+	"send the minutes" -> "update all departmental records"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

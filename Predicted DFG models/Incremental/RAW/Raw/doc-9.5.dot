@@ -1,0 +1,22 @@
+strict digraph "doc-9.5" {
+	graph [name="doc-9.5"];
+	"receive expense report"	[attrs="{'type': 'Activity', 'label': 'receive expense report'}"];
+	"create account"	[attrs="{'type': 'Activity', 'label': 'create account'}"];
+	"receive expense report" -> "create account"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review report for automatic approval"	[attrs="{'type': 'Activity', 'label': 'review report for automatic approval'}"];
+	"create account" -> "review report for automatic approval"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"automatically approve amounts under $200"	[attrs="{'type': 'Activity', 'label': 'automatically approve amounts under $200'}"];
+	"review report for automatic approval" -> "automatically approve amounts under $200"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"require supervisor approval for amounts equal to or over $200"	[attrs="{'type': 'Activity', 'label': 'require supervisor approval for amounts equal to or over $200'}"];
+	"automatically approve amounts under $200" -> "require supervisor approval for amounts equal to or over $200"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send rejection notice"	[attrs="{'type': 'Activity', 'label': 'send rejection notice'}"];
+	"require supervisor approval for amounts equal to or over $200" -> "send rejection notice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reimburse employee"	[attrs="{'type': 'Activity', 'label': 'reimburse employee'}"];
+	"send rejection notice" -> "reimburse employee"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send approval in progress email"	[attrs="{'type': 'Activity', 'label': 'send approval in progress email'}"];
+	"reimburse employee" -> "send approval in progress email"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"stop process and send email cancellation notice"	[attrs="{'type': 'Activity', 'label': 'stop process and send email cancellation notice'}"];
+	"send approval in progress email" -> "stop process and send email cancellation notice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"re-submit expense report"	[attrs="{'type': 'Activity', 'label': 're-submit expense report'}"];
+	"stop process and send email cancellation notice" -> "re-submit expense report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

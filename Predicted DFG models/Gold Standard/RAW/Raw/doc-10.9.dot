@@ -1,0 +1,18 @@
+strict digraph "doc-10.9" {
+	graph [name="doc-10.9"];
+	"request changes"	[attrs="{'type': 'Activity', 'label': 'request changes'}"];
+	"cause a change"	[attrs="{'type': 'Activity', 'label': 'cause a change'}"];
+	"request changes" -> "cause a change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review the change request"	[attrs="{'type': 'Activity', 'label': 'review the change request'}"];
+	"cause a change" -> "review the change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the change of the measuring point by the sp/pu/go"	[attrs="{'type': 'Activity', 'label': 'reject the change of the measuring point by the sp/pu/go'}"];
+	"review the change request" -> "reject the change of the measuring point by the sp/pu/go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the request of the sp/pu/go"	[attrs="{'type': 'Activity', 'label': 'confirm the request of the sp/pu/go'}"];
+	"reject the change of the measuring point by the sp/pu/go" -> "confirm the request of the sp/pu/go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform a measuring point change"	[attrs="{'type': 'Activity', 'label': 'perform a measuring point change'}"];
+	"confirm the request of the sp/pu/go" -> "perform a measuring point change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"report the implementation"	[attrs="{'type': 'Activity', 'label': 'report the implementation'}"];
+	"perform a measuring point change" -> "report the implementation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"notifie about the failure of the changes"	[attrs="{'type': 'Activity', 'label': 'notifie about the failure of the changes'}"];
+	"report the implementation" -> "notifie about the failure of the changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

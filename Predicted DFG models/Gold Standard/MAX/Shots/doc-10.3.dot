@@ -1,0 +1,24 @@
+digraph "doc-10.3" {
+	graph [name="doc-10.3"];
+	deregister	[attrs="{'type': 'Activity', 'label': 'deregister'}"];
+	"verify the deregistration"	[attrs="{'type': 'Activity', 'label': 'verify the deregistration'}"];
+	deregister -> "verify the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the deregistration of the mpoo"	[attrs="{'type': 'Activity', 'label': 'reject the deregistration of the mpoo'}"];
+	"verify the deregistration" -> "reject the deregistration of the mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the deregistration of the mpoo"	[attrs="{'type': 'Activity', 'label': 'confirm the deregistration of the mpoo'}"];
+	"verify the deregistration" -> "confirm the deregistration of the mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"prepare the readmission of the measuring point"	[attrs="{'type': 'Activity', 'label': 'prepare the readmission of the measuring point'}"];
+	"reject the deregistration of the mpoo" -> "prepare the readmission of the measuring point"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the deregistration of the mpoo" -> "prepare the readmission of the measuring point"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the continuation"	[attrs="{'type': 'Activity', 'label': 'confirm the continuation'}"];
+	"prepare the readmission of the measuring point" -> "confirm the continuation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'Activity', 'label': 'perform the equipment acquisition and/or equipment changes'}"];
+	"confirm the continuation" -> "perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the go as mpo"	[attrs="{'type': 'Activity', 'label': 'assign the go as mpo'}"];
+	"perform the equipment acquisition and/or equipment changes" -> "assign the go as mpo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the end of the assignment of the mpoo and the beginning of the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform about the end of the assignment of the mpoo and the beginning of the assignment of the go'}"];
+	"assign the go as mpo" -> "inform about the end of the assignment of the mpoo and the beginning of the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"informs about the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'informs about the assignment of the go'}"];
+	"inform about the end of the assignment of the mpoo and the beginning of the assignment of the go" -> "informs about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"informs about the assignment of the go" -> "informs about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

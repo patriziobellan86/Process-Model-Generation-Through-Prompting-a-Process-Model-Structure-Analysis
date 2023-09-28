@@ -1,0 +1,19 @@
+strict digraph "doc-10.2" {
+	graph [name="doc-10.2"];
+	"report the meter operation"	[attrs="{'type': 'Activity', 'label': 'report the meter operation'}"];
+	"examine the application"	[attrs="{'type': 'Activity', 'label': 'examine the application'}"];
+	"report the meter operation" -> "examine the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject or confirm the application"	[attrs="{'type': 'Activity', 'label': 'reject or confirm the application'}"];
+	"examine the application" -> "reject or confirm the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mpoo and mspo"	[attrs="{'type': 'Activity', 'label': 'inform the mpoo and mspo'}"];
+	"reject or confirm the application" -> "inform the mpoo and mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform equipment acquisition and/or changes"	[attrs="{'type': 'Activity', 'label': 'perform equipment acquisition and/or changes'}"];
+	"inform the mpoo and mspo" -> "perform equipment acquisition and/or changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the go about the failure or successful completion of the process"	[attrs="{'type': 'Activity', 'label': 'inform the go about the failure or successful completion of the process'}"];
+	"confirm the failure or assignment"	[attrs="{'type': 'Activity', 'label': 'confirm the failure or assignment'}"];
+	"inform the go about the failure or successful completion of the process" -> "confirm the failure or assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the sp about the assignment"	[attrs="{'type': 'Activity', 'label': 'inform the sp about the assignment'}"];
+	"inform the go about the failure or successful completion of the process" -> "inform the sp about the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mpoo and mspo about the failure or assignment"	[attrs="{'type': 'Activity', 'label': 'inform the mpoo and mspo about the failure or assignment'}"];
+	"confirm the failure or assignment" -> "inform the mpoo and mspo about the failure or assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

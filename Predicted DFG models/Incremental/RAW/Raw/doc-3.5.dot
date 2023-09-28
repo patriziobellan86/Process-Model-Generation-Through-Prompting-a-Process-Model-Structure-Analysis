@@ -1,0 +1,28 @@
+strict digraph "doc-3.5" {
+	graph [name="doc-3.5"];
+	"collecting mail"	[attrs="{'type': 'Activity', 'label': 'collecting mail'}"];
+	"sorting mail"	[attrs="{'type': 'Activity', 'label': 'sorting mail'}"];
+	"collecting mail" -> "sorting mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"distributing mail"	[attrs="{'type': 'Activity', 'label': 'distributing mail'}"];
+	"sorting mail" -> "distributing mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"opening and sorting mail"	[attrs="{'type': 'Activity', 'label': 'opening and sorting mail'}"];
+	"distributing mail" -> "opening and sorting mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"registering mail in a manual incoming mail register"	[attrs="{'type': 'Activity', 'label': 'registering mail in a manual incoming mail register'}"];
+	"opening and sorting mail" -> "registering mail in a manual incoming mail register"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"quality checking mail"	[attrs="{'type': 'Activity', 'label': 'quality checking mail'}"];
+	"registering mail in a manual incoming mail register" -> "quality checking mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"compiling a list of requisition for rejected mail"	[attrs="{'type': 'Activity', 'label': 'compiling a list of requisition for rejected mail'}"];
+	"quality checking mail" -> "compiling a list of requisition for rejected mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capturing matter details"	[attrs="{'type': 'Activity', 'label': 'capturing matter details'}"];
+	"compiling a list of requisition for rejected mail" -> "capturing matter details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"taking applicable fees"	[attrs="{'type': 'Activity', 'label': 'taking applicable fees'}"];
+	"capturing matter details" -> "taking applicable fees"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"putting receipt and copied documents into an envelope"	[attrs="{'type': 'Activity', 'label': 'putting receipt and copied documents into an envelope'}"];
+	"taking applicable fees" -> "putting receipt and copied documents into an envelope"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"posting envelope to party"	[attrs="{'type': 'Activity', 'label': 'posting envelope to party'}"];
+	"putting receipt and copied documents into an envelope" -> "posting envelope to party"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capturing party details"	[attrs="{'type': 'Activity', 'label': 'capturing party details'}"];
+	"posting envelope to party" -> "capturing party details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"printing physical court file"	[attrs="{'type': 'Activity', 'label': 'printing physical court file'}"];
+	"capturing party details" -> "printing physical court file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

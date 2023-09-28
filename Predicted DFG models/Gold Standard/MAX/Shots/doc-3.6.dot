@@ -1,0 +1,22 @@
+strict digraph "doc-3.6" {
+	graph [name="doc-3.6"];
+	"receive a claim"	[attrs="{'type': 'Activity', 'label': 'receive a claim'}"];
+	"check the claim"	[attrs="{'type': 'Activity', 'label': 'check the claim'}"];
+	"receive a claim" -> "check the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform that claim must be rejected"	[attrs="{'type': 'Activity', 'label': 'inform that claim must be rejected'}"];
+	"check the claim" -> "inform that claim must be rejected"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"evaluate the severity of the claim"	[attrs="{'type': 'Activity', 'label': 'evaluate the severity of the claim'}"];
+	"inform that claim must be rejected" -> "evaluate the severity of the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send relevant forms"	[attrs="{'type': 'Activity', 'label': 'send relevant forms'}"];
+	"evaluate the severity of the claim" -> "send relevant forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"return the forms"	[attrs="{'type': 'Activity', 'label': 'return the forms'}"];
+	"send relevant forms" -> "return the forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the forms"	[attrs="{'type': 'Activity', 'label': 'check the forms'}"];
+	"return the forms" -> "check the forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register the claim"	[attrs="{'type': 'Activity', 'label': 'register the claim'}"];
+	"check the forms" -> "register the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	inform	[attrs="{'type': 'Activity', 'label': 'inform'}"];
+	"register the claim" -> inform	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"update the forms"	[attrs="{'type': 'Activity', 'label': 'update the forms'}"];
+	inform -> "update the forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

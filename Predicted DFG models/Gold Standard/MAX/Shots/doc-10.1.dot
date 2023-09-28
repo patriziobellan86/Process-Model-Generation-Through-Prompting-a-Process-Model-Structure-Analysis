@@ -1,0 +1,10 @@
+strict digraph "doc-10.1" {
+	graph [name="doc-10.1"];
+	"send the dismissal"	[attrs="{'type': 'Activity', 'label': 'send the dismissal'}"];
+	"review the dismissal"	[attrs="{'type': 'Activity', 'label': 'review the dismissal'}"];
+	"send the dismissal" -> "review the dismissal"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"oppose the dismissal"	[attrs="{'type': 'Activity', 'label': 'oppose the dismissal'}"];
+	"review the dismissal" -> "oppose the dismissal"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the dismissal"	[attrs="{'type': 'Activity', 'label': 'confirm the dismissal'}"];
+	"oppose the dismissal" -> "confirm the dismissal"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

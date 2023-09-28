@@ -1,0 +1,3 @@
+Q: List all the process model activities described in this process description:
+"""{text}"""
+A:

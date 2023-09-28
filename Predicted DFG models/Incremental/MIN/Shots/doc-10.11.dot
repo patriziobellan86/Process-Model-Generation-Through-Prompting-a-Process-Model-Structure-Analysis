@@ -1,0 +1,20 @@
+strict digraph "doc-10.11" {
+	graph [name="doc-10.11"];
+	"request measurements from the msp"	[attrs="{'type': 'Activity', 'label': 'request measurements from the msp'}"];
+	"check the received request"	[attrs="{'type': 'Activity', 'label': 'check the received request'}"];
+	"request measurements from the msp" -> "check the received request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny the request of the go"	[attrs="{'type': 'Activity', 'label': 'deny the request of the go'}"];
+	"check the received request" -> "deny the request of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the go about the failure of the reading"	[attrs="{'type': 'Activity', 'label': 'inform the go about the failure of the reading'}"];
+	"deny the request of the go" -> "inform the go about the failure of the reading"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform the measurement"	[attrs="{'type': 'Activity', 'label': 'perform the measurement'}"];
+	"transmit the measured values to the go"	[attrs="{'type': 'Activity', 'label': 'transmit the measured values to the go'}"];
+	"perform the measurement" -> "transmit the measured values to the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process the measured values"	[attrs="{'type': 'Activity', 'label': 'process the measured values'}"];
+	"inform the go about the failure of the reading" -> "process the measured values"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the changed values to the msp"	[attrs="{'type': 'Activity', 'label': 'send the changed values to the msp'}"];
+	"transmit the measured values to the go" -> "send the changed values to the msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transmit the readings to the sp"	[attrs="{'type': 'Activity', 'label': 'transmit the readings to the sp'}"];
+	"process the measured values" -> "transmit the readings to the sp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the changed values to the msp" -> "transmit the readings to the sp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,16 @@
+strict digraph "doc-10.9" {
+	graph [name="doc-10.9"];
+	"request change"	[attrs="{'type': 'Activity', 'label': 'request change'}"];
+	"review change request"	[attrs="{'type': 'Activity', 'label': 'review change request'}"];
+	"request change" -> "review change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject change request"	[attrs="{'type': 'Activity', 'label': 'reject change request'}"];
+	"review change request" -> "reject change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm change request"	[attrs="{'type': 'Activity', 'label': 'confirm change request'}"];
+	"reject change request" -> "confirm change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform measuring point change"	[attrs="{'type': 'Activity', 'label': 'perform measuring point change'}"];
+	"confirm change request" -> "perform measuring point change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"report implementation"	[attrs="{'type': 'Activity', 'label': 'report implementation'}"];
+	"perform measuring point change" -> "report implementation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"notify of failure"	[attrs="{'type': 'Activity', 'label': 'notify of failure'}"];
+	"report implementation" -> "notify of failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

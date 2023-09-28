@@ -1,0 +1,15 @@
+digraph "doc-10.7" {
+	graph [name="doc-10.7"];
+	"register the measurement"	[attrs="{'type': 'Activity', 'label': 'register the measurement'}"];
+	"examine the application of the mspn"	[attrs="{'type': 'Activity', 'label': 'examine the application of the mspn'}"];
+	"register the measurement" -> "examine the application of the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the application of the mspn"	[attrs="{'type': 'Activity', 'label': 'reject the application of the mspn'}"];
+	"examine the application of the mspn" -> "reject the application of the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the application of the mspn"	[attrs="{'type': 'Activity', 'label': 'confirm the application of the mspn'}"];
+	"reject the application of the mspn" -> "confirm the application of the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the mspn"	[attrs="{'type': 'Activity', 'label': 'assign the mspn'}"];
+	"confirm the application of the mspn" -> "assign the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the assignment of the mspn"	[attrs="{'type': 'Activity', 'label': 'inform about the assignment of the mspn'}"];
+	"assign the mspn" -> "inform about the assignment of the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the assignment of the mspn" -> "inform about the assignment of the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

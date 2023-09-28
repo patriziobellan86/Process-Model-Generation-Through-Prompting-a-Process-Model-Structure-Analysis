@@ -1,0 +1,3 @@
+Q: Considering the context of Business Process Management, list all the process model activities described in this process description:
+"""{text}"""
+A:

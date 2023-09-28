@@ -1,0 +1,18 @@
+strict digraph "doc-6.3" {
+	graph [name="doc-6.3"];
+	"get a new order"	[attrs="{'type': 'Activity', 'label': 'get a new order'}"];
+	"determine the necessary parts and quantities"	[attrs="{'type': 'Activity', 'label': 'determine the necessary parts and quantities'}"];
+	"get a new order" -> "determine the necessary parts and quantities"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"enter into production planning system"	[attrs="{'type': 'Activity', 'label': 'enter into production planning system'}"];
+	"determine the necessary parts and quantities" -> "enter into production planning system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transfer data manually"	[attrs="{'type': 'Activity', 'label': 'transfer data manually'}"];
+	"enter into production planning system" -> "transfer data manually"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"decide if parts must be procured"	[attrs="{'type': 'Activity', 'label': 'decide if parts must be procured'}"];
+	"transfer data manually" -> "decide if parts must be procured"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive a notice from the system"	[attrs="{'type': 'Activity', 'label': 'receive a notice from the system'}"];
+	"decide if parts must be procured" -> "receive a notice from the system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"implement the order"	[attrs="{'type': 'Activity', 'label': 'implement the order'}"];
+	"receive a notice from the system" -> "implement the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the order for quality"	[attrs="{'type': 'Activity', 'label': 'check the order for quality'}"];
+	"implement the order" -> "check the order for quality"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,18 @@
+strict digraph "doc-10.4" {
+	graph [name="doc-10.4"];
+	notify	[attrs="{'type': 'Activity', 'label': 'notify'}"];
+	announce	[attrs="{'type': 'Activity', 'label': 'announce'}"];
+	notify -> announce	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform final reading"	[attrs="{'type': 'Activity', 'label': 'perform final reading'}"];
+	announce -> "perform final reading"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"dismount old equipment"	[attrs="{'type': 'Activity', 'label': 'dismount old equipment'}"];
+	"perform final reading" -> "dismount old equipment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mount new device"	[attrs="{'type': 'Activity', 'label': 'mount new device'}"];
+	"dismount old equipment" -> "mount new device"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"read meter count"	[attrs="{'type': 'Activity', 'label': 'read meter count'}"];
+	"mount new device" -> "read meter count"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send values of final reading"	[attrs="{'type': 'Activity', 'label': 'send values of final reading'}"];
+	"read meter count" -> "send values of final reading"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"tell go about device changes, master data, meter count at dismounting, and meter count at installation"	[attrs="{'type': 'Activity', 'label': 'tell go about device changes, master data, meter count at dismounting, and meter count at installation'}"];
+	"send values of final reading" -> "tell go about device changes, master data, meter count at dismounting, and meter count at installation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,25 @@
+strict digraph "doc-3.1" {
+	graph [name="doc-3.1"];
+	"send a warrant possession request"	[attrs="{'type': 'Activity', 'label': 'send a warrant possession request'}"];
+	"receive the request"	[attrs="{'type': 'Activity', 'label': 'receive the request'}"];
+	"retrieve the sct file"	[attrs="{'type': 'Activity', 'label': 'retrieve the sct file'}"];
+	"receive the request" -> "retrieve the sct file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"forward the sct warrant possession"	[attrs="{'type': 'Activity', 'label': 'forward the sct warrant possession'}"];
+	"retrieve the sct file" -> "forward the sct warrant possession"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"store the sct physical file"	[attrs="{'type': 'Activity', 'label': 'store the sct physical file'}"];
+	"forward the sct warrant possession" -> "store the sct physical file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"await a report"	[attrs="{'type': 'Activity', 'label': 'await a report'}"];
+	"store the sct physical file" -> "await a report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive the report"	[attrs="{'type': 'Activity', 'label': 'receive the report'}"];
+	"await a report" -> "receive the report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"retrieve the respective sct file"	[attrs="{'type': 'Activity', 'label': 'retrieve the respective sct file'}"];
+	"receive the report" -> "retrieve the respective sct file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"attach the new sct document"	[attrs="{'type': 'Activity', 'label': 'attach the new sct document'}"];
+	"retrieve the respective sct file" -> "attach the new sct document"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"store the expanded sct physical file"	[attrs="{'type': 'Activity', 'label': 'store the expanded sct physical file'}"];
+	"attach the new sct document" -> "store the expanded sct physical file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive the physical sct file"	[attrs="{'type': 'Activity', 'label': 'receive the physical sct file'}"];
+	"store the expanded sct physical file" -> "receive the physical sct file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send  a warrant possession request"	[attrs="{'type': 'Activity', 'label': 'send  a warrant possession request'}"];
+	"send  a warrant possession request" -> "receive the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

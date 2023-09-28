@@ -1,0 +1,28 @@
+strict digraph "doc-6.4" {
+	graph [name="doc-6.4"];
+	"determine contact details"	[attrs="{'type': 'Activity', 'label': 'determine contact details'}"];
+	"buy details for cold calls"	[attrs="{'type': 'Activity', 'label': 'buy details for cold calls'}"];
+	"determine contact details" -> "buy details for cold calls"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"marketing staff participates in exhibitions"	[attrs="{'type': 'Activity', 'label': 'marketing staff participates in exhibitions'}"];
+	"buy details for cold calls" -> "marketing staff participates in exhibitions"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"know somebody interested in the product"	[attrs="{'type': 'Activity', 'label': 'know somebody interested in the product'}"];
+	"marketing staff participates in exhibitions" -> "know somebody interested in the product"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"start calling the customer"	[attrs="{'type': 'Activity', 'label': 'start calling the customer'}"];
+	"know somebody interested in the product" -> "start calling the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"determine the contact person"	[attrs="{'type': 'Activity', 'label': 'determine the contact person'}"];
+	"start calling the customer" -> "determine the contact person"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"determine the budget"	[attrs="{'type': 'Activity', 'label': 'determine the budget'}"];
+	"determine the contact person" -> "determine the budget"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ask the customer if he is interested"	[attrs="{'type': 'Activity', 'label': 'ask the customer if he is interested'}"];
+	"determine the budget" -> "ask the customer if he is interested"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"head of development personally tries to acquire the customer"	[attrs="{'type': 'Activity', 'label': 'head of development personally tries to acquire the customer'}"];
+	"ask the customer if he is interested" -> "head of development personally tries to acquire the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"detailed online presentation"	[attrs="{'type': 'Activity', 'label': 'detailed online presentation'}"];
+	"head of development personally tries to acquire the customer" -> "detailed online presentation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"waiting for the customer to come back"	[attrs="{'type': 'Activity', 'label': 'waiting for the customer to come back'}"];
+	"detailed online presentation" -> "waiting for the customer to come back"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"calling the customer"	[attrs="{'type': 'Activity', 'label': 'calling the customer'}"];
+	"waiting for the customer to come back" -> "calling the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"creation of a quotation"	[attrs="{'type': 'Activity', 'label': 'creation of a quotation'}"];
+	"calling the customer" -> "creation of a quotation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

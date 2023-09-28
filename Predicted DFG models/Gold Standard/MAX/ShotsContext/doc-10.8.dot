@@ -1,0 +1,17 @@
+digraph "doc-10.8" {
+	graph [name="doc-10.8"];
+	deregister	[attrs="{'type': 'Activity', 'label': 'deregister'}"];
+	"verify the deregistration"	[attrs="{'type': 'Activity', 'label': 'verify the deregistration'}"];
+	deregister -> "verify the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the deregistration of the mspo"	[attrs="{'type': 'Activity', 'label': 'reject the deregistration of the mspo'}"];
+	"verify the deregistration" -> "reject the deregistration of the mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the deregistration of the mspo"	[attrs="{'type': 'Activity', 'label': 'confirm the deregistration of the mspo'}"];
+	"verify the deregistration" -> "confirm the deregistration of the mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the go"	[attrs="{'type': 'Activity', 'label': 'assign the go'}"];
+	"confirm the deregistration of the mspo" -> "assign the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the end of the assignment and the beginning of the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform about the end of the assignment and the beginning of the assignment of the go'}"];
+	"assign the go" -> "inform about the end of the assignment and the beginning of the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"informs about the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'informs about the assignment of the go'}"];
+	"inform about the end of the assignment and the beginning of the assignment of the go" -> "informs about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"informs about the assignment of the go" -> "informs about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

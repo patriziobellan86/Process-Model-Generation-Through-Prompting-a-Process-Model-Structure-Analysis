@@ -1,0 +1,22 @@
+strict digraph "doc-9.5" {
+	graph [name="doc-9.5"];
+	"receive the expense report"	[attrs="{'type': 'Activity', 'label': 'receive the expense report'}"];
+	"create a new account"	[attrs="{'type': 'Activity', 'label': 'create a new account'}"];
+	"receive the expense report" -> "create a new account"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review for automatic approval"	[attrs="{'type': 'Activity', 'label': 'review for automatic approval'}"];
+	"create a new account" -> "review for automatic approval"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve or reject the report"	[attrs="{'type': 'Activity', 'label': 'approve or reject the report'}"];
+	"review for automatic approval" -> "approve or reject the report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a rejection notice"	[attrs="{'type': 'Activity', 'label': 'send a rejection notice'}"];
+	"approve or reject the report" -> "send a rejection notice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reimburse the employee"	[attrs="{'type': 'Activity', 'label': 'reimburse the employee'}"];
+	"approve or reject the report" -> "reimburse the employee"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send an approval in progress email"	[attrs="{'type': 'Activity', 'label': 'send an approval in progress email'}"];
+	"send a rejection notice" -> "send an approval in progress email"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"stop the process"	[attrs="{'type': 'Activity', 'label': 'stop the process'}"];
+	"send an approval in progress email" -> "stop the process"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send an email cancellation notice"	[attrs="{'type': 'Activity', 'label': 'send an email cancellation notice'}"];
+	"stop the process" -> "send an email cancellation notice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"re-submit the expense report"	[attrs="{'type': 'Activity', 'label': 're-submit the expense report'}"];
+	"send an email cancellation notice" -> "re-submit the expense report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

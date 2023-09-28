@@ -1,0 +1,29 @@
+strict digraph "doc-3.5" {
+	graph [name="doc-3.5"];
+	"collect mail"	[attrs="{'type': 'Activity', 'label': 'collect mail'}"];
+	"sort mail"	[attrs="{'type': 'Activity', 'label': 'sort mail'}"];
+	"collect mail" -> "sort mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"distribute mail"	[attrs="{'type': 'Activity', 'label': 'distribute mail'}"];
+	"sort mail" -> "distribute mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register mail"	[attrs="{'type': 'Activity', 'label': 'register mail'}"];
+	"sort mail" -> "register mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"open mail"	[attrs="{'type': 'Activity', 'label': 'open mail'}"];
+	"distribute mail" -> "open mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"open mail" -> "sort mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform quality check"	[attrs="{'type': 'Activity', 'label': 'perform quality check'}"];
+	"register mail" -> "perform quality check"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"compile list of requisition"	[attrs="{'type': 'Activity', 'label': 'compile list of requisition'}"];
+	"perform quality check" -> "compile list of requisition"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capture matter details"	[attrs="{'type': 'Activity', 'label': 'capture matter details'}"];
+	"compile list of requisition" -> "capture matter details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"take applicable fees"	[attrs="{'type': 'Activity', 'label': 'take applicable fees'}"];
+	"capture matter details" -> "take applicable fees"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"put receipt and copied documents into an envelope"	[attrs="{'type': 'Activity', 'label': 'put receipt and copied documents into an envelope'}"];
+	"take applicable fees" -> "put receipt and copied documents into an envelope"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"post to the party"	[attrs="{'type': 'Activity', 'label': 'post to the party'}"];
+	"put receipt and copied documents into an envelope" -> "post to the party"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capture party details"	[attrs="{'type': 'Activity', 'label': 'capture party details'}"];
+	"post to the party" -> "capture party details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"print physical court file"	[attrs="{'type': 'Activity', 'label': 'print physical court file'}"];
+	"capture party details" -> "print physical court file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

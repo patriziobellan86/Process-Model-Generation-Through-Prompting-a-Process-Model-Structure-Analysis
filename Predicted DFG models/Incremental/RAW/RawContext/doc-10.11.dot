@@ -1,0 +1,20 @@
+strict digraph "doc-10.11" {
+	graph [name="doc-10.11"];
+	"request measurements"	[attrs="{'type': 'Activity', 'label': 'request measurements'}"];
+	"check request"	[attrs="{'type': 'Activity', 'label': 'check request'}"];
+	"request measurements" -> "check request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny request, perform measurement"	[attrs="{'type': 'Activity', 'label': 'deny request, perform measurement'}"];
+	"check request" -> "deny request, perform measurement"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny request"	[attrs="{'type': 'Activity', 'label': 'deny request'}"];
+	"inform go of failure"	[attrs="{'type': 'Activity', 'label': 'inform go of failure'}"];
+	"deny request" -> "inform go of failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform measurement"	[attrs="{'type': 'Activity', 'label': 'perform measurement'}"];
+	"transmit measured values"	[attrs="{'type': 'Activity', 'label': 'transmit measured values'}"];
+	"perform measurement" -> "transmit measured values"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process measured values"	[attrs="{'type': 'Activity', 'label': 'process measured values'}"];
+	"transmit measured values" -> "process measured values"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send changed values"	[attrs="{'type': 'Activity', 'label': 'send changed values'}"];
+	"process measured values" -> "send changed values"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transmit readings"	[attrs="{'type': 'Activity', 'label': 'transmit readings'}"];
+	"send changed values" -> "transmit readings"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

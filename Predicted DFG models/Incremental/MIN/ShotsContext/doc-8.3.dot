@@ -1,0 +1,14 @@
+strict digraph "doc-8.3" {
+	graph [name="doc-8.3"];
+	"detect personnel requirements"	[attrs="{'type': 'Activity', 'label': 'detect personnel requirements'}"];
+	"report the vacancy to the personnel department"	[attrs="{'type': 'Activity', 'label': 'report the vacancy to the personnel department'}"];
+	"detect personnel requirements" -> "report the vacancy to the personnel department"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"get the job description for review"	[attrs="{'type': 'Activity', 'label': 'get the job description for review'}"];
+	"report the vacancy to the personnel department" -> "get the job description for review"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ask for corrections"	[attrs="{'type': 'Activity', 'label': 'ask for corrections'}"];
+	"get the job description for review" -> "ask for corrections"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve the job description"	[attrs="{'type': 'Activity', 'label': 'approve the job description'}"];
+	"ask for corrections" -> "approve the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"clarify questions about the tasks and requirements"	[attrs="{'type': 'Activity', 'label': 'clarify questions about the tasks and requirements'}"];
+	"approve the job description" -> "clarify questions about the tasks and requirements"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

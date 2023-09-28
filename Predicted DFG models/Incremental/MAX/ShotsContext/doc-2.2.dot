@@ -1,0 +1,31 @@
+strict digraph "doc-2.2" {
+	graph [name="doc-2.2"];
+	"switch-over request"	[attrs="{'type': 'Activity', 'label': 'switch-over request'}"];
+	"transmit customer data"	[attrs="{'type': 'Activity', 'label': 'transmit customer data'}"];
+	"receive customer data"	[attrs="{'type': 'Activity', 'label': 'receive customer data'}"];
+	"enter customer data object"	[attrs="{'type': 'Activity', 'label': 'enter customer data object'}"];
+	"compare with internal customer data base"	[attrs="{'type': 'Activity', 'label': 'compare with internal customer data base'}"];
+	"check for completeness and plausibility"	[attrs="{'type': 'Activity', 'label': 'check for completeness and plausibility'}"];
+	"correct errors"	[attrs="{'type': 'Activity', 'label': 'correct errors'}"];
+	"create a new customer object"	[attrs="{'type': 'Activity', 'label': 'create a new customer object'}"];
+	"prepare the contract documents"	[attrs="{'type': 'Activity', 'label': 'prepare the contract documents'}"];
+	"automated check of the contract documents"	[attrs="{'type': 'Activity', 'label': 'automated check of the contract documents'}"];
+	"analyze and resolve the causing issues"	[attrs="{'type': 'Activity', 'label': 'analyze and resolve the causing issues'}"];
+	"generate the contract documents"	[attrs="{'type': 'Activity', 'label': 'generate the contract documents'}"];
+	"send out a confirmation document"	[attrs="{'type': 'Activity', 'label': 'send out a confirmation document'}"];
+	"send out a request to the grid operator"	[attrs="{'type': 'Activity', 'label': 'send out a request to the grid operator'}"];
+	"check for supplier concurrence"	[attrs="{'type': 'Activity', 'label': 'check for supplier concurrence'}"];
+	"inform all involved suppliers"	[attrs="{'type': 'Activity', 'label': 'inform all involved suppliers'}"];
+	"terminate the sales agreement"	[attrs="{'type': 'Activity', 'label': 'terminate the sales agreement'}"];
+	"create a cis contract"	[attrs="{'type': 'Activity', 'label': 'create a cis contract'}"];
+	"check the contract details"	[attrs="{'type': 'Activity', 'label': 'check the contract details'}"];
+	"withdraw from the switch contract"	[attrs="{'type': 'Activity', 'label': 'withdraw from the switch contract'}"];
+	"confirm the switch contract"	[attrs="{'type': 'Activity', 'label': 'confirm the switch contract'}"];
+	"transmit the power meter data"	[attrs="{'type': 'Activity', 'label': 'transmit the power meter data'}"];
+	"compute the final billing"	[attrs="{'type': 'Activity', 'label': 'compute the final billing'}"];
+	"send the final billing"	[attrs="{'type': 'Activity', 'label': 'send the final billing'}"];
+	"import the meter data"	[attrs="{'type': 'Activity', 'label': 'import the meter data'}"];
+	"not applicable"	[attrs="{'type': 'Activity', 'label': 'not applicable'}"];
+	"-NOT-BREAKABLE"	[attrs="{'type': 'Activity', 'label': '-NOT-BREAKABLE'}"];
+	"not applicable" -> "-NOT-BREAKABLE"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

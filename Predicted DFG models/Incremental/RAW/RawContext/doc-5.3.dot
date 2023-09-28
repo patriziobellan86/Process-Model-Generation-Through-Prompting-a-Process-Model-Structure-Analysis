@@ -1,0 +1,20 @@
+strict digraph "doc-5.3" {
+	graph [name="doc-5.3"];
+	"submit office supply request"	[attrs="{'type': 'Activity', 'label': 'submit office supply request'}"];
+	"receive request"	[attrs="{'type': 'Activity', 'label': 'receive request'}"];
+	"submit office supply request" -> "receive request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve/reject/ask for change"	[attrs="{'type': 'Activity', 'label': 'approve/reject/ask for change'}"];
+	"receive request" -> "approve/reject/ask for change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"return request with change request"	[attrs="{'type': 'Activity', 'label': 'return request with change request'}"];
+	"approve/reject/ask for change" -> "return request with change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"make quotations"	[attrs="{'type': 'Activity', 'label': 'make quotations'}"];
+	"return request with change request" -> "make quotations"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"select vendor"	[attrs="{'type': 'Activity', 'label': 'select vendor'}"];
+	"make quotations" -> "select vendor"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate and send purchase order"	[attrs="{'type': 'Activity', 'label': 'generate and send purchase order'}"];
+	"select vendor" -> "generate and send purchase order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait for product delivery and invoice received"	[attrs="{'type': 'Activity', 'label': 'wait for product delivery and invoice received'}"];
+	"generate and send purchase order" -> "wait for product delivery and invoice received"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send notification of result"	[attrs="{'type': 'Activity', 'label': 'send notification of result'}"];
+	"wait for product delivery and invoice received" -> "send notification of result"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

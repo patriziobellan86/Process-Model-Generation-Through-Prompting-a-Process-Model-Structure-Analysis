@@ -1,0 +1,17 @@
+strict digraph "doc-5.2" {
+	graph [name="doc-5.2"];
+	"submit a vacation request"	[attrs="{'type': 'Activity', 'label': 'submit a vacation request'}"];
+	"register the requirement"	[attrs="{'type': 'Activity', 'label': 'register the requirement'}"];
+	"submit a vacation request" -> "register the requirement"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive the request"	[attrs="{'type': 'Activity', 'label': 'receive the request'}"];
+	"register the requirement" -> "receive the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve or reject the request"	[attrs="{'type': 'Activity', 'label': 'approve or reject the request'}"];
+	"receive the request" -> "approve or reject the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"return the application"	[attrs="{'type': 'Activity', 'label': 'return the application'}"];
+	"approve or reject the request" -> "return the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate a notification"	[attrs="{'type': 'Activity', 'label': 'generate a notification'}"];
+	"approve or reject the request" -> "generate a notification"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"complete the respective management procedures"	[attrs="{'type': 'Activity', 'label': 'complete the respective management procedures'}"];
+	"return the application" -> "complete the respective management procedures"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate a notification" -> "complete the respective management procedures"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

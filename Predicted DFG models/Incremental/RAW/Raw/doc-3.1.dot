@@ -1,0 +1,20 @@
+strict digraph "doc-3.1" {
+	graph [name="doc-3.1"];
+	"send warrant possession request"	[attrs="{'type': 'Activity', 'label': 'send warrant possession request'}"];
+	"receive request and retrieve sct file"	[attrs="{'type': 'Activity', 'label': 'receive request and retrieve sct file'}"];
+	"send warrant possession request" -> "receive request and retrieve sct file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"forward sct warrant possession to queensland police"	[attrs="{'type': 'Activity', 'label': 'forward sct warrant possession to queensland police'}"];
+	"receive request and retrieve sct file" -> "forward sct warrant possession to queensland police"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"store sct physical file"	[attrs="{'type': 'Activity', 'label': 'store sct physical file'}"];
+	"forward sct warrant possession to queensland police" -> "store sct physical file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive report from police"	[attrs="{'type': 'Activity', 'label': 'receive report from police'}"];
+	"store sct physical file" -> "receive report from police"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"retrieve sct file"	[attrs="{'type': 'Activity', 'label': 'retrieve sct file'}"];
+	"receive report from police" -> "retrieve sct file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"attach new sct document"	[attrs="{'type': 'Activity', 'label': 'attach new sct document'}"];
+	"retrieve sct file" -> "attach new sct document"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"store expanded sct physical file"	[attrs="{'type': 'Activity', 'label': 'store expanded sct physical file'}"];
+	"attach new sct document" -> "store expanded sct physical file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive physical sct file"	[attrs="{'type': 'Activity', 'label': 'receive physical sct file'}"];
+	"store expanded sct physical file" -> "receive physical sct file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

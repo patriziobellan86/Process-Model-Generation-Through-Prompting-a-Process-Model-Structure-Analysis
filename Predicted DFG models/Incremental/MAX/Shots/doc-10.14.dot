@@ -1,0 +1,16 @@
+strict digraph "doc-10.14" {
+	graph [name="doc-10.14"];
+	"send the bill for the temporary continuation of the metering point operations"	[attrs="{'type': 'Activity', 'label': 'send the bill for the temporary continuation of the metering point operations'}"];
+	"examine the bill"	[attrs="{'type': 'Activity', 'label': 'examine the bill'}"];
+	"send the bill for the temporary continuation of the metering point operations" -> "examine the bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the invoice with payment advice"	[attrs="{'type': 'Activity', 'label': 'confirm the invoice with payment advice'}"];
+	"examine the bill" -> "confirm the invoice with payment advice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the invoice"	[attrs="{'type': 'Activity', 'label': 'reject the invoice'}"];
+	"examine the bill" -> "reject the invoice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the bill for the temporary continuation of the measurement"	[attrs="{'type': 'Activity', 'label': 'send the bill for the temporary continuation of the measurement'}"];
+	"send the bill for the temporary continuation of the measurement" -> "examine the bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the bill for additional readings"	[attrs="{'type': 'Activity', 'label': 'send the bill for additional readings'}"];
+	"send the bill for additional readings" -> "examine the bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the bill for the equipment acquisition"	[attrs="{'type': 'Activity', 'label': 'send the bill for the equipment acquisition'}"];
+	"send the bill for the equipment acquisition" -> "examine the bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

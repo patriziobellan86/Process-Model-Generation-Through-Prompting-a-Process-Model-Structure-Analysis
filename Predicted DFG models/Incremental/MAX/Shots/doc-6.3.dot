@@ -1,0 +1,18 @@
+strict digraph "doc-6.3" {
+	graph [name="doc-6.3"];
+	"determine the necessary parts and quantities"	[attrs="{'type': 'Activity', 'label': 'determine the necessary parts and quantities'}"];
+	"enter the information into the production planning system"	[attrs="{'type': 'Activity', 'label': 'enter the information into the production planning system'}"];
+	"determine the necessary parts and quantities" -> "enter the information into the production planning system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"create a list of parts to be procured"	[attrs="{'type': 'Activity', 'label': 'create a list of parts to be procured'}"];
+	"enter the information into the production planning system" -> "create a list of parts to be procured"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transfer the data manually"	[attrs="{'type': 'Activity', 'label': 'transfer the data manually'}"];
+	"create a list of parts to be procured" -> "transfer the data manually"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"decide whether any parts are missing"	[attrs="{'type': 'Activity', 'label': 'decide whether any parts are missing'}"];
+	"transfer the data manually" -> "decide whether any parts are missing"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive a notice from the system"	[attrs="{'type': 'Activity', 'label': 'receive a notice from the system'}"];
+	"decide whether any parts are missing" -> "receive a notice from the system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"take care of the implementation"	[attrs="{'type': 'Activity', 'label': 'take care of the implementation'}"];
+	"receive a notice from the system" -> "take care of the implementation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the order for its quality"	[attrs="{'type': 'Activity', 'label': 'check the order for its quality'}"];
+	"take care of the implementation" -> "check the order for its quality"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,11 @@
+strict digraph "doc-10.12" {
+	graph [name="doc-10.12"];
+	"ec notifies inq of master data change"	[attrs="{'type': 'Activity', 'label': 'ec notifies inq of master data change'}"];
+	"inq notifies ip of change"	[attrs="{'type': 'Activity', 'label': 'inq notifies ip of change'}"];
+	"ec notifies inq of master data change" -> "inq notifies ip of change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inq notifies ip of change" -> "ec notifies inq of master data change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ip checks if master data can be changed at desired time"	[attrs="{'type': 'Activity', 'label': 'ip checks if master data can be changed at desired time'}"];
+	"ip checks if master data can be changed at desired time" -> "inq notifies ip of change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ip confirms or rejects inq changes"	[attrs="{'type': 'Activity', 'label': 'ip confirms or rejects inq changes'}"];
+	"ip confirms or rejects inq changes" -> "ip checks if master data can be changed at desired time"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

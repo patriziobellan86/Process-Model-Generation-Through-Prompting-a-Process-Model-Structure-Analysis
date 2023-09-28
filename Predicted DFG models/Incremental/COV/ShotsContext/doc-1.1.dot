@@ -1,0 +1,22 @@
+strict digraph "doc-1.1" {
+	graph [name="doc-1.1"];
+	"receive an order"	[attrs="{'type': 'Activity', 'label': 'receive an order'}"];
+	"reject or accept the order"	[attrs="{'type': 'Activity', 'label': 'reject or accept the order'}"];
+	"receive an order" -> "reject or accept the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the storehouse and engineering department"	[attrs="{'type': 'Activity', 'label': 'inform the storehouse and engineering department'}"];
+	"reject or accept the order" -> "inform the storehouse and engineering department"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process the part list"	[attrs="{'type': 'Activity', 'label': 'process the part list'}"];
+	"inform the storehouse and engineering department" -> "process the part list"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the required quantity"	[attrs="{'type': 'Activity', 'label': 'check the required quantity'}"];
+	"process the part list" -> "check the required quantity"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reserve or back-order the parts"	[attrs="{'type': 'Activity', 'label': 'reserve or back-order the parts'}"];
+	"check the required quantity" -> "reserve or back-order the parts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"prepare for assembling"	[attrs="{'type': 'Activity', 'label': 'prepare for assembling'}"];
+	"reserve or back-order the parts" -> "prepare for assembling"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assemble the bicycle"	[attrs="{'type': 'Activity', 'label': 'assemble the bicycle'}"];
+	"prepare for assembling" -> "assemble the bicycle"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ship the bicycle"	[attrs="{'type': 'Activity', 'label': 'ship the bicycle'}"];
+	"assemble the bicycle" -> "ship the bicycle"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"finish the process instance"	[attrs="{'type': 'Activity', 'label': 'finish the process instance'}"];
+	"ship the bicycle" -> "finish the process instance"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

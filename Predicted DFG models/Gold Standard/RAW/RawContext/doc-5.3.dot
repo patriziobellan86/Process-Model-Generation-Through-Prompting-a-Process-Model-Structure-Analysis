@@ -1,0 +1,33 @@
+strict digraph "doc-5.3" {
+	graph [name="doc-5.3"];
+	"submit an office supply request"	[attrs="{'type': 'Activity', 'label': 'submit an office supply request'}"];
+	"register the requirement"	[attrs="{'type': 'Activity', 'label': 'register the requirement'}"];
+	"submit an office supply request" -> "register the requirement"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive the request"	[attrs="{'type': 'Activity', 'label': 'receive the request'}"];
+	"register the requirement" -> "receive the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve or ask for change or reject the request"	[attrs="{'type': 'Activity', 'label': 'approve or ask for change or reject the request'}"];
+	"receive the request" -> "approve or ask for change or reject the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"return the request"	[attrs="{'type': 'Activity', 'label': 'return the request'}"];
+	"approve or ask for change or reject the request" -> "return the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review the comments for the change request"	[attrs="{'type': 'Activity', 'label': 'review the comments for the change request'}"];
+	"return the request" -> "review the comments for the change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the request"	[attrs="{'type': 'Activity', 'label': 'send the request'}"];
+	"review the comments for the change request" -> "send the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"make quotations"	[attrs="{'type': 'Activity', 'label': 'make quotations'}"];
+	"send the request" -> "make quotations"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"select a vendor"	[attrs="{'type': 'Activity', 'label': 'select a vendor'}"];
+	"make quotations" -> "select a vendor"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"choose a different vendor"	[attrs="{'type': 'Activity', 'label': 'choose a different vendor'}"];
+	"select a vendor" -> "choose a different vendor"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm a vendor"	[attrs="{'type': 'Activity', 'label': 'confirm a vendor'}"];
+	"select a vendor" -> "confirm a vendor"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"choose a different vendor" -> "select a vendor"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate a purchase order"	[attrs="{'type': 'Activity', 'label': 'generate a purchase order'}"];
+	"confirm a vendor" -> "generate a purchase order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a purchase order"	[attrs="{'type': 'Activity', 'label': 'send a purchase order'}"];
+	"generate a purchase order" -> "send a purchase order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait for the product to be delivered and the invoice received"	[attrs="{'type': 'Activity', 'label': 'wait for the product to be delivered and the invoice received'}"];
+	"send a purchase order" -> "wait for the product to be delivered and the invoice received"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a notification"	[attrs="{'type': 'Activity', 'label': 'send a notification'}"];
+	"wait for the product to be delivered and the invoice received" -> "send a notification"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

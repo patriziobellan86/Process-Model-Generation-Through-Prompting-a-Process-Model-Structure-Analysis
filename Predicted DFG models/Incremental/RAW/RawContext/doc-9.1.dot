@@ -1,0 +1,25 @@
+strict digraph "doc-9.1" {
+	graph [name="doc-9.1"];
+	"back up database"	[attrs="{'type': 'Activity', 'label': 'back up database'}"];
+	"check account defaulter table for new records"	[attrs="{'type': 'Activity', 'label': 'check account defaulter table for new records'}"];
+	"back up database" -> "check account defaulter table for new records"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check crm system for new returns"	[attrs="{'type': 'Activity', 'label': 'check crm system for new returns'}"];
+	"check account defaulter table for new records" -> "check crm system for new returns"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register defaulting accounts and customers"	[attrs="{'type': 'Activity', 'label': 'register defaulting accounts and customers'}"];
+	"check crm system for new returns" -> "register defaulting accounts and customers"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reconcile with existing account defaulters table"	[attrs="{'type': 'Activity', 'label': 'reconcile with existing account defaulters table'}"];
+	"check crm system for new returns" -> "reconcile with existing account defaulters table"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"produce table of defaulting accounts and send to account management"	[attrs="{'type': 'Activity', 'label': 'produce table of defaulting accounts and send to account management'}"];
+	"register defaulting accounts and customers" -> "produce table of defaulting accounts and send to account management"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"set deadline of 2:30 pm"	[attrs="{'type': 'Activity', 'label': 'set deadline of 2:30 pm'}"];
+	"produce table of defaulting accounts and send to account management" -> "set deadline of 2:30 pm"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send alert to supervisor if deadline is not met"	[attrs="{'type': 'Activity', 'label': 'send alert to supervisor if deadline is not met'}"];
+	"set deadline of 2:30 pm" -> "send alert to supervisor if deadline is not met"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"complete new defaulting account report"	[attrs="{'type': 'Activity', 'label': 'complete new defaulting account report'}"];
+	"send alert to supervisor if deadline is not met" -> "complete new defaulting account report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"complete new defaulting account report" -> "check crm system for new returns"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"set deadline of 4:00 pm"	[attrs="{'type': 'Activity', 'label': 'set deadline of 4:00 pm'}"];
+	"reconcile with existing account defaulters table" -> "set deadline of 4:00 pm"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send message to supervisor if deadline is not met"	[attrs="{'type': 'Activity', 'label': 'send message to supervisor if deadline is not met'}"];
+	"set deadline of 4:00 pm" -> "send message to supervisor if deadline is not met"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

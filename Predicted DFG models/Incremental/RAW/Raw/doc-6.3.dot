@@ -1,0 +1,14 @@
+strict digraph "doc-6.3" {
+	graph [name="doc-6.3"];
+	"determine necessary parts and quantities"	[attrs="{'type': 'Activity', 'label': 'determine necessary parts and quantities'}"];
+	"enter data into production planning system"	[attrs="{'type': 'Activity', 'label': 'enter data into production planning system'}"];
+	"determine necessary parts and quantities" -> "enter data into production planning system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transfer data manually to enterprise resource planning system"	[attrs="{'type': 'Activity', 'label': 'transfer data manually to enterprise resource planning system'}"];
+	"enter data into production planning system" -> "transfer data manually to enterprise resource planning system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"decide if parts need to be procured"	[attrs="{'type': 'Activity', 'label': 'decide if parts need to be procured'}"];
+	"transfer data manually to enterprise resource planning system" -> "decide if parts need to be procured"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive notice from system and implement production"	[attrs="{'type': 'Activity', 'label': 'receive notice from system and implement production'}"];
+	"decide if parts need to be procured" -> "receive notice from system and implement production"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check order for quality"	[attrs="{'type': 'Activity', 'label': 'check order for quality'}"];
+	"receive notice from system and implement production" -> "check order for quality"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

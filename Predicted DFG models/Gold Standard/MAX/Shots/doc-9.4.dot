@@ -1,0 +1,22 @@
+strict digraph "doc-9.4" {
+	graph [name="doc-9.4"];
+	"finalize the dates"	[attrs="{'type': 'Activity', 'label': 'finalize the dates'}"];
+	"update all group calendars"	[attrs="{'type': 'Activity', 'label': 'update all group calendars'}"];
+	"finalize the dates" -> "update all group calendars"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"create meeting folders for each meeting"	[attrs="{'type': 'Activity', 'label': 'create meeting folders for each meeting'}"];
+	"update all group calendars" -> "create meeting folders for each meeting"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ensures all appropriate documents are uploaded to system"	[attrs="{'type': 'Activity', 'label': 'ensures all appropriate documents are uploaded to system'}"];
+	"create meeting folders for each meeting" -> "ensures all appropriate documents are uploaded to system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"advise to read all related documents"	[attrs="{'type': 'Activity', 'label': 'advise to read all related documents'}"];
+	"ensures all appropriate documents are uploaded to system" -> "advise to read all related documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"hold meeting"	[attrs="{'type': 'Activity', 'label': 'hold meeting'}"];
+	"advise to read all related documents" -> "hold meeting"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"produce minutes"	[attrs="{'type': 'Activity', 'label': 'produce minutes'}"];
+	"hold meeting" -> "produce minutes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"conduct a qa check on the minutes"	[attrs="{'type': 'Activity', 'label': 'conduct a qa check on the minutes'}"];
+	"produce minutes" -> "conduct a qa check on the minutes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the minutes"	[attrs="{'type': 'Activity', 'label': 'send the minutes'}"];
+	"conduct a qa check on the minutes" -> "send the minutes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"update all departmental records"	[attrs="{'type': 'Activity', 'label': 'update all departmental records'}"];
+	"send the minutes" -> "update all departmental records"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,18 @@
+strict digraph "doc-1.3" {
+	graph [name="doc-1.3"];
+	"call room service"	[attrs="{'type': 'Activity', 'label': 'call room service'}"];
+	"submit an order ticket"	[attrs="{'type': 'Activity', 'label': 'submit an order ticket'}"];
+	"call room service" -> "submit an order ticket"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"give an order to the sommelier"	[attrs="{'type': 'Activity', 'label': 'give an order to the sommelier'}"];
+	"submit an order ticket" -> "give an order to the sommelier"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the order to the waiter"	[attrs="{'type': 'Activity', 'label': 'assign the order to the waiter'}"];
+	"give an order to the sommelier" -> "assign the order to the waiter"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ready a cart"	[attrs="{'type': 'Activity', 'label': 'ready a cart'}"];
+	"assign the order to the waiter" -> "ready a cart"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deliver the food, wine, and cart"	[attrs="{'type': 'Activity', 'label': 'deliver the food, wine, and cart'}"];
+	"ready a cart" -> "deliver the food, wine, and cart"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"debit the guest's account"	[attrs="{'type': 'Activity', 'label': \"debit the guest's account\"}"];
+	"deliver the food, wine, and cart" -> "debit the guest's account"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	billing	[attrs="{'type': 'Activity', 'label': 'billing'}"];
+	"debit the guest's account" -> billing	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

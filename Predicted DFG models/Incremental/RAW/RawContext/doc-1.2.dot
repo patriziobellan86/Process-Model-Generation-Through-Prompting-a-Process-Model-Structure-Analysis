@@ -1,0 +1,18 @@
+strict digraph "doc-1.2" {
+	graph [name="doc-1.2"];
+	"check defect"	[attrs="{'type': 'Activity', 'label': 'check defect'}"];
+	"hand out repair cost calculation"	[attrs="{'type': 'Activity', 'label': 'hand out repair cost calculation'}"];
+	"check defect" -> "hand out repair cost calculation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check and repair hardware"	[attrs="{'type': 'Activity', 'label': 'check and repair hardware'}"];
+	"hand out repair cost calculation" -> "check and repair hardware"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check and configure software"	[attrs="{'type': 'Activity', 'label': 'check and configure software'}"];
+	"check and repair hardware" -> "check and configure software"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"test system functionality"	[attrs="{'type': 'Activity', 'label': 'test system functionality'}"];
+	"check and repair hardware" -> "test system functionality"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check and configure software" -> "test system functionality"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"execute arbitrary repair activity"	[attrs="{'type': 'Activity', 'label': 'execute arbitrary repair activity'}"];
+	"test system functionality" -> "execute arbitrary repair activity"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"finish repair"	[attrs="{'type': 'Activity', 'label': 'finish repair'}"];
+	"test system functionality" -> "finish repair"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"execute arbitrary repair activity" -> "test system functionality"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

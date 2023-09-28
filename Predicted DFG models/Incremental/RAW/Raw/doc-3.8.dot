@@ -1,0 +1,26 @@
+strict digraph "doc-3.8" {
+	graph [name="doc-3.8"];
+	"submit claim"	[attrs="{'type': 'Activity', 'label': 'submit claim'}"];
+	"check documents"	[attrs="{'type': 'Activity', 'label': 'check documents'}"];
+	"submit claim" -> "check documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register claim"	[attrs="{'type': 'Activity', 'label': 'register claim'}"];
+	"check documents" -> "register claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"pick up claim"	[attrs="{'type': 'Activity', 'label': 'pick up claim'}"];
+	"register claim" -> "pick up claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check insurance"	[attrs="{'type': 'Activity', 'label': 'check insurance'}"];
+	"pick up claim" -> "check insurance"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform assessment"	[attrs="{'type': 'Activity', 'label': 'perform assessment'}"];
+	"check insurance" -> "perform assessment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"authorise repairs"	[attrs="{'type': 'Activity', 'label': 'authorise repairs'}"];
+	"perform assessment" -> "authorise repairs"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject claim"	[attrs="{'type': 'Activity', 'label': 'reject claim'}"];
+	"perform assessment" -> "reject claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"schedule payment"	[attrs="{'type': 'Activity', 'label': 'schedule payment'}"];
+	"authorise repairs" -> "schedule payment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send letter"	[attrs="{'type': 'Activity', 'label': 'send letter'}"];
+	"authorise repairs" -> "send letter"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"schedule payment" -> "send letter"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject claim" -> "send letter"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process complete"	[attrs="{'type': 'Activity', 'label': 'process complete'}"];
+	"send letter" -> "process complete"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

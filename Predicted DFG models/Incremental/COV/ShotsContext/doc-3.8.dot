@@ -1,0 +1,20 @@
+strict digraph "doc-3.8" {
+	graph [name="doc-3.8"];
+	"submit a claim"	[attrs="{'type': 'Activity', 'label': 'submit a claim'}"];
+	"check the documents"	[attrs="{'type': 'Activity', 'label': 'check the documents'}"];
+	"submit a claim" -> "check the documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register the claim"	[attrs="{'type': 'Activity', 'label': 'register the claim'}"];
+	"check the documents" -> "register the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the insurance"	[attrs="{'type': 'Activity', 'label': 'check the insurance'}"];
+	"register the claim" -> "check the insurance"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform an assessment"	[attrs="{'type': 'Activity', 'label': 'perform an assessment'}"];
+	"check the insurance" -> "perform an assessment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"authorise the repairs"	[attrs="{'type': 'Activity', 'label': 'authorise the repairs'}"];
+	"perform an assessment" -> "authorise the repairs"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the claim"	[attrs="{'type': 'Activity', 'label': 'reject the claim'}"];
+	"perform an assessment" -> "reject the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"schedule the payment"	[attrs="{'type': 'Activity', 'label': 'schedule the payment'}"];
+	"authorise the repairs" -> "schedule the payment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a letter"	[attrs="{'type': 'Activity', 'label': 'send a letter'}"];
+	"reject the claim" -> "send a letter"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

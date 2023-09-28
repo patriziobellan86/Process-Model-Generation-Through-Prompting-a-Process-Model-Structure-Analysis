@@ -1,0 +1,21 @@
+strict digraph "doc-10.10" {
+	graph [name="doc-10.10"];
+	"report a failure"	[attrs="{'type': 'Activity', 'label': 'report a failure'}"];
+	"examine the failure"	[attrs="{'type': 'Activity', 'label': 'examine the failure'}"];
+	"report a failure" -> "examine the failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the failure"	[attrs="{'type': 'Activity', 'label': 'reject the failure'}"];
+	"examine the failure" -> "reject the failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the failure"	[attrs="{'type': 'Activity', 'label': 'confirm the failure'}"];
+	"examine the failure" -> "confirm the failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the go and the msp"	[attrs="{'type': 'Activity', 'label': 'inform the go and the msp'}"];
+	"reject the failure" -> "inform the go and the msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the failure" -> "inform the go and the msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"fix the fault"	[attrs="{'type': 'Activity', 'label': 'fix the fault'}"];
+	"inform the go and the msp" -> "fix the fault"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"share the results of the repairs"	[attrs="{'type': 'Activity', 'label': 'share the results of the repairs'}"];
+	"fix the fault" -> "share the results of the repairs"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the go about the resolution"	[attrs="{'type': 'Activity', 'label': 'inform the go about the resolution'}"];
+	"share the results of the repairs" -> "inform the go about the resolution"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the msp about the resolution"	[attrs="{'type': 'Activity', 'label': 'inform the msp about the resolution'}"];
+	"inform the go about the resolution" -> "inform the msp about the resolution"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

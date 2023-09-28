@@ -1,0 +1,16 @@
+strict digraph "doc-3.6" {
+	graph [name="doc-3.6"];
+	"check if the claimant is insured"	[attrs="{'type': 'Activity', 'label': 'check if the claimant is insured'}"];
+	"evaluate the severity of the claim"	[attrs="{'type': 'Activity', 'label': 'evaluate the severity of the claim'}"];
+	"check if the claimant is insured" -> "evaluate the severity of the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send relevant forms"	[attrs="{'type': 'Activity', 'label': 'send relevant forms'}"];
+	"evaluate the severity of the claim" -> "send relevant forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check for completeness"	[attrs="{'type': 'Activity', 'label': 'check for completeness'}"];
+	"send relevant forms" -> "check for completeness"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register the claim"	[attrs="{'type': 'Activity', 'label': 'register the claim'}"];
+	"check for completeness" -> "register the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the claimant to update the forms"	[attrs="{'type': 'Activity', 'label': 'inform the claimant to update the forms'}"];
+	"register the claim" -> "inform the claimant to update the forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the updated forms"	[attrs="{'type': 'Activity', 'label': 'check the updated forms'}"];
+	"inform the claimant to update the forms" -> "check the updated forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

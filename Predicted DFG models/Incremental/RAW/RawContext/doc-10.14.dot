@@ -1,0 +1,16 @@
+strict digraph "doc-10.14" {
+	graph [name="doc-10.14"];
+	"mpoo sends bill for temporary continuation of metering point operations to go"	[attrs="{'type': 'Activity', 'label': 'mpoo sends bill for temporary continuation of metering point operations to go'}"];
+	"go or mpon examines bill"	[attrs="{'type': 'Activity', 'label': 'go or mpon examines bill'}"];
+	"mpoo sends bill for temporary continuation of metering point operations to go" -> "go or mpon examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mspo sends bill for temporary continuation of measurement to go"	[attrs="{'type': 'Activity', 'label': 'mspo sends bill for temporary continuation of measurement to go'}"];
+	"mspo sends bill for temporary continuation of measurement to go" -> "go or mpon examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mspo sends bill for additional readings to go"	[attrs="{'type': 'Activity', 'label': 'mspo sends bill for additional readings to go'}"];
+	"mspo sends bill for additional readings to go" -> "go or mpon examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpoo sends bill for equipment acquisition to mpon or go"	[attrs="{'type': 'Activity', 'label': 'mpoo sends bill for equipment acquisition to mpon or go'}"];
+	"mpoo sends bill for equipment acquisition to mpon or go" -> "go or mpon examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go or mpon confirms invoice with payment advice to mpoo or mspo"	[attrs="{'type': 'Activity', 'label': 'go or mpon confirms invoice with payment advice to mpoo or mspo'}"];
+	"go or mpon confirms invoice with payment advice to mpoo or mspo" -> "go or mpon examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go or mpon rejects invoice of mpoo or mspo"	[attrs="{'type': 'Activity', 'label': 'go or mpon rejects invoice of mpoo or mspo'}"];
+	"go or mpon rejects invoice of mpoo or mspo" -> "go or mpon examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,20 @@
+strict digraph "doc-10.10" {
+	graph [name="doc-10.10"];
+	"report a failure to the mpo"	[attrs="{'type': 'Activity', 'label': 'report a failure to the mpo'}"];
+	"examine the failure"	[attrs="{'type': 'Activity', 'label': 'examine the failure'}"];
+	"report a failure to the mpo" -> "examine the failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the failure of the fault detector"	[attrs="{'type': 'Activity', 'label': 'reject the failure of the fault detector'}"];
+	"examine the failure" -> "reject the failure of the fault detector"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the failure of the fault detector"	[attrs="{'type': 'Activity', 'label': 'confirm the failure of the fault detector'}"];
+	"reject the failure of the fault detector" -> "confirm the failure of the fault detector"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the go and the msp"	[attrs="{'type': 'Activity', 'label': 'inform the go and the msp'}"];
+	"confirm the failure of the fault detector" -> "inform the go and the msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"fix the fault at the measuring device"	[attrs="{'type': 'Activity', 'label': 'fix the fault at the measuring device'}"];
+	"inform the go and the msp" -> "fix the fault at the measuring device"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"share the results of the repairs"	[attrs="{'type': 'Activity', 'label': 'share the results of the repairs'}"];
+	"fix the fault at the measuring device" -> "share the results of the repairs"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the go about the resolution of the interference"	[attrs="{'type': 'Activity', 'label': 'inform the go about the resolution of the interference'}"];
+	"share the results of the repairs" -> "inform the go about the resolution of the interference"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the msp about the resolution of the interference"	[attrs="{'type': 'Activity', 'label': 'inform the msp about the resolution of the interference'}"];
+	"inform the go about the resolution of the interference" -> "inform the msp about the resolution of the interference"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

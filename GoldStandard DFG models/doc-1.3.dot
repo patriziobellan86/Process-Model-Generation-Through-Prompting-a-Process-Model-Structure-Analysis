@@ -1,0 +1,25 @@
+strict digraph "doc-1.3" {
+	graph [name="doc-1.3"];
+	call	[attrs="{'type': 'Activity', 'label': 'call'}"];
+	"take down the order"	[attrs="{'type': 'Activity', 'label': 'take down the order'}"];
+	call -> "take down the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"submit an order ticket"	[attrs="{'type': 'Activity', 'label': 'submit an order ticket'}"];
+	"take down the order" -> "submit an order ticket"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"give an order"	[attrs="{'type': 'Activity', 'label': 'give an order'}"];
+	"submit an order ticket" -> "give an order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the order"	[attrs="{'type': 'Activity', 'label': 'assign the order'}"];
+	"give an order" -> "assign the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"doing tasks"	[attrs="{'type': 'Activity', 'label': 'doing tasks'}"];
+	"assign the order" -> "doing tasks"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ready a cart"	[attrs="{'type': 'Activity', 'label': 'ready a cart'}"];
+	"assign the order" -> "ready a cart"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deliver the order"	[attrs="{'type': 'Activity', 'label': 'deliver the order'}"];
+	"doing tasks" -> "deliver the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ready a cart" -> "deliver the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	return	[attrs="{'type': 'Activity', 'label': 'return'}"];
+	"deliver the order" -> return	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"debit the guest's account"	[attrs="{'type': 'Activity', 'label': \"debit the guest's account\"}"];
+	return -> "debit the guest's account"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait to do the billing"	[attrs="{'type': 'Activity', 'label': 'wait to do the billing'}"];
+	return -> "wait to do the billing"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

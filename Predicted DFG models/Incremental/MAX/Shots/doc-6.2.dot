@@ -1,0 +1,12 @@
+strict digraph "doc-6.2" {
+	graph [name="doc-6.2"];
+	"place an order"	[attrs="{'type': 'Activity', 'label': 'place an order'}"];
+	"send the order"	[attrs="{'type': 'Activity', 'label': 'send the order'}"];
+	"place an order" -> "send the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process the order"	[attrs="{'type': 'Activity', 'label': 'process the order'}"];
+	"send the order" -> "process the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send an invoice"	[attrs="{'type': 'Activity', 'label': 'send an invoice'}"];
+	"process the order" -> "send an invoice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive the invoice"	[attrs="{'type': 'Activity', 'label': 'receive the invoice'}"];
+	"send an invoice" -> "receive the invoice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

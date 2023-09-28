@@ -1,0 +1,20 @@
+strict digraph "doc-6.3" {
+	graph [name="doc-6.3"];
+	"get a new order"	[attrs="{'type': 'Activity', 'label': 'get a new order'}"];
+	"determine the necessary parts and quantities as well as the delivery date"	[attrs="{'type': 'Activity', 'label': 'determine the necessary parts and quantities as well as the delivery date'}"];
+	"get a new order" -> "determine the necessary parts and quantities as well as the delivery date"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"enter the information"	[attrs="{'type': 'Activity', 'label': 'enter the information'}"];
+	"determine the necessary parts and quantities as well as the delivery date" -> "enter the information"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"create a list of parts"	[attrs="{'type': 'Activity', 'label': 'create a list of parts'}"];
+	"enter the information" -> "create a list of parts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transfer the data"	[attrs="{'type': 'Activity', 'label': 'transfer the data'}"];
+	"create a list of parts" -> "transfer the data"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	procure	[attrs="{'type': 'Activity', 'label': 'procure'}"];
+	"transfer the data" -> procure	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive a notice"	[attrs="{'type': 'Activity', 'label': 'receive a notice'}"];
+	procure -> "receive a notice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"take care of the implementation"	[attrs="{'type': 'Activity', 'label': 'take care of the implementation'}"];
+	"receive a notice" -> "take care of the implementation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the order"	[attrs="{'type': 'Activity', 'label': 'check the order'}"];
+	"take care of the implementation" -> "check the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

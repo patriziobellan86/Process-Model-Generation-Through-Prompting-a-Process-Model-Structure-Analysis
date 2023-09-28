@@ -1,0 +1,16 @@
+strict digraph "doc-7.1" {
+	graph [name="doc-7.1"];
+	"check the open leads"	[attrs="{'type': 'Activity', 'label': 'check the open leads'}"];
+	"select the top five leads"	[attrs="{'type': 'Activity', 'label': 'select the top five leads'}"];
+	"check the open leads" -> "select the top five leads"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"tell the sales assistant to call the contact person"	[attrs="{'type': 'Activity', 'label': 'tell the sales assistant to call the contact person'}"];
+	"select the top five leads" -> "tell the sales assistant to call the contact person"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"call each customer"	[attrs="{'type': 'Activity', 'label': 'call each customer'}"];
+	"tell the sales assistant to call the contact person" -> "call each customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a note to the manager"	[attrs="{'type': 'Activity', 'label': 'send a note to the manager'}"];
+	"call each customer" -> "send a note to the manager"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process the lead"	[attrs="{'type': 'Activity', 'label': 'process the lead'}"];
+	"send a note to the manager" -> "process the lead"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"call the next customer"	[attrs="{'type': 'Activity', 'label': 'call the next customer'}"];
+	"process the lead" -> "call the next customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

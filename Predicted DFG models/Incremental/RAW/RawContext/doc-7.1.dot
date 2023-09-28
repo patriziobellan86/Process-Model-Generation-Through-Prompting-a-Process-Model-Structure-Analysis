@@ -1,0 +1,16 @@
+strict digraph "doc-7.1" {
+	graph [name="doc-7.1"];
+	"check open leads"	[attrs="{'type': 'Activity', 'label': 'check open leads'}"];
+	"select top five leads"	[attrs="{'type': 'Activity', 'label': 'select top five leads'}"];
+	"check open leads" -> "select top five leads"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"tell sales assistant to call contact person"	[attrs="{'type': 'Activity', 'label': 'tell sales assistant to call contact person'}"];
+	"select top five leads" -> "tell sales assistant to call contact person"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"call customer"	[attrs="{'type': 'Activity', 'label': 'call customer'}"];
+	"tell sales assistant to call contact person" -> "call customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send note to manager"	[attrs="{'type': 'Activity', 'label': 'send note to manager'}"];
+	"call customer" -> "send note to manager"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process lead"	[attrs="{'type': 'Activity', 'label': 'process lead'}"];
+	"send note to manager" -> "process lead"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"call next customer"	[attrs="{'type': 'Activity', 'label': 'call next customer'}"];
+	"process lead" -> "call next customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

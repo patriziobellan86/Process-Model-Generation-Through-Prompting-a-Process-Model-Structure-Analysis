@@ -1,0 +1,14 @@
+strict digraph "doc-5.1" {
+	graph [name="doc-5.1"];
+	"receive customer request for loan amount"	[attrs="{'type': 'Activity', 'label': 'receive customer request for loan amount'}"];
+	"invoke risk assessment web service"	[attrs="{'type': 'Activity', 'label': 'invoke risk assessment web service'}"];
+	"receive customer request for loan amount" -> "invoke risk assessment web service"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve loan if small and customer is low risk"	[attrs="{'type': 'Activity', 'label': 'approve loan if small and customer is low risk'}"];
+	"invoke risk assessment web service" -> "approve loan if small and customer is low risk"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"provide feedback to customer from assessor or approver"	[attrs="{'type': 'Activity', 'label': 'provide feedback to customer from assessor or approver'}"];
+	"approve loan if small and customer is low risk" -> "provide feedback to customer from assessor or approver"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny loan if customer is high risk"	[attrs="{'type': 'Activity', 'label': 'deny loan if customer is high risk'}"];
+	"deny loan if customer is high risk" -> "provide feedback to customer from assessor or approver"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send request to approver web service if further review is needed or loan amount is $10,000 or more"	[attrs="{'type': 'Activity', 'label': 'send request to approver web service if further review is needed or loan amount is $10,000 or more'}"];
+	"send request to approver web service if further review is needed or loan amount is $10,000 or more" -> "provide feedback to customer from assessor or approver"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

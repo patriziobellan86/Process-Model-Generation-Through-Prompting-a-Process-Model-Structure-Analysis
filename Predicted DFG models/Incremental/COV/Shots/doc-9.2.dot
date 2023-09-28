@@ -1,0 +1,18 @@
+strict digraph "doc-9.2" {
+	graph [name="doc-9.2"];
+	"send a mortgage offer"	[attrs="{'type': 'Activity', 'label': 'send a mortgage offer'}"];
+	"update case details"	[attrs="{'type': 'Activity', 'label': 'update case details'}"];
+	"send a mortgage offer" -> "update case details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"archive prior to cancellation"	[attrs="{'type': 'Activity', 'label': 'archive prior to cancellation'}"];
+	"update case details" -> "archive prior to cancellation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send back completed offer documents"	[attrs="{'type': 'Activity', 'label': 'send back completed offer documents'}"];
+	"attach prerequisite documents"	[attrs="{'type': 'Activity', 'label': 'attach prerequisite documents'}"];
+	"send back completed offer documents" -> "attach prerequisite documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"move to administration for completion"	[attrs="{'type': 'Activity', 'label': 'move to administration for completion'}"];
+	"attach prerequisite documents" -> "move to administration for completion"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate a message to the customer"	[attrs="{'type': 'Activity', 'label': 'generate a message to the customer'}"];
+	"move to administration for completion" -> "generate a message to the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"request outstanding documents"	[attrs="{'type': 'Activity', 'label': 'request outstanding documents'}"];
+	"generate a message to the customer" -> "request outstanding documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"request outstanding documents" -> "update case details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

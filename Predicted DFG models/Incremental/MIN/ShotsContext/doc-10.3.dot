@@ -1,0 +1,27 @@
+strict digraph "doc-10.3" {
+	graph [name="doc-10.3"];
+	"deregister at the go"	[attrs="{'type': 'Activity', 'label': 'deregister at the go'}"];
+	"verify the deregistration"	[attrs="{'type': 'Activity', 'label': 'verify the deregistration'}"];
+	"deregister at the go" -> "verify the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the deregistration"	[attrs="{'type': 'Activity', 'label': 'reject the deregistration'}"];
+	"verify the deregistration" -> "reject the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"preliminarily confirm the deregistration"	[attrs="{'type': 'Activity', 'label': 'preliminarily confirm the deregistration'}"];
+	"reject the deregistration" -> "preliminarily confirm the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"prepare the readmission of the measuring point"	[attrs="{'type': 'Activity', 'label': 'prepare the readmission of the measuring point'}"];
+	"preliminarily confirm the deregistration" -> "prepare the readmission of the measuring point"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"oblige the mpoo to continue the operations"	[attrs="{'type': 'Activity', 'label': 'oblige the mpoo to continue the operations'}"];
+	"prepare the readmission of the measuring point" -> "oblige the mpoo to continue the operations"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the continuation to the mpoo"	[attrs="{'type': 'Activity', 'label': 'confirm the continuation to the mpoo'}"];
+	"oblige the mpoo to continue the operations" -> "confirm the continuation to the mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'Activity', 'label': 'perform the equipment acquisition and/or equipment changes'}"];
+	"confirm the continuation to the mpoo" -> "perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the go as mpo"	[attrs="{'type': 'Activity', 'label': 'assign the go as mpo'}"];
+	"perform the equipment acquisition and/or equipment changes" -> "assign the go as mpo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mpoo about the end of the assignment of the mpoo and the beginning of the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform the mpoo about the end of the assignment of the mpoo and the beginning of the assignment of \
+the go'}"];
+	"assign the go as mpo" -> "inform the mpoo about the end of the assignment of the mpoo and the beginning of the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mspo about the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform the mspo about the assignment of the go'}"];
+	"inform the mpoo about the end of the assignment of the mpoo and the beginning of the assignment of the go" -> "inform the mspo about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the sp about the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform the sp about the assignment of the go'}"];
+	"inform the mspo about the assignment of the go" -> "inform the sp about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

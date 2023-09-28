@@ -1,0 +1,18 @@
+strict digraph "doc-3.6" {
+	graph [name="doc-3.6"];
+	"check if claimant is insured"	[attrs="{'type': 'Activity', 'label': 'check if claimant is insured'}"];
+	"inform claimant if claim must be rejected"	[attrs="{'type': 'Activity', 'label': 'inform claimant if claim must be rejected'}"];
+	"check if claimant is insured" -> "inform claimant if claim must be rejected"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"evaluate severity of claim"	[attrs="{'type': 'Activity', 'label': 'evaluate severity of claim'}"];
+	"inform claimant if claim must be rejected" -> "evaluate severity of claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send relevant forms to claimant"	[attrs="{'type': 'Activity', 'label': 'send relevant forms to claimant'}"];
+	"evaluate severity of claim" -> "send relevant forms to claimant"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check forms for completeness"	[attrs="{'type': 'Activity', 'label': 'check forms for completeness'}"];
+	"send relevant forms to claimant" -> "check forms for completeness"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register claim in claims management system"	[attrs="{'type': 'Activity', 'label': 'register claim in claims management system'}"];
+	"check forms for completeness" -> "register claim in claims management system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform claimant to update forms"	[attrs="{'type': 'Activity', 'label': 'inform claimant to update forms'}"];
+	"register claim in claims management system" -> "inform claimant to update forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check updated forms"	[attrs="{'type': 'Activity', 'label': 'check updated forms'}"];
+	"inform claimant to update forms" -> "check updated forms"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

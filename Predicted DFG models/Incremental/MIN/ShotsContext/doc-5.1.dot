@@ -1,0 +1,15 @@
+strict digraph "doc-5.1" {
+	graph [name="doc-5.1"];
+	"receive customer request for loan amount"	[attrs="{'type': 'Activity', 'label': 'receive customer request for loan amount'}"];
+	"invoke risk assessment web service"	[attrs="{'type': 'Activity', 'label': 'invoke risk assessment web service'}"];
+	"receive customer request for loan amount" -> "invoke risk assessment web service"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve loan"	[attrs="{'type': 'Activity', 'label': 'approve loan'}"];
+	"invoke risk assessment web service" -> "approve loan"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny loan"	[attrs="{'type': 'Activity', 'label': 'deny loan'}"];
+	"invoke risk assessment web service" -> "deny loan"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send request to approver web service"	[attrs="{'type': 'Activity', 'label': 'send request to approver web service'}"];
+	"approve loan" -> "send request to approver web service"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny loan" -> "send request to approver web service"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive feedback from assessor or approver"	[attrs="{'type': 'Activity', 'label': 'receive feedback from assessor or approver'}"];
+	"send request to approver web service" -> "receive feedback from assessor or approver"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

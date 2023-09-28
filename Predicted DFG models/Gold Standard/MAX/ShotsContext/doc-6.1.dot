@@ -1,0 +1,32 @@
+strict digraph "doc-6.1" {
+	graph [name="doc-6.1"];
+	"receive invoices"	[attrs="{'type': 'Activity', 'label': 'receive invoices'}"];
+	"receive the invoices"	[attrs="{'type': 'Activity', 'label': 'receive the invoices'}"];
+	"receive invoices" -> "receive the invoices"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"forward the invoices"	[attrs="{'type': 'Activity', 'label': 'forward the invoices'}"];
+	"inspect the invoices"	[attrs="{'type': 'Activity', 'label': 'inspect the invoices'}"];
+	"identify the charging suppliers"	[attrs="{'type': 'Activity', 'label': 'identify the charging suppliers'}"];
+	"create a new instance"	[attrs="{'type': 'Activity', 'label': 'create a new instance'}"];
+	"check the invoice items"	[attrs="{'type': 'Activity', 'label': 'check the invoice items'}"];
+	"note the corresponding cost center at the acme ag and the related cost center managers for each position"	[attrs="{'type': 'Activity', 'label': 'note the corresponding cost center at the acme ag and the related cost center managers for each position'}"];
+	"send the docket and the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'send the docket and the copy of the invoice'}"];
+	"review the content"	[attrs="{'type': 'Activity', 'label': 'review the content'}"];
+	"receive the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'receive the copy of the invoice'}"];
+	"note his code"	[attrs="{'type': 'Activity', 'label': 'note his code'}"];
+	"return the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'return the copy of the invoice'}"];
+	"pass on the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'pass on the copy of the invoice'}"];
+	"send back"	[attrs="{'type': 'Activity', 'label': 'send back'}"];
+	"reject the ap"	[attrs="{'type': 'Activity', 'label': 'reject the ap'}"];
+	"send back the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'send back the copy of the invoice'}"];
+	"proceed with the clarification with the vendor"	[attrs="{'type': 'Activity', 'label': 'proceed with the clarification with the vendor'}"];
+	consult	[attrs="{'type': 'Activity', 'label': 'consult'}"];
+	"send the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'send the copy of the invoice'}"];
+	"forward the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'forward the copy of the invoice'}"];
+	"make the commercial audit"	[attrs="{'type': 'Activity', 'label': 'make the commercial audit'}"];
+	"issue the approval for payment"	[attrs="{'type': 'Activity', 'label': 'issue the approval for payment'}"];
+	"check the bill amount"	[attrs="{'type': 'Activity', 'label': 'check the bill amount'}"];
+	"move back the copy of the invoice including the docket"	[attrs="{'type': 'Activity', 'label': 'move back the copy of the invoice including the docket'}"];
+	"resolve complaint"	[attrs="{'type': 'Activity', 'label': 'resolve complaint'}"];
+	"give payment instructions"	[attrs="{'type': 'Activity', 'label': 'give payment instructions'}"];
+	"close the instance in acme financial accounting"	[attrs="{'type': 'Activity', 'label': 'close the instance in acme financial accounting'}"];
+}

@@ -1,0 +1,19 @@
+strict digraph "doc-10.14" {
+	graph [name="doc-10.14"];
+	"mpoo sends bill for temporary continuation of metering point operations to go"	[attrs="{'type': 'Activity', 'label': 'mpoo sends bill for temporary continuation of metering point operations to go'}"];
+	"go examines bill"	[attrs="{'type': 'Activity', 'label': 'go examines bill'}"];
+	"mpoo sends bill for temporary continuation of metering point operations to go" -> "go examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mspo sends bill for temporary continuation of measurement to go"	[attrs="{'type': 'Activity', 'label': 'mspo sends bill for temporary continuation of measurement to go'}"];
+	"mspo sends bill for temporary continuation of measurement to go" -> "go examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mspo sends bill for additional readings to go"	[attrs="{'type': 'Activity', 'label': 'mspo sends bill for additional readings to go'}"];
+	"mspo sends bill for additional readings to go" -> "go examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpoo sends bill for equipment acquisition to mpon or go"	[attrs="{'type': 'Activity', 'label': 'mpoo sends bill for equipment acquisition to mpon or go'}"];
+	"mpon or go examines bill"	[attrs="{'type': 'Activity', 'label': 'mpon or go examines bill'}"];
+	"mpoo sends bill for equipment acquisition to mpon or go" -> "mpon or go examines bill"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go or mpon examines bill"	[attrs="{'type': 'Activity', 'label': 'go or mpon examines bill'}"];
+	"go or mpon confirms invoice with payment advice to mpoo or mspo"	[attrs="{'type': 'Activity', 'label': 'go or mpon confirms invoice with payment advice to mpoo or mspo'}"];
+	"mpoo or mspo"	[attrs="{'type': 'Activity', 'label': 'mpoo or mspo'}"];
+	"go or mpon confirms invoice with payment advice to mpoo or mspo" -> "mpoo or mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go or mpon rejects invoice of mpoo or mspo"	[attrs="{'type': 'Activity', 'label': 'go or mpon rejects invoice of mpoo or mspo'}"];
+	"go or mpon rejects invoice of mpoo or mspo" -> "mpoo or mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,14 @@
+strict digraph "doc-9.3" {
+	graph [name="doc-9.3"];
+	"draft schedule of meetings"	[attrs="{'type': 'Activity', 'label': 'draft schedule of meetings'}"];
+	"coordination unit"	[attrs="{'type': 'Activity', 'label': 'coordination unit'}"];
+	"draft schedule of meetings" -> "coordination unit"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check dates and suggest modifications"	[attrs="{'type': 'Activity', 'label': 'check dates and suggest modifications'}"];
+	"check dates and suggest modifications" -> "draft schedule of meetings"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"recheck all dates and look for potential conflicts"	[attrs="{'type': 'Activity', 'label': 'recheck all dates and look for potential conflicts'}"];
+	"recheck all dates and look for potential conflicts" -> "check dates and suggest modifications"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send final schedule of meeting dates to all independent committee members"	[attrs="{'type': 'Activity', 'label': 'send final schedule of meeting dates to all independent committee members'}"];
+	"send final schedule of meeting dates to all independent committee members" -> "recheck all dates and look for potential conflicts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check diaries and advise coordination unit of any conflicts"	[attrs="{'type': 'Activity', 'label': 'check diaries and advise coordination unit of any conflicts'}"];
+	"check diaries and advise coordination unit of any conflicts" -> "send final schedule of meeting dates to all independent committee members"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

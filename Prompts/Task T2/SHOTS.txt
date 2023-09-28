@@ -1,0 +1,15 @@
+Q: Lists all the directly follows relations between activities of this list of activities: [{example1_activitylist}] of the process model described in this process description:
+"""{example1_process_description}"""
+A:
+{example1_dfglist}
+
+
+Q: Lists all the directly follows relations between activities of this list of activities: [{example2_activitylist}] of the process model described in this process description:
+"""{example2_process_description}"""
+A:
+{example2_dfglist}
+
+
+Q: Lists all the directly follows relations between activities of this list of activities: [{activitylist}] of the process model described in this process description:
+"""{text}"""
+A:

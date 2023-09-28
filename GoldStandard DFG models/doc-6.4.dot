@@ -1,0 +1,31 @@
+strict digraph "doc-6.4" {
+	graph [name="doc-6.4"];
+	"determine contact details"	[attrs="{'type': 'Activity', 'label': 'determine contact details'}"];
+	"buy details for cold calls"	[attrs="{'type': 'Activity', 'label': 'buy details for cold calls'}"];
+	"determine contact details" -> "buy details for cold calls"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"participate in exhibitions"	[attrs="{'type': 'Activity', 'label': 'participate in exhibitions'}"];
+	"determine contact details" -> "participate in exhibitions"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"know somebody who is interested in the product"	[attrs="{'type': 'Activity', 'label': 'know somebody who is interested in the product'}"];
+	"determine contact details" -> "know somebody who is interested in the product"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	call	[attrs="{'type': 'Activity', 'label': 'call'}"];
+	"buy details for cold calls" -> call	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"participate in exhibitions" -> call	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"know somebody who is interested in the product" -> call	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"determine the contact person and the budget"	[attrs="{'type': 'Activity', 'label': 'determine the contact person and the budget'}"];
+	call -> "determine the contact person and the budget"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"create a quotation"	[attrs="{'type': 'Activity', 'label': 'create a quotation'}"];
+	call -> "create a quotation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	ask	[attrs="{'type': 'Activity', 'label': 'ask'}"];
+	"determine the contact person and the budget" -> ask	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"leave the customer"	[attrs="{'type': 'Activity', 'label': 'leave the customer'}"];
+	ask -> "leave the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"acquire the customer"	[attrs="{'type': 'Activity', 'label': 'acquire the customer'}"];
+	ask -> "acquire the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"give a detailed online presentation"	[attrs="{'type': 'Activity', 'label': 'give a detailed online presentation'}"];
+	ask -> "give a detailed online presentation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"acquire the customer" -> "give a detailed online presentation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait for the customer to come back to us"	[attrs="{'type': 'Activity', 'label': 'wait for the customer to come back to us'}"];
+	"give a detailed online presentation" -> "wait for the customer to come back to us"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait for the customer to come back to us" -> call	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait for the customer to come back to us" -> "create a quotation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

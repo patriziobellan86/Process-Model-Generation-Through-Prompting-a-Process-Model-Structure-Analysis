@@ -1,0 +1,22 @@
+strict digraph "doc-9.4" {
+	graph [name="doc-9.4"];
+	"finalizing dates"	[attrs="{'type': 'Activity', 'label': 'finalizing dates'}"];
+	"updating group calendars"	[attrs="{'type': 'Activity', 'label': 'updating group calendars'}"];
+	"finalizing dates" -> "updating group calendars"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"creating meeting folders"	[attrs="{'type': 'Activity', 'label': 'creating meeting folders'}"];
+	"updating group calendars" -> "creating meeting folders"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"uploading documents to system"	[attrs="{'type': 'Activity', 'label': 'uploading documents to system'}"];
+	"creating meeting folders" -> "uploading documents to system"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"advising committee members"	[attrs="{'type': 'Activity', 'label': 'advising committee members'}"];
+	"uploading documents to system" -> "advising committee members"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"holding meeting"	[attrs="{'type': 'Activity', 'label': 'holding meeting'}"];
+	"advising committee members" -> "holding meeting"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"producing minutes"	[attrs="{'type': 'Activity', 'label': 'producing minutes'}"];
+	"holding meeting" -> "producing minutes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"conducting qa check"	[attrs="{'type': 'Activity', 'label': 'conducting qa check'}"];
+	"producing minutes" -> "conducting qa check"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"sending minutes to committee members"	[attrs="{'type': 'Activity', 'label': 'sending minutes to committee members'}"];
+	"conducting qa check" -> "sending minutes to committee members"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"updating departmental records"	[attrs="{'type': 'Activity', 'label': 'updating departmental records'}"];
+	"sending minutes to committee members" -> "updating departmental records"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

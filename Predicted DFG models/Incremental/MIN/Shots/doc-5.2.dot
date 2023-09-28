@@ -1,0 +1,14 @@
+strict digraph "doc-5.2" {
+	graph [name="doc-5.2"];
+	"submit a vacation request"	[attrs="{'type': 'Activity', 'label': 'submit a vacation request'}"];
+	"receive the request"	[attrs="{'type': 'Activity', 'label': 'receive the request'}"];
+	"submit a vacation request" -> "receive the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve or reject the request"	[attrs="{'type': 'Activity', 'label': 'approve or reject the request'}"];
+	"receive the request" -> "approve or reject the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review the rejection reasons"	[attrs="{'type': 'Activity', 'label': 'review the rejection reasons'}"];
+	"approve or reject the request" -> "review the rejection reasons"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate a notification"	[attrs="{'type': 'Activity', 'label': 'generate a notification'}"];
+	"review the rejection reasons" -> "generate a notification"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"complete the management procedures"	[attrs="{'type': 'Activity', 'label': 'complete the management procedures'}"];
+	"generate a notification" -> "complete the management procedures"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

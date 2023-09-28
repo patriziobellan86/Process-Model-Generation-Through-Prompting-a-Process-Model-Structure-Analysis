@@ -1,0 +1,30 @@
+strict digraph "doc-3.5" {
+	graph [name="doc-3.5"];
+	"collect mail from the party"	[attrs="{'type': 'Activity', 'label': 'collect mail from the party'}"];
+	"sort unopened mail into various business areas"	[attrs="{'type': 'Activity', 'label': 'sort unopened mail into various business areas'}"];
+	"collect mail from the party" -> "sort unopened mail into various business areas"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"distribute the mail"	[attrs="{'type': 'Activity', 'label': 'distribute the mail'}"];
+	"sort unopened mail into various business areas" -> "distribute the mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"open and sort mail into groups for distribution"	[attrs="{'type': 'Activity', 'label': 'open and sort mail into groups for distribution'}"];
+	"distribute the mail" -> "open and sort mail into groups for distribution"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register in a manual incoming mail register"	[attrs="{'type': 'Activity', 'label': 'register in a manual incoming mail register'}"];
+	"open and sort mail into groups for distribution" -> "register in a manual incoming mail register"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform a quality check"	[attrs="{'type': 'Activity', 'label': 'perform a quality check'}"];
+	"register in a manual incoming mail register" -> "perform a quality check"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"compile a list of requisition and send back to the party"	[attrs="{'type': 'Activity', 'label': 'compile a list of requisition and send back to the party'}"];
+	"perform a quality check" -> "compile a list of requisition and send back to the party"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capture matter details"	[attrs="{'type': 'Activity', 'label': 'capture matter details'}"];
+	"compile a list of requisition and send back to the party" -> "capture matter details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"provide to the cashier"	[attrs="{'type': 'Activity', 'label': 'provide to the cashier'}"];
+	"capture matter details" -> "provide to the cashier"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"take applicable fees attached to the mail"	[attrs="{'type': 'Activity', 'label': 'take applicable fees attached to the mail'}"];
+	"provide to the cashier" -> "take applicable fees attached to the mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"put the receipt and copied documents into an envelope"	[attrs="{'type': 'Activity', 'label': 'put the receipt and copied documents into an envelope'}"];
+	"take applicable fees attached to the mail" -> "put the receipt and copied documents into an envelope"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"post it to the party"	[attrs="{'type': 'Activity', 'label': 'post it to the party'}"];
+	"put the receipt and copied documents into an envelope" -> "post it to the party"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capture the party details"	[attrs="{'type': 'Activity', 'label': 'capture the party details'}"];
+	"post it to the party" -> "capture the party details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"print the physical court file"	[attrs="{'type': 'Activity', 'label': 'print the physical court file'}"];
+	"capture the party details" -> "print the physical court file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

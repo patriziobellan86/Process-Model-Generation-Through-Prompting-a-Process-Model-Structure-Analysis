@@ -1,0 +1,26 @@
+strict digraph "doc-5.3" {
+	graph [name="doc-5.3"];
+	"submit an office supply request"	[attrs="{'type': 'Activity', 'label': 'submit an office supply request'}"];
+	"receive the request"	[attrs="{'type': 'Activity', 'label': 'receive the request'}"];
+	"submit an office supply request" -> "receive the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve or reject the request"	[attrs="{'type': 'Activity', 'label': 'approve or reject the request'}"];
+	"receive the request" -> "approve or reject the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ask for a change"	[attrs="{'type': 'Activity', 'label': 'ask for a change'}"];
+	"approve or reject the request" -> "ask for a change"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review the comments for the change request"	[attrs="{'type': 'Activity', 'label': 'review the comments for the change request'}"];
+	"ask for a change" -> "review the comments for the change request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go to the purchase department"	[attrs="{'type': 'Activity', 'label': 'go to the purchase department'}"];
+	"review the comments for the change request" -> "go to the purchase department"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"make quotations"	[attrs="{'type': 'Activity', 'label': 'make quotations'}"];
+	"go to the purchase department" -> "make quotations"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"select a vendor"	[attrs="{'type': 'Activity', 'label': 'select a vendor'}"];
+	"make quotations" -> "select a vendor"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"generate and send a purchase order"	[attrs="{'type': 'Activity', 'label': 'generate and send a purchase order'}"];
+	"select a vendor" -> "generate and send a purchase order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait for the product to be delivered"	[attrs="{'type': 'Activity', 'label': 'wait for the product to be delivered'}"];
+	"generate and send a purchase order" -> "wait for the product to be delivered"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive the invoice"	[attrs="{'type': 'Activity', 'label': 'receive the invoice'}"];
+	"wait for the product to be delivered" -> "receive the invoice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a notification"	[attrs="{'type': 'Activity', 'label': 'send a notification'}"];
+	"receive the invoice" -> "send a notification"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

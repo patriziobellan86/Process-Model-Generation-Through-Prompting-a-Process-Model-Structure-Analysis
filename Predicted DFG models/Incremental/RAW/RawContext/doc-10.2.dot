@@ -1,0 +1,24 @@
+strict digraph "doc-10.2" {
+	graph [name="doc-10.2"];
+	"report meter operation to go"	[attrs="{'type': 'Activity', 'label': 'report meter operation to go'}"];
+	"examine application of mpon"	[attrs="{'type': 'Activity', 'label': 'examine application of mpon'}"];
+	"report meter operation to go" -> "examine application of mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject or confirm application of mpon"	[attrs="{'type': 'Activity', 'label': 'reject or confirm application of mpon'}"];
+	"examine application of mpon" -> "reject or confirm application of mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform mpoo and mspo of registration confirmation"	[attrs="{'type': 'Activity', 'label': 'inform mpoo and mspo of registration confirmation'}"];
+	"reject or confirm application of mpon" -> "inform mpoo and mspo of registration confirmation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform equipment acquisition and/or changes"	[attrs="{'type': 'Activity', 'label': 'perform equipment acquisition and/or changes'}"];
+	"inform mpoo and mspo of registration confirmation" -> "perform equipment acquisition and/or changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform go of failure or successful completion of process"	[attrs="{'type': 'Activity', 'label': 'inform go of failure or successful completion of process'}"];
+	"perform equipment acquisition and/or changes" -> "inform go of failure or successful completion of process"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm failure of assignment to mpon"	[attrs="{'type': 'Activity', 'label': 'confirm failure of assignment to mpon'}"];
+	"inform go of failure or successful completion of process" -> "confirm failure of assignment to mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign mpon"	[attrs="{'type': 'Activity', 'label': 'assign mpon'}"];
+	"confirm failure of assignment to mpon" -> "assign mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm assignment to mpon"	[attrs="{'type': 'Activity', 'label': 'confirm assignment to mpon'}"];
+	"assign mpon" -> "confirm assignment to mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform mpoo and mspo of failure or assignment of mpon"	[attrs="{'type': 'Activity', 'label': 'inform mpoo and mspo of failure or assignment of mpon'}"];
+	"confirm assignment to mpon" -> "inform mpoo and mspo of failure or assignment of mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform sp of assignment of mpon"	[attrs="{'type': 'Activity', 'label': 'inform sp of assignment of mpon'}"];
+	"inform mpoo and mspo of failure or assignment of mpon" -> "inform sp of assignment of mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,22 @@
+strict digraph "doc-1.2" {
+	graph [name="doc-1.2"];
+	"bring in a defective computer"	[attrs="{'type': 'Activity', 'label': 'bring in a defective computer'}"];
+	"check the defect"	[attrs="{'type': 'Activity', 'label': 'check the defect'}"];
+	"bring in a defective computer" -> "check the defect"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"hand out a repair cost calculation"	[attrs="{'type': 'Activity', 'label': 'hand out a repair cost calculation'}"];
+	"check the defect" -> "hand out a repair cost calculation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"take computer"	[attrs="{'type': 'Activity', 'label': 'take computer'}"];
+	"hand out a repair cost calculation" -> "take computer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the hardware"	[attrs="{'type': 'Activity', 'label': 'check the hardware'}"];
+	"take computer" -> "check the hardware"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"repair the hardware"	[attrs="{'type': 'Activity', 'label': 'repair the hardware'}"];
+	"check the hardware" -> "repair the hardware"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the software"	[attrs="{'type': 'Activity', 'label': 'check the software'}"];
+	"repair the hardware" -> "check the software"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"configure the software"	[attrs="{'type': 'Activity', 'label': 'configure the software'}"];
+	"check the software" -> "configure the software"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"test the proper system functionality"	[attrs="{'type': 'Activity', 'label': 'test the proper system functionality'}"];
+	"configure the software" -> "test the proper system functionality"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"execute another arbitrary repair activity"	[attrs="{'type': 'Activity', 'label': 'execute another arbitrary repair activity'}"];
+	"test the proper system functionality" -> "execute another arbitrary repair activity"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

@@ -1,0 +1,18 @@
+strict digraph "doc-10.8" {
+	graph [name="doc-10.8"];
+	"deregister at the go"	[attrs="{'type': 'Activity', 'label': 'deregister at the go'}"];
+	"verify deregistration"	[attrs="{'type': 'Activity', 'label': 'verify deregistration'}"];
+	"deregister at the go" -> "verify deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject/preliminarily confirm deregistration"	[attrs="{'type': 'Activity', 'label': 'reject/preliminarily confirm deregistration'}"];
+	"verify deregistration" -> "reject/preliminarily confirm deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign go as msp"	[attrs="{'type': 'Activity', 'label': 'assign go as msp'}"];
+	"reject/preliminarily confirm deregistration" -> "assign go as msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform mspo of end of assignment"	[attrs="{'type': 'Activity', 'label': 'inform mspo of end of assignment'}"];
+	"assign go as msp" -> "inform mspo of end of assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform mspo of beginning of assignment of go"	[attrs="{'type': 'Activity', 'label': 'inform mspo of beginning of assignment of go'}"];
+	"inform mspo of end of assignment" -> "inform mspo of beginning of assignment of go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform mpo of assignment of go"	[attrs="{'type': 'Activity', 'label': 'inform mpo of assignment of go'}"];
+	"inform mspo of beginning of assignment of go" -> "inform mpo of assignment of go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform sp of assignment of go"	[attrs="{'type': 'Activity', 'label': 'inform sp of assignment of go'}"];
+	"inform mpo of assignment of go" -> "inform sp of assignment of go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

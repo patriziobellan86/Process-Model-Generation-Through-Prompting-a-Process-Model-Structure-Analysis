@@ -1,0 +1,34 @@
+digraph "doc-10.2" {
+	graph [name="doc-10.2"];
+	"report the meter operation"	[attrs="{'type': 'Activity', 'label': 'report the meter operation'}"];
+	"examine the application"	[attrs="{'type': 'Activity', 'label': 'examine the application'}"];
+	"report the meter operation" -> "examine the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the application of the mpon"	[attrs="{'type': 'Activity', 'label': 'reject the application of the mpon'}"];
+	"examine the application" -> "reject the application of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the application of the mpon"	[attrs="{'type': 'Activity', 'label': 'confirm the application of the mpon'}"];
+	"examine the application" -> "confirm the application of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the registration confirmation of the mpon"	[attrs="{'type': 'Activity', 'label': 'inform about the registration confirmation of the mpon'}"];
+	"reject the application of the mpon" -> "inform about the registration confirmation of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the application of the mpon" -> "inform about the registration confirmation of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'Activity', 'label': 'perform the equipment acquisition and/or equipment changes'}"];
+	"inform about the registration confirmation of the mpon" -> "perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the failure of the entire process"	[attrs="{'type': 'Activity', 'label': 'inform about the failure of the entire process'}"];
+	"perform the equipment acquisition and/or equipment changes" -> "inform about the failure of the entire process"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the successful completion of the entire process"	[attrs="{'type': 'Activity', 'label': 'inform about the successful completion of the entire process'}"];
+	"perform the equipment acquisition and/or equipment changes" -> "inform about the successful completion of the entire process"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the failure of the overall transaction by deadline"	[attrs="{'type': 'Activity', 'label': 'inform about the failure of the overall transaction by deadline'}"];
+	"inform about the failure of the entire process" -> "inform about the failure of the overall transaction by deadline"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the failure of the assignment"	[attrs="{'type': 'Activity', 'label': 'confirm the failure of the assignment'}"];
+	"inform about the successful completion of the entire process" -> "confirm the failure of the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the mpon"	[attrs="{'type': 'Activity', 'label': 'assign the mpon'}"];
+	"confirm the failure of the assignment" -> "assign the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the assignment"	[attrs="{'type': 'Activity', 'label': 'confirm the assignment'}"];
+	"assign the mpon" -> "confirm the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the failure of the assignment of the mpon"	[attrs="{'type': 'Activity', 'label': 'inform about the failure of the assignment of the mpon'}"];
+	"confirm the assignment" -> "inform about the failure of the assignment of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the assignment of the mpon"	[attrs="{'type': 'Activity', 'label': 'inform about the assignment of the mpon'}"];
+	"confirm the assignment" -> "inform about the assignment of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the failure of the assignment of the mpon" -> "inform about the assignment of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the assignment of the mpon" -> "inform about the failure of the assignment of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform about the assignment of the mpon" -> "inform about the assignment of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

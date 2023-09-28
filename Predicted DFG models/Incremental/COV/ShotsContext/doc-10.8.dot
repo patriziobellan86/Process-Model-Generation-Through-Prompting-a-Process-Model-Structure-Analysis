@@ -1,0 +1,20 @@
+strict digraph "doc-10.8" {
+	graph [name="doc-10.8"];
+	"deregister at the go"	[attrs="{'type': 'Activity', 'label': 'deregister at the go'}"];
+	"verify the deregistration"	[attrs="{'type': 'Activity', 'label': 'verify the deregistration'}"];
+	"deregister at the go" -> "verify the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the deregistration"	[attrs="{'type': 'Activity', 'label': 'reject the deregistration'}"];
+	"verify the deregistration" -> "reject the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"preliminarily confirm the deregistration"	[attrs="{'type': 'Activity', 'label': 'preliminarily confirm the deregistration'}"];
+	"verify the deregistration" -> "preliminarily confirm the deregistration"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the go as msp"	[attrs="{'type': 'Activity', 'label': 'assign the go as msp'}"];
+	"preliminarily confirm the deregistration" -> "assign the go as msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mspo about the end of the assignment"	[attrs="{'type': 'Activity', 'label': 'inform the mspo about the end of the assignment'}"];
+	"assign the go as msp" -> "inform the mspo about the end of the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mspo about the beginning of the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform the mspo about the beginning of the assignment of the go'}"];
+	"inform the mspo about the end of the assignment" -> "inform the mspo about the beginning of the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mpo about the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform the mpo about the assignment of the go'}"];
+	"inform the mspo about the beginning of the assignment of the go" -> "inform the mpo about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the sp about the assignment of the go"	[attrs="{'type': 'Activity', 'label': 'inform the sp about the assignment of the go'}"];
+	"inform the mpo about the assignment of the go" -> "inform the sp about the assignment of the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

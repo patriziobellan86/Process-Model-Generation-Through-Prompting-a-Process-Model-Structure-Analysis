@@ -1,0 +1,12 @@
+strict digraph "doc-10.5" {
+	graph [name="doc-10.5"];
+	"request a device takeover bid"	[attrs="{'type': 'Activity', 'label': 'request a device takeover bid'}"];
+	"send a tender for equipment takeover"	[attrs="{'type': 'Activity', 'label': 'send a tender for equipment takeover'}"];
+	"request a device takeover bid" -> "send a tender for equipment takeover"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"place an order"	[attrs="{'type': 'Activity', 'label': 'place an order'}"];
+	"send a tender for equipment takeover" -> "place an order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the order of the mpon"	[attrs="{'type': 'Activity', 'label': 'confirm the order of the mpon'}"];
+	"place an order" -> "confirm the order of the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the master data"	[attrs="{'type': 'Activity', 'label': 'send the master data'}"];
+	"confirm the order of the mpon" -> "send the master data"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

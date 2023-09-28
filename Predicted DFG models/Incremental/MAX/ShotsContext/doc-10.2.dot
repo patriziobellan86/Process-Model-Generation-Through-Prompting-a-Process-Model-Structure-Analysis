@@ -1,0 +1,36 @@
+strict digraph "doc-10.2" {
+	graph [name="doc-10.2"];
+	"mpon reports the meter operation"	[attrs="{'type': 'Activity', 'label': 'mpon reports the meter operation'}"];
+	"go examines the application"	[attrs="{'type': 'Activity', 'label': 'go examines the application'}"];
+	"mpon reports the meter operation" -> "go examines the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go rejects the application"	[attrs="{'type': 'Activity', 'label': 'go rejects the application'}"];
+	"go examines the application" -> "go rejects the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go confirms the application"	[attrs="{'type': 'Activity', 'label': 'go confirms the application'}"];
+	"go examines the application" -> "go confirms the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go informs the mpoo"	[attrs="{'type': 'Activity', 'label': 'go informs the mpoo'}"];
+	"go rejects the application" -> "go informs the mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go informs the mspo"	[attrs="{'type': 'Activity', 'label': 'go informs the mspo'}"];
+	"go rejects the application" -> "go informs the mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go confirms the application" -> "go informs the mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go confirms the application" -> "go informs the mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpon and mpoo perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'Activity', 'label': 'mpon and mpoo perform the equipment acquisition and/or equipment changes'}"];
+	"go informs the mpoo" -> "mpon and mpoo perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go informs the mspo" -> "mpon and mpoo perform the equipment acquisition and/or equipment changes"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpon informs the go about the failure of the entire process"	[attrs="{'type': 'Activity', 'label': 'mpon informs the go about the failure of the entire process'}"];
+	"mpon and mpoo perform the equipment acquisition and/or equipment changes" -> "mpon informs the go about the failure of the entire process"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mpon informs the go about the successful completion of the entire process"	[attrs="{'type': 'Activity', 'label': 'mpon informs the go about the successful completion of the entire process'}"];
+	"mpon and mpoo perform the equipment acquisition and/or equipment changes" -> "mpon informs the go about the successful completion of the entire process"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go informs the mpon about the failure of the overall transaction"	[attrs="{'type': 'Activity', 'label': 'go informs the mpon about the failure of the overall transaction'}"];
+	"mpon informs the go about the failure of the entire process" -> "go informs the mpon about the failure of the overall transaction"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go confirms the assignment"	[attrs="{'type': 'Activity', 'label': 'go confirms the assignment'}"];
+	"mpon informs the go about the successful completion of the entire process" -> "go confirms the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go confirms the failure of the assignment"	[attrs="{'type': 'Activity', 'label': 'go confirms the failure of the assignment'}"];
+	"go informs the mpon about the failure of the overall transaction" -> "go confirms the failure of the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go assigns the mpon"	[attrs="{'type': 'Activity', 'label': 'go assigns the mpon'}"];
+	"go informs the mpoo about the failure of the assignment"	[attrs="{'type': 'Activity', 'label': 'go informs the mpoo about the failure of the assignment'}"];
+	"go confirms the assignment" -> "go informs the mpoo about the failure of the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go informs the mspo about the failure of the assignment"	[attrs="{'type': 'Activity', 'label': 'go informs the mspo about the failure of the assignment'}"];
+	"go confirms the assignment" -> "go informs the mspo about the failure of the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"go informs the sp about the assignment"	[attrs="{'type': 'Activity', 'label': 'go informs the sp about the assignment'}"];
+	"go confirms the assignment" -> "go informs the sp about the assignment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

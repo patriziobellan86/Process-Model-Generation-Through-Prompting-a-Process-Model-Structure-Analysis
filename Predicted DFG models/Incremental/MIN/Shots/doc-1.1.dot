@@ -1,0 +1,21 @@
+strict digraph "doc-1.1" {
+	graph [name="doc-1.1"];
+	"manufacture customized bicycles"	[attrs="{'type': 'Activity', 'label': 'manufacture customized bicycles'}"];
+	"receive an order"	[attrs="{'type': 'Activity', 'label': 'receive an order'}"];
+	"reject or accept the order"	[attrs="{'type': 'Activity', 'label': 'reject or accept the order'}"];
+	"receive an order" -> "reject or accept the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the storehouse and engineering department"	[attrs="{'type': 'Activity', 'label': 'inform the storehouse and engineering department'}"];
+	"reject or accept the order" -> "inform the storehouse and engineering department"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process the part list"	[attrs="{'type': 'Activity', 'label': 'process the part list'}"];
+	"inform the storehouse and engineering department" -> "process the part list"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reserve or back-order the parts"	[attrs="{'type': 'Activity', 'label': 'reserve or back-order the parts'}"];
+	"process the part list" -> "reserve or back-order the parts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"prepare for the assembling of the ordered bicycle"	[attrs="{'type': 'Activity', 'label': 'prepare for the assembling of the ordered bicycle'}"];
+	"reserve or back-order the parts" -> "prepare for the assembling of the ordered bicycle"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assemble the bicycle"	[attrs="{'type': 'Activity', 'label': 'assemble the bicycle'}"];
+	"prepare for the assembling of the ordered bicycle" -> "assemble the bicycle"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ship the bicycle to the customer"	[attrs="{'type': 'Activity', 'label': 'ship the bicycle to the customer'}"];
+	"assemble the bicycle" -> "ship the bicycle to the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"finish the process instance"	[attrs="{'type': 'Activity', 'label': 'finish the process instance'}"];
+	"ship the bicycle to the customer" -> "finish the process instance"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

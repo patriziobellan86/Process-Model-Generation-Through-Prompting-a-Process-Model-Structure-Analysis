@@ -1,0 +1,22 @@
+strict digraph "doc-9.5" {
+	graph [name="doc-9.5"];
+	"receive the expense report"	[attrs="{'type': 'Activity', 'label': 'receive the expense report'}"];
+	"create a new account"	[attrs="{'type': 'Activity', 'label': 'create a new account'}"];
+	"receive the expense report" -> "create a new account"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review the report"	[attrs="{'type': 'Activity', 'label': 'review the report'}"];
+	"create a new account" -> "review the report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve the report"	[attrs="{'type': 'Activity', 'label': 'approve the report'}"];
+	"review the report" -> "approve the report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"require approval"	[attrs="{'type': 'Activity', 'label': 'require approval'}"];
+	"approve the report" -> "require approval"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive a rejection notice"	[attrs="{'type': 'Activity', 'label': 'receive a rejection notice'}"];
+	"require approval" -> "receive a rejection notice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	reimburse	[attrs="{'type': 'Activity', 'label': 'reimburse'}"];
+	"receive a rejection notice" -> reimburse	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive an approval in progress email"	[attrs="{'type': 'Activity', 'label': 'receive an approval in progress email'}"];
+	reimburse -> "receive an approval in progress email"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive an email cancellation notice"	[attrs="{'type': 'Activity', 'label': 'receive an email cancellation notice'}"];
+	"receive an approval in progress email" -> "receive an email cancellation notice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"re-submit the expense report"	[attrs="{'type': 'Activity', 'label': 're-submit the expense report'}"];
+	"receive an email cancellation notice" -> "re-submit the expense report"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

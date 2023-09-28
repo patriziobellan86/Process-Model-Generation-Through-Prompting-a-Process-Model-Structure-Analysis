@@ -1,0 +1,36 @@
+strict digraph "doc-3.5" {
+	graph [name="doc-3.5"];
+	"collect mail from the party"	[attrs="{'type': 'Activity', 'label': 'collect mail from the party'}"];
+	"sort the unopened mail"	[attrs="{'type': 'Activity', 'label': 'sort the unopened mail'}"];
+	"collect mail from the party" -> "sort the unopened mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"distribute the mail"	[attrs="{'type': 'Activity', 'label': 'distribute the mail'}"];
+	"sort the unopened mail" -> "distribute the mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive the mail"	[attrs="{'type': 'Activity', 'label': 'receive the mail'}"];
+	"distribute the mail" -> "receive the mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"open the mail"	[attrs="{'type': 'Activity', 'label': 'open the mail'}"];
+	"receive the mail" -> "open the mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"sort the mail"	[attrs="{'type': 'Activity', 'label': 'sort the mail'}"];
+	"open the mail" -> "sort the mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register the mail"	[attrs="{'type': 'Activity', 'label': 'register the mail'}"];
+	"sort the mail" -> "register the mail"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform a quality check"	[attrs="{'type': 'Activity', 'label': 'perform a quality check'}"];
+	"register the mail" -> "perform a quality check"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"compile a list of requisition"	[attrs="{'type': 'Activity', 'label': 'compile a list of requisition'}"];
+	"perform a quality check" -> "compile a list of requisition"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send back a list of requisition"	[attrs="{'type': 'Activity', 'label': 'send back a list of requisition'}"];
+	"compile a list of requisition" -> "send back a list of requisition"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capture the matter details"	[attrs="{'type': 'Activity', 'label': 'capture the matter details'}"];
+	"send back a list of requisition" -> "capture the matter details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"provide the matter details"	[attrs="{'type': 'Activity', 'label': 'provide the matter details'}"];
+	"capture the matter details" -> "provide the matter details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"take the applicable fees"	[attrs="{'type': 'Activity', 'label': 'take the applicable fees'}"];
+	"provide the matter details" -> "take the applicable fees"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"put the receipt and copied documents"	[attrs="{'type': 'Activity', 'label': 'put the receipt and copied documents'}"];
+	"take the applicable fees" -> "put the receipt and copied documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"post receipt and copied documents"	[attrs="{'type': 'Activity', 'label': 'post receipt and copied documents'}"];
+	"put the receipt and copied documents" -> "post receipt and copied documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"capture the party details"	[attrs="{'type': 'Activity', 'label': 'capture the party details'}"];
+	"post receipt and copied documents" -> "capture the party details"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"print the physical court file"	[attrs="{'type': 'Activity', 'label': 'print the physical court file'}"];
+	"capture the party details" -> "print the physical court file"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

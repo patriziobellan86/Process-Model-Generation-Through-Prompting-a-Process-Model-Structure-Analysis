@@ -1,0 +1,3 @@
+Q: Lists all the directly follows relations between the activities of this list : [{activitylist}] of this process model description:
+"""{text}"""
+A:

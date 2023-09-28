@@ -1,0 +1,34 @@
+strict digraph "doc-6.1" {
+	graph [name="doc-6.1"];
+	"receive invoices"	[attrs="{'type': 'Activity', 'label': 'receive invoices'}"];
+	"forward to an accounting employee"	[attrs="{'type': 'Activity', 'label': 'forward to an accounting employee'}"];
+	"receive invoices" -> "forward to an accounting employee"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"identify the charging suppliers"	[attrs="{'type': 'Activity', 'label': 'identify the charging suppliers'}"];
+	"forward to an accounting employee" -> "identify the charging suppliers"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"create a new instance"	[attrs="{'type': 'Activity', 'label': 'create a new instance'}"];
+	"identify the charging suppliers" -> "create a new instance"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the invoice items"	[attrs="{'type': 'Activity', 'label': 'check the invoice items'}"];
+	"create a new instance" -> "check the invoice items"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"note the corresponding cost center"	[attrs="{'type': 'Activity', 'label': 'note the corresponding cost center'}"];
+	"check the invoice items" -> "note the corresponding cost center"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review the content"	[attrs="{'type': 'Activity', 'label': 'review the content'}"];
+	"note the corresponding cost center" -> "review the content"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"note the code"	[attrs="{'type': 'Activity', 'label': 'note the code'}"];
+	"review the content" -> "note the code"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"pass the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'pass the copy of the invoice'}"];
+	"note the code" -> "pass the copy of the invoice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mark all items as correct"	[attrs="{'type': 'Activity', 'label': 'mark all items as correct'}"];
+	"pass the copy of the invoice" -> "mark all items as correct"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'send the copy of the invoice'}"];
+	"mark all items as correct" -> "send the copy of the invoice"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the ap"	[attrs="{'type': 'Activity', 'label': 'reject the ap'}"];
+	"clarification with the vendor"	[attrs="{'type': 'Activity', 'label': 'clarification with the vendor'}"];
+	"forward the copy of the invoice"	[attrs="{'type': 'Activity', 'label': 'forward the copy of the invoice'}"];
+	"make the commercial audit"	[attrs="{'type': 'Activity', 'label': 'make the commercial audit'}"];
+	"issue the approval for payment"	[attrs="{'type': 'Activity', 'label': 'issue the approval for payment'}"];
+	"check again"	[attrs="{'type': 'Activity', 'label': 'check again'}"];
+	"move back to the accounting employee"	[attrs="{'type': 'Activity', 'label': 'move back to the accounting employee'}"];
+	"resolve the complaint"	[attrs="{'type': 'Activity', 'label': 'resolve the complaint'}"];
+	"give payment instructions"	[attrs="{'type': 'Activity', 'label': 'give payment instructions'}"];
+	"close the instance"	[attrs="{'type': 'Activity', 'label': 'close the instance'}"];
+}

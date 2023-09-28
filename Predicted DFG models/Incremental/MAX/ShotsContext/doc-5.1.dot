@@ -1,0 +1,17 @@
+strict digraph "doc-5.1" {
+	graph [name="doc-5.1"];
+	"receive a customer request"	[attrs="{'type': 'Activity', 'label': 'receive a customer request'}"];
+	"invoke the risk assessment web service"	[attrs="{'type': 'Activity', 'label': 'invoke the risk assessment web service'}"];
+	"receive a customer request" -> "invoke the risk assessment web service"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assess the request"	[attrs="{'type': 'Activity', 'label': 'assess the request'}"];
+	"invoke the risk assessment web service" -> "assess the request"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve the loan"	[attrs="{'type': 'Activity', 'label': 'approve the loan'}"];
+	"assess the request" -> "approve the loan"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny the loan"	[attrs="{'type': 'Activity', 'label': 'deny the loan'}"];
+	"assess the request" -> "deny the loan"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the request to the approver web service"	[attrs="{'type': 'Activity', 'label': 'send the request to the approver web service'}"];
+	"approve the loan" -> "send the request to the approver web service"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny the loan" -> "send the request to the approver web service"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"receive feedback from the assessor or approver"	[attrs="{'type': 'Activity', 'label': 'receive feedback from the assessor or approver'}"];
+	"send the request to the approver web service" -> "receive feedback from the assessor or approver"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

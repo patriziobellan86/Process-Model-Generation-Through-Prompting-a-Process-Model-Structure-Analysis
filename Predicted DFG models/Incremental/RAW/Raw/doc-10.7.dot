@@ -1,0 +1,19 @@
+strict digraph "doc-10.7" {
+	graph [name="doc-10.7"];
+	"register measurement at go"	[attrs="{'type': 'Activity', 'label': 'register measurement at go'}"];
+	"examine application of mspn"	[attrs="{'type': 'Activity', 'label': 'examine application of mspn'}"];
+	"register measurement at go" -> "examine application of mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject application of mspn, confirm application of mspn"	[attrs="{'type': 'Activity', 'label': 'reject application of mspn, confirm application of mspn'}"];
+	"examine application of mspn" -> "reject application of mspn, confirm application of mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject application of mspn"	[attrs="{'type': 'Activity', 'label': 'reject application of mspn'}"];
+	"assign mspn"	[attrs="{'type': 'Activity', 'label': 'assign mspn'}"];
+	"reject application of mspn" -> "assign mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm application of mspn"	[attrs="{'type': 'Activity', 'label': 'confirm application of mspn'}"];
+	"confirm application of mspn" -> "assign mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform mspo about assignment of mspn, inform mpo about assignment of mspn, inform sp about assignment of mspn"	[attrs="{'type': 'Activity', 'label': 'inform mspo about assignment of mspn, inform mpo about assignment of mspn, inform sp about assignment \
+of mspn'}"];
+	"assign mspn" -> "inform mspo about assignment of mspn, inform mpo about assignment of mspn, inform sp about assignment of mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform mspo about assignment of mspn"	[attrs="{'type': 'Activity', 'label': 'inform mspo about assignment of mspn'}"];
+	"inform mpo about assignment of mspn"	[attrs="{'type': 'Activity', 'label': 'inform mpo about assignment of mspn'}"];
+	"inform sp about assignment of mspn"	[attrs="{'type': 'Activity', 'label': 'inform sp about assignment of mspn'}"];
+}

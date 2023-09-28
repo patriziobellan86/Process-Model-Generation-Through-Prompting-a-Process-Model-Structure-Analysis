@@ -1,0 +1,25 @@
+strict digraph "doc-1.1" {
+	graph [name="doc-1.1"];
+	"receive an order"	[attrs="{'type': 'Activity', 'label': 'receive an order'}"];
+	"reject the order"	[attrs="{'type': 'Activity', 'label': 'reject the order'}"];
+	"receive an order" -> "reject the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"accept the order"	[attrs="{'type': 'Activity', 'label': 'accept the order'}"];
+	"receive an order" -> "accept the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	inform	[attrs="{'type': 'Activity', 'label': 'inform'}"];
+	"accept the order" -> inform	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process the part list of the order"	[attrs="{'type': 'Activity', 'label': 'process the part list of the order'}"];
+	inform -> "process the part list of the order"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the required quantity of each part"	[attrs="{'type': 'Activity', 'label': 'check the required quantity of each part'}"];
+	"process the part list of the order" -> "check the required quantity of each part"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reserve part"	[attrs="{'type': 'Activity', 'label': 'reserve part'}"];
+	"check the required quantity of each part" -> "reserve part"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"back-order part"	[attrs="{'type': 'Activity', 'label': 'back-order part'}"];
+	"check the required quantity of each part" -> "back-order part"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"prepare everything"	[attrs="{'type': 'Activity', 'label': 'prepare everything'}"];
+	"reserve part" -> "prepare everything"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"back-order part" -> "prepare everything"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assemble the bicycle"	[attrs="{'type': 'Activity', 'label': 'assemble the bicycle'}"];
+	"prepare everything" -> "assemble the bicycle"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ship the bicycle"	[attrs="{'type': 'Activity', 'label': 'ship the bicycle'}"];
+	"assemble the bicycle" -> "ship the bicycle"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

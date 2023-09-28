@@ -1,0 +1,25 @@
+strict digraph "doc-3.8" {
+	graph [name="doc-3.8"];
+	"submit a claim"	[attrs="{'type': 'Activity', 'label': 'submit a claim'}"];
+	"send in relevant documentation"	[attrs="{'type': 'Activity', 'label': 'send in relevant documentation'}"];
+	"submit a claim" -> "send in relevant documentation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the documents"	[attrs="{'type': 'Activity', 'label': 'check the documents'}"];
+	"send in relevant documentation" -> "check the documents"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register the claim"	[attrs="{'type': 'Activity', 'label': 'register the claim'}"];
+	"check the documents" -> "register the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"pick up the claim"	[attrs="{'type': 'Activity', 'label': 'pick up the claim'}"];
+	"register the claim" -> "pick up the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the insurance"	[attrs="{'type': 'Activity', 'label': 'check the insurance'}"];
+	"pick up the claim" -> "check the insurance"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform an assessment"	[attrs="{'type': 'Activity', 'label': 'perform an assessment'}"];
+	"check the insurance" -> "perform an assessment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"authorise the repairs"	[attrs="{'type': 'Activity', 'label': 'authorise the repairs'}"];
+	"perform an assessment" -> "authorise the repairs"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the claim"	[attrs="{'type': 'Activity', 'label': 'reject the claim'}"];
+	"perform an assessment" -> "reject the claim"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"schedule the payment"	[attrs="{'type': 'Activity', 'label': 'schedule the payment'}"];
+	"authorise the repairs" -> "schedule the payment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a letter to the customer"	[attrs="{'type': 'Activity', 'label': 'send a letter to the customer'}"];
+	"schedule the payment" -> "send a letter to the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the claim" -> "send a letter to the customer"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

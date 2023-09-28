@@ -1,0 +1,19 @@
+strict digraph "doc-9.1" {
+	graph [name="doc-9.1"];
+	"back up the database"	[attrs="{'type': 'Activity', 'label': 'back up the database'}"];
+	"check the account defaulter table for new records"	[attrs="{'type': 'Activity', 'label': 'check the account defaulter table for new records'}"];
+	"back up the database" -> "check the account defaulter table for new records"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"check the crm system for new returns"	[attrs="{'type': 'Activity', 'label': 'check the crm system for new returns'}"];
+	"check the account defaulter table for new records" -> "check the crm system for new returns"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"register all defaulting accounts and customers"	[attrs="{'type': 'Activity', 'label': 'register all defaulting accounts and customers'}"];
+	"check the crm system for new returns" -> "register all defaulting accounts and customers"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reconcile with the existing account defaulters table"	[attrs="{'type': 'Activity', 'label': 'reconcile with the existing account defaulters table'}"];
+	"check the crm system for new returns" -> "reconcile with the existing account defaulters table"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"produce another table of defaulting accounts"	[attrs="{'type': 'Activity', 'label': 'produce another table of defaulting accounts'}"];
+	"register all defaulting accounts and customers" -> "produce another table of defaulting accounts"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send to account management"	[attrs="{'type': 'Activity', 'label': 'send to account management'}"];
+	"produce another table of defaulting accounts" -> "send to account management"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send to account management" -> "check the crm system for new returns"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send a message to the supervisor"	[attrs="{'type': 'Activity', 'label': 'send a message to the supervisor'}"];
+	"reconcile with the existing account defaulters table" -> "send a message to the supervisor"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

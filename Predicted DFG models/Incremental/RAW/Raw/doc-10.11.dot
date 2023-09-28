@@ -1,0 +1,20 @@
+strict digraph "doc-10.11" {
+	graph [name="doc-10.11"];
+	"request measurements from msp"	[attrs="{'type': 'Activity', 'label': 'request measurements from msp'}"];
+	"check request from go"	[attrs="{'type': 'Activity', 'label': 'check request from go'}"];
+	"request measurements from msp" -> "check request from go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"deny request from go"	[attrs="{'type': 'Activity', 'label': 'deny request from go'}"];
+	"check request from go" -> "deny request from go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform measurement"	[attrs="{'type': 'Activity', 'label': 'perform measurement'}"];
+	"deny request from go" -> "perform measurement"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform go of failure"	[attrs="{'type': 'Activity', 'label': 'inform go of failure'}"];
+	"perform measurement" -> "inform go of failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transmit measured values to go"	[attrs="{'type': 'Activity', 'label': 'transmit measured values to go'}"];
+	"inform go of failure" -> "transmit measured values to go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"process measured values"	[attrs="{'type': 'Activity', 'label': 'process measured values'}"];
+	"transmit measured values to go" -> "process measured values"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send changed values to msp"	[attrs="{'type': 'Activity', 'label': 'send changed values to msp'}"];
+	"process measured values" -> "send changed values to msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"transmit readings to sp"	[attrs="{'type': 'Activity', 'label': 'transmit readings to sp'}"];
+	"send changed values to msp" -> "transmit readings to sp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

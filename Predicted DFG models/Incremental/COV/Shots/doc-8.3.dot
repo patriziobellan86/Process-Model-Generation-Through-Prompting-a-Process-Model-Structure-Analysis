@@ -1,0 +1,16 @@
+strict digraph "doc-8.3" {
+	graph [name="doc-8.3"];
+	"detect personnel requirements"	[attrs="{'type': 'Activity', 'label': 'detect personnel requirements'}"];
+	"report the vacancy"	[attrs="{'type': 'Activity', 'label': 'report the vacancy'}"];
+	"detect personnel requirements" -> "report the vacancy"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait to get the job description"	[attrs="{'type': 'Activity', 'label': 'wait to get the job description'}"];
+	"report the vacancy" -> "wait to get the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"review the job description"	[attrs="{'type': 'Activity', 'label': 'review the job description'}"];
+	"wait to get the job description" -> "review the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"ask for corrections"	[attrs="{'type': 'Activity', 'label': 'ask for corrections'}"];
+	"review the job description" -> "ask for corrections"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve the job description"	[attrs="{'type': 'Activity', 'label': 'approve the job description'}"];
+	"ask for corrections" -> "approve the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"clarify tasks and requirements"	[attrs="{'type': 'Activity', 'label': 'clarify tasks and requirements'}"];
+	"approve the job description" -> "clarify tasks and requirements"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

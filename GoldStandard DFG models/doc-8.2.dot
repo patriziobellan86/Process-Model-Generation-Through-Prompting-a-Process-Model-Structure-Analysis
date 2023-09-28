@@ -1,0 +1,22 @@
+strict digraph "doc-8.2" {
+	graph [name="doc-8.2"];
+	"report a vacancy"	[attrs="{'type': 'Activity', 'label': 'report a vacancy'}"];
+	"create a job description from the information"	[attrs="{'type': 'Activity', 'label': 'create a job description from the information'}"];
+	"report a vacancy" -> "create a job description from the information"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	ask	[attrs="{'type': 'Activity', 'label': 'ask'}"];
+	"create a job description from the information" -> ask	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"submit the job description"	[attrs="{'type': 'Activity', 'label': 'submit the job description'}"];
+	"create a job description from the information" -> "submit the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	ask -> "submit the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"wait the approval"	[attrs="{'type': 'Activity', 'label': 'wait the approval'}"];
+	"submit the job description" -> "wait the approval"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"request a correction"	[attrs="{'type': 'Activity', 'label': 'request a correction'}"];
+	"wait the approval" -> "request a correction"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"post the job"	[attrs="{'type': 'Activity', 'label': 'post the job'}"];
+	"wait the approval" -> "post the job"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"correct the description"	[attrs="{'type': 'Activity', 'label': 'correct the description'}"];
+	"request a correction" -> "correct the description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"submit the description"	[attrs="{'type': 'Activity', 'label': 'submit the description'}"];
+	"correct the description" -> "submit the description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"submit the description" -> "post the job"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

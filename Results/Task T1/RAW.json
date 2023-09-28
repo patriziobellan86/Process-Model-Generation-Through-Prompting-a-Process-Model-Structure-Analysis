@@ -1,0 +1,1942 @@
+{
+  "doc-2.1": {
+    "T1-Raw": {
+      "raw answer": "1. Perceive service degradation\n2. Send list with problem parameters to Customer Service\n3. Enter problem report into system T\n4. Compare problem report to customer SLA\n5. Determine necessary counter measures and priorities\n6. Determine customer significance\n7. Link to extra problem fix process (if customer is premium)\n8. Re-prioritize counter measures (if customer is of certain significance)\n9. Create detailed problem report\n10. Send detailed problem report to Service Management\n11. Investigate whether problem is analyzable at Service Management level\n12. Send detailed problem report to Resource Provisioning (if not analyzable)\n13. Check for possible problems (at Resource Provisioning)\n14. Create notification about normal service execution (if no problems detected)\n15. Analyze problem (if detected) and create trouble report\n16. Create status report (including trouble report or normal execution notification)\n17. Send status report back to Service Management\n18. Determine counter measures based on final status report\n19. Send actual service performance to Customer Service (if no problem detected)\n20. Service Management undertakes corrective actions (if minor corrective actions required)\n21. Create problem resolution report\n22. Send problem resolution report to Customer Service\n23. Create request for automatic resource restoration (if required)\n24. Send request to Resource Provisioning\n25. Track errors and undertake corrective actions\n26. Create trouble-shooting report\n27. Send trouble-shooting report to Service Management\n28. Create problem resolution report\n29. Send problem resolution report to Customer Service\n30. Create report for customer detailing current service performance and problem resolution\n31. Report SLA violation rebate to Billing & Collections\n32. Send report to customer\n33. Process ends within Customer Service\n34. Process ends at customer",
+      "extracted": [
+        "perceive service degradation",
+        "send list with problem parameters to customer service",
+        "enter problem report into system t",
+        "compare problem report to customer sla",
+        "determine necessary counter measures and priorities",
+        "determine customer significance",
+        "link to extra problem fix process",
+        "re-prioritize counter measures",
+        "create detailed problem report",
+        "send detailed problem report to service management",
+        "investigate whether problem is analyzable at service management level",
+        "send detailed problem report to resource provisioning",
+        "check for possible problems",
+        "create notification about normal service execution",
+        "analyze problem  and create trouble report",
+        "create status report",
+        "send status report back to service management",
+        "determine counter measures based on final status report",
+        "send actual service performance to customer service",
+        "service management undertakes corrective actions",
+        "create problem resolution report",
+        "send problem resolution report to customer service",
+        "create request for automatic resource restoration",
+        "send request to resource provisioning",
+        "track errors and undertake corrective actions",
+        "create trouble-shooting report",
+        "send trouble-shooting report to service management",
+        "create problem resolution report",
+        "send problem resolution report to customer service",
+        "create report for customer detailing current service performance and problem resolution",
+        "report sla violation rebate to billing & collections",
+        "send report to customer",
+        "process ends within customer service",
+        "process ends at customer"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Perceive service degradation\n2. Send problem parameters to Customer Service\n3. Enter problem report into system T\n4. Compare problem report to customer SLA\n5. Determine necessary counter measures and priorities\n6. Determine customer significance\n7. Link to extra problem fix process (if customer is premium)\n8. Re-prioritize counter measures (if customer is of certain significance)\n9. Create detailed problem report\n10. Send detailed problem report to Service Management\n11. Investigate whether problem is analyzable at Service Management level\n12. Send detailed problem report to Resource Provisioning (if not analyzable)\n13. Check for possible problems (at Resource Provisioning)\n14. Create notification about normal service execution (if no problems detected)\n15. Analyze problem (if detected) and create trouble report\n16. Create status report (including trouble report or normal execution notification)\n17. Send status report to Service Management\n18. Determine counter measures based on final status report\n19. Send actual service performance to Customer Service (if no problem detected)\n20. Service Management undertakes corrective actions (if minor corrective actions required)\n21. Create problem resolution report\n22. Send problem resolution report to Customer Service\n23. Create request for automatic resource restoration (if required)\n24. Send request to Resource Provisioning\n25. Track errors and undertake corrective actions\n26. Create trouble-shooting report\n27. Send trouble-shooting report to Service Management\n28. Create problem resolution report\n29. Send problem resolution report to Customer Service\n30. Create report for customer detailing service performance and problem resolution\n31. Report SLA violation rebate to Billing & Collections\n32. Send report to customer\n33. End process within Customer Service",
+      "extracted": [
+        "perceive service degradation",
+        "send problem parameters to customer service",
+        "enter problem report into system t",
+        "compare problem report to customer sla",
+        "determine necessary counter measures and priorities",
+        "determine customer significance",
+        "link to extra problem fix process",
+        "re-prioritize counter measures",
+        "create detailed problem report",
+        "send detailed problem report to service management",
+        "investigate whether problem is analyzable at service management level",
+        "send detailed problem report to resource provisioning",
+        "check for possible problems",
+        "create notification about normal service execution",
+        "analyze problem  and create trouble report",
+        "create status report",
+        "send status report to service management",
+        "determine counter measures based on final status report",
+        "send actual service performance to customer service",
+        "service management undertakes corrective actions",
+        "create problem resolution report",
+        "send problem resolution report to customer service",
+        "create request for automatic resource restoration",
+        "send request to resource provisioning",
+        "track errors and undertake corrective actions",
+        "create trouble-shooting report",
+        "send trouble-shooting report to service management",
+        "create problem resolution report",
+        "send problem resolution report to customer service",
+        "create report for customer detailing service performance and problem resolution",
+        "report sla violation rebate to billing & collections",
+        "send report to customer",
+        "end process within customer service"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-1.3": {
+    "T1-Raw": {
+      "raw answer": "1. Take down order\n2. Submit order ticket to kitchen\n3. Give order to sommelier\n4. Assign order to waiter\n5. Waiter readies cart\n6. Waiter gathers nonalcoholic drinks\n7. Waiter delivers food, wine, and cart to guest's room\n8. Waiter debits guest's account",
+      "extracted": [
+        "take down order",
+        "submit order ticket to kitchen",
+        "give order to sommelier",
+        "assign order to waiter",
+        "waiter readies cart",
+        "waiter gathers nonalcoholic drinks",
+        "waiter delivers food, wine, and cart to guest's room",
+        "waiter debits guest's account"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities: \n1. Take down order \n2. Submit order ticket to kitchen \n3. Give order to sommelier \n4. Assign order to waiter \n5. Prepare cart \n6. Prepare nonalcoholic drinks \n7. Deliver food, wine, and cart to guest's room \n8. Debit guest's account \n9. Wait to do billing if another order to prepare or deliver",
+      "extracted": [
+        "take down order",
+        "submit order ticket to kitchen",
+        "give order to sommelier",
+        "assign order to waiter",
+        "prepare cart",
+        "prepare nonalcoholic drinks",
+        "deliver food, wine, and cart to guest's room",
+        "debit guest's account",
+        "wait to do billing if another order to prepare or deliver"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-3.1": {
+    "T1-Raw": {
+      "raw answer": "1. Send warrant possession request\n2. Receive request and retrieve SCT file\n3. Forward SCT Warrant Possession to Queensland Police\n4. Store SCT physical file\n5. Receive report from Police\n6. Retrieve SCT file\n7. Attach new SCT document\n8. Store expanded SCT physical file\n9. Receive physical SCT file (out of scope)",
+      "extracted": [
+        "send warrant possession request",
+        "receive request and retrieve sct file",
+        "forward sct warrant possession to queensland police",
+        "store sct physical file",
+        "receive report from police",
+        "retrieve sct file",
+        "attach new sct document",
+        "store expanded sct physical file",
+        "receive physical sct file"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Send warrant possession request\n2. Retrieve SCT file\n3. Forward SCT Warrant Possession to Queensland Police\n4. Store SCT physical file\n5. Receive report from Police\n6. Retrieve SCT file\n7. Attach new SCT document\n8. Store expanded SCT physical file\n9. Receive physical SCT file (out of scope)",
+      "extracted": [
+        "send warrant possession request",
+        "retrieve sct file",
+        "forward sct warrant possession to queensland police",
+        "store sct physical file",
+        "receive report from police",
+        "retrieve sct file",
+        "attach new sct document",
+        "store expanded sct physical file",
+        "receive physical sct file"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-5.2": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Submit Vacation Request\n2. Receive Request\n3. Approve/Reject Request\n4. Review Rejection Reasons\n5. Generate Notification\n6. Complete Management Procedures",
+      "extracted": [
+        "submit vacation request",
+        "receive request",
+        "approve/reject request",
+        "review rejection reasons",
+        "generate notification",
+        "complete management procedures"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Submit Vacation Request\n2. Receive Request\n3. Approve/Reject Request\n4. Review Rejection Reasons\n5. Generate Notification\n6. Complete Management Procedures",
+      "extracted": [
+        "submit vacation request",
+        "receive request",
+        "approve/reject request",
+        "review rejection reasons",
+        "generate notification",
+        "complete management procedures"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-8.2": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Create job description\n2. Ask Department for clarification\n3. Submit job description for consideration\n4. Receive approval/rejection\n5. Make corrections\n6. Resubmit job description\n7. Receive approval\n8. Post job",
+      "extracted": [
+        "create job description",
+        "ask department for clarification",
+        "submit job description for consideration",
+        "receive approval/rejection",
+        "make corrections",
+        "resubmit job description",
+        "receive approval",
+        "post job"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Create job description\n2. Ask Department for clarification\n3. Submit job description for consideration\n4. Receive approval/rejection\n5. Make corrections\n6. Resubmit job description\n7. Receive approval\n8. Post job",
+      "extracted": [
+        "create job description",
+        "ask department for clarification",
+        "submit job description for consideration",
+        "receive approval/rejection",
+        "make corrections",
+        "resubmit job description",
+        "receive approval",
+        "post job"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-5.4": {
+    "T1-Raw": {
+      "raw answer": "1. Employee purchases product/service\n2. Employee submits expense report\n3. Supervisor reviews expense report\n4. Supervisor approves/rejects report\n5. Employee edits report (if rejected)\n6. Report goes to treasurer\n7. Treasurer checks receipts\n8. Treasurer accepts/rejects report\n9. Supervisor reviews report (if rejected)\n10. Report moves to payment system\n11. Process waits for payment confirmation\n12. Payment confirmed\n13. Process ends",
+      "extracted": [
+        "employee purchases product/service",
+        "employee submits expense report",
+        "supervisor reviews expense report",
+        "supervisor approves/rejects report",
+        "employee edits report",
+        "report goes to treasurer",
+        "treasurer checks receipts",
+        "treasurer accepts/rejects report",
+        "supervisor reviews report",
+        "report moves to payment system",
+        "process waits for payment confirmation",
+        "payment confirmed",
+        "process ends"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Employee purchases product/service\n2. Employee submits expense report\n3. Supervisor reviews expense report\n4. Supervisor approves/rejects report\n5. Employee edits report (if rejected)\n6. Report goes to treasurer\n7. Treasurer checks receipts\n8. Treasurer accepts/rejects report\n9. Supervisor reviews report (if rejected)\n10. Report links to payment system\n11. Process waits for payment confirmation\n12. Payment confirmed\n13. Process ends",
+      "extracted": [
+        "employee purchases product/service",
+        "employee submits expense report",
+        "supervisor reviews expense report",
+        "supervisor approves/rejects report",
+        "employee edits report",
+        "report goes to treasurer",
+        "treasurer checks receipts",
+        "treasurer accepts/rejects report",
+        "supervisor reviews report",
+        "report links to payment system",
+        "process waits for payment confirmation",
+        "payment confirmed",
+        "process ends"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-1.4": {
+    "T1-Raw": {
+      "raw answer": "1. Select underwriters\n2. Provide financial and procedural advice\n3. Buy the issue\n4. Resell it to the public\n5. Prepare registration statement\n6. Check compliance with blue-sky laws\n7. Arrange a road show\n8. Fix the issue price\n9. Enter into a firm commitment to buy the stock\n10. Offer it to the public",
+      "extracted": [
+        "select underwriters",
+        "provide financial and procedural advice",
+        "buy the issue",
+        "resell it to the public",
+        "prepare registration statement",
+        "check compliance with blue-sky laws",
+        "arrange a road show",
+        "fix the issue price",
+        "enter into a firm commitment to buy the stock",
+        "offer it to the public"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities: \n1. Select underwriters \n2. Provide company with procedural and financial advice \n3. Buy the issue \n4. Resell it to the public \n5. Prepare registration statement \n6. Check compliance with blue-sky laws \n7. Arrange road show \n8. Fix issue price \n9. Enter into firm commitment to buy the stock \n10. Offer it to the public",
+      "extracted": [
+        "select underwriters",
+        "provide company with procedural and financial advice",
+        "buy the issue",
+        "resell it to the public",
+        "prepare registration statement",
+        "check compliance with blue-sky laws",
+        "arrange road show",
+        "fix issue price",
+        "enter into firm commitment to buy the stock",
+        "offer it to the public"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-9.1": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Back up database\n2. Check Account Defaulter table for new records\n3. Check CRM system for new returns\n4. Register defaulting accounts and customers\n5. Produce table of defaulting accounts and send to account management\n6. Complete process by 2:30 pm\n7. Send alert to supervisor if not completed by 2:30 pm\n8. Check CRM system for new returns\n9. Reconcile with existing account defaulters table\n10. Complete process by 4:00 pm\n11. Send message to supervisor if not completed by 4:00 pm",
+      "extracted": [
+        "back up database",
+        "check account defaulter table for new records",
+        "check crm system for new returns",
+        "register defaulting accounts and customers",
+        "produce table of defaulting accounts and send to account management",
+        "complete process by 2:30 pm",
+        "send alert to supervisor if not completed by 2:30 pm",
+        "check crm system for new returns",
+        "reconcile with existing account defaulters table",
+        "complete process by 4:00 pm",
+        "send message to supervisor if not completed by 4:00 pm"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Back up database\n2. Check Account Defaulter table for new records\n3. Check CRM system for new returns\n4. Register defaulting accounts and customers\n5. Produce table of defaulting accounts and send to account management\n6. Set deadline of 2:30 pm\n7. Send alert to supervisor if deadline is not met\n8. Complete new defaulting account report\n9. Check CRM system for new returns\n10. Reconcile with existing account defaulters table\n11. Set deadline of 4:00 pm\n12. Send message to supervisor if deadline is not met",
+      "extracted": [
+        "back up database",
+        "check account defaulter table for new records",
+        "check crm system for new returns",
+        "register defaulting accounts and customers",
+        "produce table of defaulting accounts and send to account management",
+        "set deadline of 2:30 pm",
+        "send alert to supervisor if deadline is not met",
+        "complete new defaulting account report",
+        "check crm system for new returns",
+        "reconcile with existing account defaulters table",
+        "set deadline of 4:00 pm",
+        "send message to supervisor if deadline is not met"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-6.1": {
+    "T1-Raw": {
+      "raw answer": "Process model activities:\n1. Receiving invoices\n2. Visual inspection\n3. Identifying charging suppliers\n4. Creating a new instance\n5. Checking invoice items\n6. Noting cost center and cost center managers\n7. Sending copy of invoice and docket to cost center managers\n8. Reviewing content for accuracy\n9. Marking positions as accurate\n10. Passing copy of invoice to next cost center manager\n11. Clarifying inconsistencies with vendor\n12. Sending copy of invoice to commercial manager\n13. Commercial audit\n14. Approving payment\n15. Board review\n16. Sending copy of invoice to accounting employee\n17. Resolving complaints\n18. Giving payment instructions\n19. Closing instance in ACME financial accounting",
+      "extracted": [
+        "receiving invoices",
+        "visual inspection",
+        "identifying charging suppliers",
+        "creating a new instance",
+        "checking invoice items",
+        "noting cost center and cost center managers",
+        "sending copy of invoice and docket to cost center managers",
+        "reviewing content for accuracy",
+        "marking positions as accurate",
+        "passing copy of invoice to next cost center manager",
+        "clarifying inconsistencies with vendor",
+        "sending copy of invoice to commercial manager",
+        "commercial audit",
+        "approving payment",
+        "board review",
+        "sending copy of invoice to accounting employee",
+        "resolving complaints",
+        "giving payment instructions",
+        "closing instance in acme financial accounting"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process model activities:\n1. Receiving invoices on paper or fax\n2. Forwarding invoices to accounting employee\n3. Identifying charging suppliers\n4. Creating a new instance (invoice)\n5. Checking invoice items\n6. Noting corresponding cost center at ACME AG\n7. Noting related cost center managers for each position\n8. Reviewing content for accuracy\n9. Noting code on docket\n10. Passing copy of invoice to next cost center manager\n11. Clarifying inconsistencies with vendor\n12. Sending copy of invoice to cost center managers\n13. Forwarding copy of invoice to commercial manager\n14. Making commercial audit\n15. Issuing approval for payment\n16. Checking invoice amount with Board\n17. Moving copy of invoice to accounting employee\n18. Resolving complaints with supplier\n19. Giving payment instructions\n20. Closing instance in ACME financial accounting",
+      "extracted": [
+        "receiving invoices on paper or fax",
+        "forwarding invoices to accounting employee",
+        "identifying charging suppliers",
+        "creating a new instance",
+        "checking invoice items",
+        "noting corresponding cost center at acme ag",
+        "noting related cost center managers for each position",
+        "reviewing content for accuracy",
+        "noting code on docket",
+        "passing copy of invoice to next cost center manager",
+        "clarifying inconsistencies with vendor",
+        "sending copy of invoice to cost center managers",
+        "forwarding copy of invoice to commercial manager",
+        "making commercial audit",
+        "issuing approval for payment",
+        "checking invoice amount with board",
+        "moving copy of invoice to accounting employee",
+        "resolving complaints with supplier",
+        "giving payment instructions",
+        "closing instance in acme financial accounting"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.12": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. EC notifies INQ of master data change\n2. INQ notifies IP of change\n3. IP checks if master data can be changed at desired time\n4. IP confirms or rejects INQ changes",
+      "extracted": [
+        "ec notifies inq of master data change",
+        "inq notifies ip of change",
+        "ip checks if master data can be changed at desired time",
+        "ip confirms or rejects inq changes"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. EC informs INQ of master data change\n2. INQ notifies IP of change\n3. IP checks if master data can be changed at desired time\n4. IP confirms or rejects INQ changes",
+      "extracted": [
+        "ec informs inq of master data change",
+        "inq notifies ip of change",
+        "ip checks if master data can be changed at desired time",
+        "ip confirms or rejects inq changes"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.13": {
+    "T1-Raw": {
+      "raw answer": "1. Transmit transaction data request (INQ)\n2. Check request (IP)\n3. Answer question (IP)\n4. Transmit data (IP)\n5. Reject request (IP)",
+      "extracted": [
+        "transmit transaction data request",
+        "check request",
+        "answer question",
+        "transmit data",
+        "reject request"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "1. Transmit transaction data request (INQ to IP)\n2. Check request (IP)\n3. Answer question (IP)\n4. Transmission of data (IP)\n5. Rejection (IP)",
+      "extracted": [
+        "transmit transaction data request",
+        "check request",
+        "answer question",
+        "transmission of data",
+        "rejection"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-1.2": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Check defect\n2. Hand out repair cost calculation\n3. Check and repair hardware\n4. Check and configure software\n5. Test system functionality\n6. Execute repair activity if error detected\n7. Finish repair",
+      "extracted": [
+        "check defect",
+        "hand out repair cost calculation",
+        "check and repair hardware",
+        "check and configure software",
+        "test system functionality",
+        "execute repair activity if error detected",
+        "finish repair"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Check defect\n2. Hand out repair cost calculation\n3. Check and repair hardware\n4. Check and configure software\n5. Test system functionality\n6. Execute arbitrary repair activity (if error detected)\n7. Finish repair",
+      "extracted": [
+        "check defect",
+        "hand out repair cost calculation",
+        "check and repair hardware",
+        "check and configure software",
+        "test system functionality",
+        "execute arbitrary repair activity",
+        "finish repair"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-6.3": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Determine necessary parts and quantities\n2. Enter data into Production Planning System\n3. Transfer data manually to Enterprise Resource Planning System\n4. Decide if parts need to be procured\n5. Receive notice from system and implement production\n6. Check order for quality",
+      "extracted": [
+        "determine necessary parts and quantities",
+        "enter data into production planning system",
+        "transfer data manually to enterprise resource planning system",
+        "decide if parts need to be procured",
+        "receive notice from system and implement production",
+        "check order for quality"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Determine necessary parts and quantities\n2. Determine delivery date\n3. Enter data into production planning system\n4. Optimize production processes\n5. Create work packages\n6. Create list of parts to procure\n7. Transfer data manually to ERP system\n8. Decide if parts need to be procured\n9. Receive notice from system\n10. Implement production\n11. Check order for quality",
+      "extracted": [
+        "determine necessary parts and quantities",
+        "determine delivery date",
+        "enter data into production planning system",
+        "optimize production processes",
+        "create work packages",
+        "create list of parts to procure",
+        "transfer data manually to erp system",
+        "decide if parts need to be procured",
+        "receive notice from system",
+        "implement production",
+        "check order for quality"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-9.2": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Send Mortgage Offer\n2. Update Case Details\n3. Archive Work\n4. Move Case to Administration\n5. Generate Message to Customer\n6. Update Case Details\n7. Archive and Cancel",
+      "extracted": [
+        "send mortgage offer",
+        "update case details",
+        "archive work",
+        "move case to administration",
+        "generate message to customer",
+        "update case details",
+        "archive and cancel"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Send Mortgage Offer\n2. Update Case Details\n3. Archive Work\n4. Move Case to Administration\n5. Generate Message to Customer\n6. Update Case Details\n7. Archive and Cancel",
+      "extracted": [
+        "send mortgage offer",
+        "update case details",
+        "archive work",
+        "move case to administration",
+        "generate message to customer",
+        "update case details",
+        "archive and cancel"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-8.1": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Trigger: Demand of a functional department to fill a post\n2. Advertise post\n3. Receive applications\n4. Check applications\n5. Fill post\n6. Conclude contract of employment",
+      "extracted": [
+        "trigger: demand of a functional department to fill a post",
+        "advertise post",
+        "receive applications",
+        "check applications",
+        "fill post",
+        "conclude contract of employment"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Trigger: Demand of a functional department to fill a post\n2. Advertise post\n3. Receive applications\n4. Check applications\n5. Fill post\n6. Conclude contract of employment",
+      "extracted": [
+        "trigger: demand of a functional department to fill a post",
+        "advertise post",
+        "receive applications",
+        "check applications",
+        "fill post",
+        "conclude contract of employment"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.8": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Deregister at the GO\n2. Verify deregistration\n3. Reject/Preliminarily confirm deregistration\n4. Assign GO as MSP\n5. Inform MSPO of end of assignment\n6. Inform MSPO of beginning of assignment of GO\n7. Inform MPO of assignment of GO\n8. Inform SP of assignment of GO",
+      "extracted": [
+        "deregister at the go",
+        "verify deregistration",
+        "reject/preliminarily confirm deregistration",
+        "assign go as msp",
+        "inform mspo of end of assignment",
+        "inform mspo of beginning of assignment of go",
+        "inform mpo of assignment of go",
+        "inform sp of assignment of go"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Deregister at the GO\n2. Verify deregistration\n3. Reject/Preliminarily confirm deregistration\n4. Assign GO as MSP\n5. Inform MSPO of end of assignment and beginning of GO assignment\n6. Inform MPO of GO assignment\n7. Inform SP of GO assignment",
+      "extracted": [
+        "deregister at the go",
+        "verify deregistration",
+        "reject/preliminarily confirm deregistration",
+        "assign go as msp",
+        "inform mspo of end of assignment and beginning of go assignment",
+        "inform mpo of go assignment",
+        "inform sp of go assignment"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.1": {
+    "T1-Raw": {
+      "raw answer": "1. MPON sends dismissal to MPOO\n2. MPOO reviews dismissal\n3. MPOO opposes dismissal of MPON\n4. MPOO confirms dismissal of MPON",
+      "extracted": [
+        "mpon sends dismissal to mpoo",
+        "mpoo reviews dismissal",
+        "mpoo opposes dismissal of mpon",
+        "mpoo confirms dismissal of mpon"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Sending the dismissal from MPON to MPOO\n2. Reviewing the dismissal by MPOO\n3. Opposing the dismissal of MPON by MPOO\n4. Confirming the dismissal of MPON by MPOO",
+      "extracted": [
+        "sending the dismissal from mpon to mpoo",
+        "reviewing the dismissal by mpoo",
+        "opposing the dismissal of mpon by mpoo",
+        "confirming the dismissal of mpon by mpoo"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-5.1": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Receive customer request for loan amount\n2. Invoke risk assessment Web service\n3. Approve loan if small and customer is low risk\n4. Deny loan if customer is high risk\n5. Send request to approver Web service if further review is needed or loan amount is $10,000 or more\n6. Provide feedback to customer from assessor or approver",
+      "extracted": [
+        "receive customer request for loan amount",
+        "invoke risk assessment web service",
+        "approve loan if small and customer is low risk",
+        "deny loan if customer is high risk",
+        "send request to approver web service if further review is needed or loan amount is $10,000 or more",
+        "provide feedback to customer from assessor or approver"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Receive customer request for loan amount\n2. Invoke risk assessment Web service\n3. Approve loan if small and customer is low risk\n4. Deny loan if customer is high risk\n5. Send request to approver Web service if further review is needed or loan amount is $10,000 or more\n6. Provide feedback to customer from assessor or approver",
+      "extracted": [
+        "receive customer request for loan amount",
+        "invoke risk assessment web service",
+        "approve loan if small and customer is low risk",
+        "deny loan if customer is high risk",
+        "send request to approver web service if further review is needed or loan amount is $10,000 or more",
+        "provide feedback to customer from assessor or approver"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-2.2": {
+    "T1-Raw": {
+      "raw answer": "1. Initiate switch-over request\n2. Transmit customer data to customer service\n3. Enter customer data into CRM system\n4. Compare customer data with internal customer database\n5. Check for completeness and plausibility\n6. Correct errors on basis of error list\n7. Create new customer object\n8. Prepare contract documents\n9. Automated check of contract documents\n10. Analyze and resolve causing issues\n11. Generate contract documents\n12. Send confirmation document to customer\n13. Send request to grid operator\n14. Check for supplier concurrence\n15. Inform involved suppliers\n16. Terminate sales agreement with old supplier\n17. Generate CIS contract\n18. Check contract details\n19. Withdraw or confirm contract\n20. Send confirmation message\n21. Switch-over date\n22. Transmit power meter data\n23. Compute final billing\n24. Create and send final billing to customer\n25. Import meter data to systems\n26. Win new customer",
+      "extracted": [
+        "initiate switch-over request",
+        "transmit customer data to customer service",
+        "enter customer data into crm system",
+        "compare customer data with internal customer database",
+        "check for completeness and plausibility",
+        "correct errors on basis of error list",
+        "create new customer object",
+        "prepare contract documents",
+        "automated check of contract documents",
+        "analyze and resolve causing issues",
+        "generate contract documents",
+        "send confirmation document to customer",
+        "send request to grid operator",
+        "check for supplier concurrence",
+        "inform involved suppliers",
+        "terminate sales agreement with old supplier",
+        "generate cis contract",
+        "check contract details",
+        "withdraw or confirm contract",
+        "send confirmation message",
+        "switch-over date",
+        "transmit power meter data",
+        "compute final billing",
+        "create and send final billing to customer",
+        "import meter data to systems",
+        "win new customer"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Initiate switch-over request\n2. Transmit customer data to customer service\n3. Enter customer data into CRM system\n4. Compare customer data with internal customer database\n5. Check for completeness and plausibility\n6. Correct errors on basis of error list\n7. Create new customer object\n8. Prepare contract documents\n9. Automated check of contract documents\n10. Analyze and resolve causing issues\n11. Generate confirmation document\n12. Send request to grid operator\n13. Check for supplier concurrence\n14. Communicate with old supplier\n15. Terminate sales agreement\n16. Generate CIS contract\n17. Check contract details\n18. Accept/reject contract\n19. Transmit power meter data\n20. Compute final billing\n21. Import meter data to systems\n22. End process",
+      "extracted": [
+        "initiate switch-over request",
+        "transmit customer data to customer service",
+        "enter customer data into crm system",
+        "compare customer data with internal customer database",
+        "check for completeness and plausibility",
+        "correct errors on basis of error list",
+        "create new customer object",
+        "prepare contract documents",
+        "automated check of contract documents",
+        "analyze and resolve causing issues",
+        "generate confirmation document",
+        "send request to grid operator",
+        "check for supplier concurrence",
+        "communicate with old supplier",
+        "terminate sales agreement",
+        "generate cis contract",
+        "check contract details",
+        "accept/reject contract",
+        "transmit power meter data",
+        "compute final billing",
+        "import meter data to systems",
+        "end process"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-7.1": {
+    "T1-Raw": {
+      "raw answer": "1. Manager checks open leads\n2. Manager selects top five leads\n3. Manager tells Sales Assistant to call contact person\n4. Sales Assistant calls each customer\n5. Sales Assistant sends note to Manager if someone is interested\n6. Manager processes lead\n7. Manager calls next customer",
+      "extracted": [
+        "manager checks open leads",
+        "manager selects top five leads",
+        "manager tells sales assistant to call contact person",
+        "sales assistant calls each customer",
+        "sales assistant sends note to manager if someone is interested",
+        "manager processes lead",
+        "manager calls next customer"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Check open leads\n2. Select top five leads\n3. Tell Sales Assistant to call contact person\n4. Call customer\n5. Send note to Manager\n6. Process lead\n7. Call next customer",
+      "extracted": [
+        "check open leads",
+        "select top five leads",
+        "tell sales assistant to call contact person",
+        "call customer",
+        "send note to manager",
+        "process lead",
+        "call next customer"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-4.1": {
+    "T1-Raw": {
+      "raw answer": "1. Notice by telephone at the secretarial office\n2. Inquiry into the name and residence of the patient\n3. Conversation with the nursing officer\n4. Recording of information on a registration form\n5. Storing of information in the information system\n6. Creation of a patient file\n7. Production of two registration cards\n8. Adding the patient to the list of new notices\n9. Staff meeting of the medical team\n10. Assigning intakers to new patients\n11. Recording of assignments on an assignment list\n12. Determining whether the medical file is required\n13. Storing of assignments in the information system\n14. Passing of registration cards to the first and second intaker\n15. Sending of a letter to the family doctor requesting a copy of the medical file\n16. Informing the second intaker when the medical file is received\n17. Planning of a meeting with the patient\n18. Examining the patient using a standard checklist\n19. Recording of additional observations in a personal notebook\n20. Putting a copy of the notes in the patient file\n21. Adding the standard checklist to the patient file\n22. Planning of the first meeting by the second intaker\n23. Recording of observations by physicians using dictaphones\n24. Typing out of the dictaphone tapes\n25. Adding of information to the patient file\n26. Putting the patient on the list of patients that reach a certain status\n27. Providing the team-leader with a list of patients\n28. Formulating a treatment plan with the first and second intaker, team-leader, and attending psychiatrist",
+      "extracted": [
+        "notice by telephone at the secretarial office",
+        "inquiry into the name and residence of the patient",
+        "conversation with the nursing officer",
+        "recording of information on a registration form",
+        "storing of information in the information system",
+        "creation of a patient file",
+        "production of two registration cards",
+        "adding the patient to the list of new notices",
+        "staff meeting of the medical team",
+        "assigning intakers to new patients",
+        "recording of assignments on an assignment list",
+        "determining whether the medical file is required",
+        "storing of assignments in the information system",
+        "passing of registration cards to the first and second intaker",
+        "sending of a letter to the family doctor requesting a copy of the medical file",
+        "informing the second intaker when the medical file is received",
+        "planning of a meeting with the patient",
+        "examining the patient using a standard checklist",
+        "recording of additional observations in a personal notebook",
+        "putting a copy of the notes in the patient file",
+        "adding the standard checklist to the patient file",
+        "planning of the first meeting by the second intaker",
+        "recording of observations by physicians using dictaphones",
+        "typing out of the dictaphone tapes",
+        "adding of information to the patient file",
+        "putting the patient on the list of patients that reach a certain status",
+        "providing the team-leader with a list of patients",
+        "formulating a treatment plan with the first and second intaker, team-leader, and attending psychiatrist"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Notice by telephone at the secretarial office\n2. Inquire after the name and residence of the patient\n3. Put doctor through to the nursing officer responsible for the part of the region that the patient lives in\n4. Make a full inquiry into the mental, health, and social state of the patient\n5. Record information on a registration form\n6. Store information on the form in the information system and print\n7. Create a patient file for new patients\n8. Store registration form and print from the information system in the patient file\n9. Produce two registration cards for the future first and second intaker of the patient\n10. Add new patient to the list of new notices\n11. Assign new patients on the list of new notices to members of the medical team\n12. Record assignments on an assignment list and hand to the secretarial office\n13. Determine if the medical file of the patient is required\n14. Store assignments of each patient on the assignment list in the information system\n15. Pass registration cards to the first and second intaker of each newly assigned patient\n16. Send a letter to the family doctor of the patient requesting for a copy of the medical file\n17. Inform the second intaker when the copy is received and add to the patient file\n18. Plan a meeting with the patient for the first intaker\n19. Examine the patient using a standard checklist and register additional observations in a personal notebook\n20. Put a copy of the notes in the file of the patient and add the standard checklist to the patient's file\n21. Plan the first meeting for the second intaker after the medical information of the physician is received\n22. Use dictaphones to record observations made during meetings with patients\n23. Type out tapes and add information to the patient file\n24. Put the patient on the list of patients that reach this status\n25. Provide the team-leader with a list of these patients\n26. Formulate a treatment plan with the first and second intaker, team-leader, and attending psychiatrist\n27. End the intake procedure",
+      "extracted": [
+        "notice by telephone at the secretarial office",
+        "inquire after the name and residence of the patient",
+        "put doctor through to the nursing officer responsible for the part of the region that the patient lives in",
+        "make a full inquiry into the mental, health, and social state of the patient",
+        "record information on a registration form",
+        "store information on the form in the information system and print",
+        "create a patient file for new patients",
+        "store registration form and print from the information system in the patient file",
+        "produce two registration cards for the future first and second intaker of the patient",
+        "add new patient to the list of new notices",
+        "assign new patients on the list of new notices to members of the medical team",
+        "record assignments on an assignment list and hand to the secretarial office",
+        "determine if the medical file of the patient is required",
+        "store assignments of each patient on the assignment list in the information system",
+        "pass registration cards to the first and second intaker of each newly assigned patient",
+        "send a letter to the family doctor of the patient requesting for a copy of the medical file",
+        "inform the second intaker when the copy is received and add to the patient file",
+        "plan a meeting with the patient for the first intaker",
+        "examine the patient using a standard checklist and register additional observations in a personal notebook",
+        "put a copy of the notes in the file of the patient and add the standard checklist to the patient's file",
+        "plan the first meeting for the second intaker after the medical information of the physician is received",
+        "use dictaphones to record observations made during meetings with patients",
+        "type out tapes and add information to the patient file",
+        "put the patient on the list of patients that reach this status",
+        "provide the team-leader with a list of these patients",
+        "formulate a treatment plan with the first and second intaker, team-leader, and attending psychiatrist",
+        "end the intake procedure"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.11": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Request Measurements from MSP\n2. Check Request from GO\n3. Deny Request from GO\n4. Perform Measurement\n5. Inform GO of Failure\n6. Transmit Measured Values to GO\n7. Process Measured Values\n8. Send Changed Values to MSP\n9. Transmit Readings to SP",
+      "extracted": [
+        "request measurements from msp",
+        "check request from go",
+        "deny request from go",
+        "perform measurement",
+        "inform go of failure",
+        "transmit measured values to go",
+        "process measured values",
+        "send changed values to msp",
+        "transmit readings to sp"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Request Measurements (GO to MSP)\n2. Check Request (MSP)\n3. Deny Request (MSP)\n4. Perform Measurement (MSP)\n5. Inform GO of Failure (MSP to GO)\n6. Transmit Measured Values (MSP to GO)\n7. Process Measured Values (GO)\n8. Send Changed Values (GO to MSP)\n9. Transmit Readings (GO to SP)",
+      "extracted": [
+        "request measurements",
+        "check request",
+        "deny request",
+        "perform measurement",
+        "inform go of failure",
+        "transmit measured values",
+        "process measured values",
+        "send changed values",
+        "transmit readings"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-3.3": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Register Claim\n2. Examine Claim (by Claims Officer)\n3. Write Settlement Recommendation\n4. Check Settlement Recommendation (by Senior Claims Officer)\n5. Mark Claim as OK or Not OK\n6. Send Claim Back (if Not OK)\n7. Repeat Recommendation (if Not OK)\n8. Proceed with Claim Handling (if OK)",
+      "extracted": [
+        "register claim",
+        "examine claim",
+        "write settlement recommendation",
+        "check settlement recommendation",
+        "mark claim as ok or not ok",
+        "send claim back",
+        "repeat recommendation",
+        "proceed with claim handling"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Register Claim\n2. Examine Claim (by Claims Officer)\n3. Write Settlement Recommendation\n4. Check Settlement Recommendation (by Senior Claims Officer)\n5. Mark Claim as OK or Not OK\n6. Send Claim Back (if Not OK)\n7. Repeat Recommendation (if Not OK)\n8. Proceed with Claim Handling (if OK)",
+      "extracted": [
+        "register claim",
+        "examine claim",
+        "write settlement recommendation",
+        "check settlement recommendation",
+        "mark claim as ok or not ok",
+        "send claim back",
+        "repeat recommendation",
+        "proceed with claim handling"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-3.7": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Search Police Report in Database\n2. Put Police Report and Claim Documentation in File\n3. Calculate Initial Claim Estimate\n4. Create Action Plan Based on Action Plan Checklist\n5. Negotiate Settlement on Claim Estimate\n6. Inform Claimant of Outcome",
+      "extracted": [
+        "search police report in database",
+        "put police report and claim documentation in file",
+        "calculate initial claim estimate",
+        "create action plan based on action plan checklist",
+        "negotiate settlement on claim estimate",
+        "inform claimant of outcome"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Search Police Report in Database\n2. Put Police Report and Claim Documentation in File\n3. Calculate Initial Claim Estimate\n4. Create Action Plan Based on Action Plan Checklist\n5. Negotiate Settlement on Claim Estimate\n6. Inform Claimant of Outcome",
+      "extracted": [
+        "search police report in database",
+        "put police report and claim documentation in file",
+        "calculate initial claim estimate",
+        "create action plan based on action plan checklist",
+        "negotiate settlement on claim estimate",
+        "inform claimant of outcome"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-5.3": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Submit Office Supply Request\n2. Receive Request by Supervisor\n3. Approve/Reject/Ask for Change\n4. Return Request to Petitioner/Employee\n5. Make Quotations (Using Subprocess)\n6. Select Vendor\n7. Generate and Send Purchase Order\n8. Wait for Product Delivery and Invoice Received\n9. Send Notification to User\n10. Approve/Reject/Ask for Change Notification",
+      "extracted": [
+        "submit office supply request",
+        "receive request by supervisor",
+        "approve/reject/ask for change",
+        "return request to petitioner/employee",
+        "make quotations",
+        "select vendor",
+        "generate and send purchase order",
+        "wait for product delivery and invoice received",
+        "send notification to user",
+        "approve/reject/ask for change notification"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Submit Office Supply Request\n2. Receive Request\n3. Approve/Reject/Ask for Change\n4. Return Request with Change Request\n5. Make Quotations (Subprocess)\n6. Select Vendor\n7. Generate and Send Purchase Order\n8. Wait for Product Delivery and Invoice Received\n9. Send Notification of Result",
+      "extracted": [
+        "submit office supply request",
+        "receive request",
+        "approve/reject/ask for change",
+        "return request with change request",
+        "make quotations",
+        "select vendor",
+        "generate and send purchase order",
+        "wait for product delivery and invoice received",
+        "send notification of result"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-3.6": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Check if claimant is insured\n2. Evaluate severity of claim\n3. Send relevant forms to claimant\n4. Check forms for completeness\n5. Register claim in Claims Management system\n6. Inform claimant to update forms\n7. Check updated forms",
+      "extracted": [
+        "check if claimant is insured",
+        "evaluate severity of claim",
+        "send relevant forms to claimant",
+        "check forms for completeness",
+        "register claim in claims management system",
+        "inform claimant to update forms",
+        "check updated forms"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Check if claimant is insured\n2. Inform claimant if claim must be rejected\n3. Evaluate severity of claim\n4. Send relevant forms to claimant\n5. Check forms for completeness\n6. Register claim in Claims Management system\n7. Inform claimant to update forms\n8. Check updated forms",
+      "extracted": [
+        "check if claimant is insured",
+        "inform claimant if claim must be rejected",
+        "evaluate severity of claim",
+        "send relevant forms to claimant",
+        "check forms for completeness",
+        "register claim in claims management system",
+        "inform claimant to update forms",
+        "check updated forms"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.4": {
+    "T1-Raw": {
+      "raw answer": "1. Notify MPOO about equipment change intentions (MPON)\n2. Announce self dismounting (MPOO)\n3. Notify MPON about no self-dismounting (MPOO)\n4. Perform final reading (MPON or MPOO)\n5. Dismount old equipment (MPON or MPOO)\n6. Mount new device (MPON)\n7. Read meter count from installed meter (MPON)\n8. Send values of final reading to GO (MPON)\n9. Tell GO about device changes, master data, and meter count at installation (MPON)\n10. Notify MSP about device changes, master data, meter count at dismounting, and meter count at installation (GO)",
+      "extracted": [
+        "notify mpoo about equipment change intentions",
+        "announce self dismounting",
+        "notify mpon about no self-dismounting",
+        "perform final reading",
+        "dismount old equipment",
+        "mount new device",
+        "read meter count from installed meter",
+        "send values of final reading to go",
+        "tell go about device changes, master data, and meter count at installation",
+        "notify msp about device changes, master data, meter count at dismounting, and meter count at installation"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Notify\n2. Announce\n3. Perform Final Reading\n4. Dismount Old Equipment\n5. Mount New Device\n6. Read Meter Count\n7. Send Values of Final Reading\n8. Tell GO about Device Changes, Master Data, Meter Count at Dismounting, and Meter Count at Installation",
+      "extracted": [
+        "notify",
+        "announce",
+        "perform final reading",
+        "dismount old equipment",
+        "mount new device",
+        "read meter count",
+        "send values of final reading",
+        "tell go about device changes, master data, meter count at dismounting, and meter count at installation"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-6.4": {
+    "T1-Raw": {
+      "raw answer": "1. Determine contact details of potential customers \n2. Cold calls \n3. Participate in exhibitions \n4. Know somebody interested in the product \n5. Call customer \n6. Determine contact person and budget \n7. Ask customer if interested \n8. Head of development personally tries to acquire customer \n9. Detailed online presentation \n10. Wait for customer to come back \n11. Call customer if not contacted within 2 weeks \n12. Create quotation",
+      "extracted": [
+        "determine contact details of potential customers",
+        "cold calls",
+        "participate in exhibitions",
+        "know somebody interested in the product",
+        "call customer",
+        "determine contact person and budget",
+        "ask customer if interested",
+        "head of development personally tries to acquire customer",
+        "detailed online presentation",
+        "wait for customer to come back",
+        "call customer if not contacted within 2 weeks",
+        "create quotation"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Determine contact details of potential customers\n2. Cold calls\n3. Participate in exhibitions\n4. Know somebody interested in the product\n5. Call customer\n6. Determine contact person and budget\n7. Ask customer if interested\n8. Head of development personally tries to acquire customer\n9. Detailed online presentation\n10. Wait for customer to come back\n11. Call customer if not contacted within 2 weeks\n12. Create quotation",
+      "extracted": [
+        "determine contact details of potential customers",
+        "cold calls",
+        "participate in exhibitions",
+        "know somebody interested in the product",
+        "call customer",
+        "determine contact person and budget",
+        "ask customer if interested",
+        "head of development personally tries to acquire customer",
+        "detailed online presentation",
+        "wait for customer to come back",
+        "call customer if not contacted within 2 weeks",
+        "create quotation"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-3.8": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Submit claim (customer)\n2. Check documents (Notification department)\n3. Register claim (Notification department)\n4. Pick up claim (Handling department)\n5. Check insurance (Handling department)\n6. Perform assessment (Handling department)\n7. Authorise repairs (Garage)\n8. Schedule payment (Garage)\n9. Reject claim (Handling department)\n10. Send letter (Notification department)\n11. Process complete (Notification department)",
+      "extracted": [
+        "submit claim",
+        "check documents",
+        "register claim",
+        "pick up claim",
+        "check insurance",
+        "perform assessment",
+        "authorise repairs",
+        "schedule payment",
+        "reject claim",
+        "send letter",
+        "process complete"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Submit claim (customer)\n2. Check documents (Notification department)\n3. Register claim (Notification department)\n4. Pick up claim (Handling department)\n5. Check insurance (Handling department)\n6. Perform assessment (Handling department)\n7. Authorise repairs (Garage)\n8. Schedule payment (Garage)\n9. Reject claim (Handling department)\n10. Send letter (Notification department)\n11. Complete process (Notification department)",
+      "extracted": [
+        "submit claim",
+        "check documents",
+        "register claim",
+        "pick up claim",
+        "check insurance",
+        "perform assessment",
+        "authorise repairs",
+        "schedule payment",
+        "reject claim",
+        "send letter",
+        "complete process"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.7": {
+    "T1-Raw": {
+      "raw answer": "1. Register measurement at GO\n2. Examine application of MSPN\n3. Reject application of MSPN\n4. Confirm application of MSPN\n5. Assign MSPN\n6. Inform MSPO about assignment of MSPN\n7. Inform MPO about assignment of MSPN\n8. Inform SP about assignment of MSPN",
+      "extracted": [
+        "register measurement at go",
+        "examine application of mspn",
+        "reject application of mspn",
+        "confirm application of mspn",
+        "assign mspn",
+        "inform mspo about assignment of mspn",
+        "inform mpo about assignment of mspn",
+        "inform sp about assignment of mspn"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Register Measurement\n2. Examine Application\n3. Reject/Confirm Application\n4. Assign MSPN\n5. Inform MSPO\n6. Inform MPO\n7. Inform SP",
+      "extracted": [
+        "register measurement",
+        "examine application",
+        "reject/confirm application",
+        "assign mspn",
+        "inform mspo",
+        "inform mpo",
+        "inform sp"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.3": {
+    "T1-Raw": {
+      "raw answer": "1. Deregister at the GO\n2. Verify deregistration\n3. Reject/Preliminarily confirm deregistration\n4. Prepare readmission of measuring point\n5. Optionally oblige MPOO to continue operations\n6. Confirm continuation to MPOO\n7. Equipment acquisition/changes\n8. Assign GO as MPO\n9. Inform MPOO of end of assignment of MPOO and beginning of assignment of GO\n10. Inform MSPO of assignment of GO\n11. Inform SP of assignment of GO",
+      "extracted": [
+        "deregister at the go",
+        "verify deregistration",
+        "reject/preliminarily confirm deregistration",
+        "prepare readmission of measuring point",
+        "optionally oblige mpoo to continue operations",
+        "confirm continuation to mpoo",
+        "equipment acquisition/changes",
+        "assign go as mpo",
+        "inform mpoo of end of assignment of mpoo and beginning of assignment of go",
+        "inform mspo of assignment of go",
+        "inform sp of assignment of go"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Deregister MPOO at GO\n2. Verify deregistration\n3. Reject or preliminarily confirm deregistration\n4. Prepare readmission of measuring point\n5. Optionally oblige MPOO to continue operations\n6. Confirm continuation to MPOO\n7. Perform equipment acquisition and/or changes\n8. Assign GO as MPO\n9. Inform MPOO about end of assignment and beginning of GO assignment\n10. Inform MSPO about GO assignment\n11. Inform SP about GO assignment",
+      "extracted": [
+        "deregister mpoo at go",
+        "verify deregistration",
+        "reject or preliminarily confirm deregistration",
+        "prepare readmission of measuring point",
+        "optionally oblige mpoo to continue operations",
+        "confirm continuation to mpoo",
+        "perform equipment acquisition and/or changes",
+        "assign go as mpo",
+        "inform mpoo about end of assignment and beginning of go assignment",
+        "inform mspo about go assignment",
+        "inform sp about go assignment"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-6.2": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Place Order\n2. Process Order\n3. Send Invoice\n4. Receive Invoice",
+      "extracted": [
+        "place order",
+        "process order",
+        "send invoice",
+        "receive invoice"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Place Order\n2. Process Order\n3. Send Invoice\n4. Receive Invoice",
+      "extracted": [
+        "place order",
+        "process order",
+        "send invoice",
+        "receive invoice"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-1.1": {
+    "T1-Raw": {
+      "raw answer": "Process model activities:\n1. Create process instance\n2. Reject/accept order\n3. Inform storehouse and engineering department\n4. Process part list\n5. Reserve/back-order parts\n6. Prepare for assembling\n7. Assemble bicycle\n8. Ship bicycle\n9. Finish process instance",
+      "extracted": [
+        "create process instance",
+        "reject/accept order",
+        "inform storehouse and engineering department",
+        "process part list",
+        "reserve/back-order parts",
+        "prepare for assembling",
+        "assemble bicycle",
+        "ship bicycle",
+        "finish process instance"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Create process instance\n2. Reject/accept order\n3. Inform storehouse and engineering department\n4. Process part list\n5. Reserve/back-order parts\n6. Prepare for assembling\n7. Assemble bicycle\n8. Ship bicycle\n9. Finish process instance",
+      "extracted": [
+        "create process instance",
+        "reject/accept order",
+        "inform storehouse and engineering department",
+        "process part list",
+        "reserve/back-order parts",
+        "prepare for assembling",
+        "assemble bicycle",
+        "ship bicycle",
+        "finish process instance"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-8.3": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Detect personnel requirements\n2. Report vacancy to Personnel Department\n3. Review job description\n4. Ask for corrections\n5. Approve job description\n6. Answer questions about tasks and requirements\n7. Provide clarifications",
+      "extracted": [
+        "detect personnel requirements",
+        "report vacancy to personnel department",
+        "review job description",
+        "ask for corrections",
+        "approve job description",
+        "answer questions about tasks and requirements",
+        "provide clarifications"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Detect personnel requirements\n2. Report vacancy to Personnel Department\n3. Review job description\n4. Ask for corrections\n5. Approve job description\n6. Answer questions about tasks and requirements\n7. Provide clarifications",
+      "extracted": [
+        "detect personnel requirements",
+        "report vacancy to personnel department",
+        "review job description",
+        "ask for corrections",
+        "approve job description",
+        "answer questions about tasks and requirements",
+        "provide clarifications"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-9.3": {
+    "T1-Raw": {
+      "raw answer": "1. Draft schedule of meetings\n2. Check dates and suggest modifications\n3. Recheck all dates and look for potential conflicts\n4. Send final schedule of meeting dates to all independent Committee Members\n5. Check diaries and advise Coordination Unit of any conflicts",
+      "extracted": [
+        "draft schedule of meetings",
+        "check dates and suggest modifications",
+        "recheck all dates and look for potential conflicts",
+        "send final schedule of meeting dates to all independent committee members",
+        "check diaries and advise coordination unit of any conflicts"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Drafting a schedule of meetings\n2. Checking the dates\n3. Suggesting modifications\n4. Rechecking all dates\n5. Looking for potential conflicts\n6. Sending the final schedule of meeting dates to all Committee Members\n7. Checking diaries for conflicts\n8. Advising the Coordination Unit of any conflicts",
+      "extracted": [
+        "drafting a schedule of meetings",
+        "checking the dates",
+        "suggesting modifications",
+        "rechecking all dates",
+        "looking for potential conflicts",
+        "sending the final schedule of meeting dates to all committee members",
+        "checking diaries for conflicts",
+        "advising the coordination unit of any conflicts"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-9.4": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Finalize dates (Coordination Unit)\n2. Update group calendars (Support Officer)\n3. Create meeting folders (Support Officer)\n4. Upload documents to system (Support Officer)\n5. Advise Committee Members (Support Officer)\n6. Hold meeting (Committee Members)\n7. Produce minutes (Support Officer)\n8. Conduct QA check (Coordination Unit)\n9. Send minutes to Committee Members (Coordination Unit)\n10. Update departmental records (Support Officer)",
+      "extracted": [
+        "finalize dates",
+        "update group calendars",
+        "create meeting folders",
+        "upload documents to system",
+        "advise committee members",
+        "hold meeting",
+        "produce minutes",
+        "conduct qa check",
+        "send minutes to committee members",
+        "update departmental records"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Finalizing dates (by Coordination Unit)\n2. Updating group calendars (by Support Officer)\n3. Creating meeting folders (by Support Officer)\n4. Uploading documents to system (by Support Officer)\n5. Advising Committee Members (by Support Officer)\n6. Holding meeting (by Committee Members)\n7. Producing minutes (by Support Officer)\n8. Conducting QA check (by Coordination Unit)\n9. Sending minutes to Committee Members (by Coordination Unit)\n10. Updating departmental records (by Support Officer)",
+      "extracted": [
+        "finalizing dates",
+        "updating group calendars",
+        "creating meeting folders",
+        "uploading documents to system",
+        "advising committee members",
+        "holding meeting",
+        "producing minutes",
+        "conducting qa check",
+        "sending minutes to committee members",
+        "updating departmental records"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-3.2": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Check files for court hearing.\n2. Initiate search for missing files.\n3. Physically track files to intended location.\n4. Hand files to Associate.\n5. Distribute Judge's Lawlist to relevant people.\n6. Conduct directions hearings.",
+      "extracted": [
+        "check files for court hearing",
+        "initiate search for missing files",
+        "physically track files to intended location",
+        "hand files to associate",
+        "distribute judge's lawlist to relevant people",
+        "conduct directions hearings"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Check files\n2. Initiate search (if files are missing)\n3. Physically track files\n4. Hand files to Associate\n5. Distribute Judge's Lawlist\n6. Conduct directions hearings",
+      "extracted": [
+        "check files",
+        "initiate search",
+        "physically track files",
+        "hand files to associate",
+        "distribute judge's lawlist",
+        "conduct directions hearings"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.10": {
+    "T1-Raw": {
+      "raw answer": "1. Fault detector reports failure to MPO or MPO has suspicion of own fault\n2. MPO examines failure\n3. MPO rejects or confirms failure of fault detector\n4. MPO informs GO and MSP if confirms failure\n5. MPO fixes fault at measuring device\n6. MPO shares results of repairs with fault detector\n7. MPO informs GO about resolution of interference\n8. MPO informs MSP about resolution of interference",
+      "extracted": [
+        "fault detector reports failure to mpo or mpo has suspicion of own fault",
+        "mpo examines failure",
+        "mpo rejects or confirms failure of fault detector",
+        "mpo informs go and msp if confirms failure",
+        "mpo fixes fault at measuring device",
+        "mpo shares results of repairs with fault detector",
+        "mpo informs go about resolution of interference",
+        "mpo informs msp about resolution of interference"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Report failure\n2. Examine failure\n3. Reject/Confirm failure\n4. Inform GO and MSP\n5. Fix fault\n6. Share results of repairs\n7. Inform GO about resolution\n8. Inform MSP about resolution",
+      "extracted": [
+        "report failure",
+        "examine failure",
+        "reject/confirm failure",
+        "inform go and msp",
+        "fix fault",
+        "share results of repairs",
+        "inform go about resolution",
+        "inform msp about resolution"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.14": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. MPOO sends bill for temporary continuation of metering point operations to GO\n2. MSPO sends bill for temporary continuation of measurement to GO\n3. MSPO sends bill for additional readings to GO\n4. MPOO sends bill for equipment acquisition to MPON or GO\n5. GO or MPON examines bill\n6. GO or MPON confirms invoice with payment advice to MPOO or MSPO\n7. GO or MPON rejects invoice of MPOO or MSPO",
+      "extracted": [
+        "mpoo sends bill for temporary continuation of metering point operations to go",
+        "mspo sends bill for temporary continuation of measurement to go",
+        "mspo sends bill for additional readings to go",
+        "mpoo sends bill for equipment acquisition to mpon or go",
+        "go or mpon examines bill",
+        "go or mpon confirms invoice with payment advice to mpoo or mspo",
+        "go or mpon rejects invoice of mpoo or mspo"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. MPOO sends bill for temporary continuation of metering point operations to GO\n2. MSPO sends bill for temporary continuation of measurement to GO\n3. MSPO sends bill for additional readings to GO\n4. MPOO sends bill for equipment acquisition to MPON or GO\n5. GO or MPON examines bill\n6. GO or MPON confirms invoice with payment advice to MPOO or MSPO\n7. GO or MPON rejects invoice of MPOO or MSPO",
+      "extracted": [
+        "mpoo sends bill for temporary continuation of metering point operations to go",
+        "mspo sends bill for temporary continuation of measurement to go",
+        "mspo sends bill for additional readings to go",
+        "mpoo sends bill for equipment acquisition to mpon or go",
+        "go or mpon examines bill",
+        "go or mpon confirms invoice with payment advice to mpoo or mspo",
+        "go or mpon rejects invoice of mpoo or mspo"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.2": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Report meter operation to GO\n2. Examine application of MPON\n3. Reject or confirm application of MPON\n4. Inform MPOO and MSPO of registration confirmation\n5. Perform equipment acquisition and/or changes\n6. Inform GO of failure or successful completion of process\n7. Confirm failure of assignment to MPON\n8. Assign MPON\n9. Confirm assignment to MPON\n10. Inform MPOO and MSPO of failure or assignment of MPON\n11. Inform SP of assignment of MPON",
+      "extracted": [
+        "report meter operation to go",
+        "examine application of mpon",
+        "reject or confirm application of mpon",
+        "inform mpoo and mspo of registration confirmation",
+        "perform equipment acquisition and/or changes",
+        "inform go of failure or successful completion of process",
+        "confirm failure of assignment to mpon",
+        "assign mpon",
+        "confirm assignment to mpon",
+        "inform mpoo and mspo of failure or assignment of mpon",
+        "inform sp of assignment of mpon"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Report meter operation to GO\n2. Examine application of MPON\n3. Reject or confirm application of MPON\n4. Inform MPOO and MSPO of registration confirmation\n5. Perform equipment acquisition and/or changes\n6. Inform GO of failure or successful completion of process\n7. Confirm failure of assignment to MPON\n8. Assign MPON\n9. Confirm assignment to MPON\n10. Inform MPOO and MSPO of failure or assignment of MPON\n11. Inform SP of assignment of MPON",
+      "extracted": [
+        "report meter operation to go",
+        "examine application of mpon",
+        "reject or confirm application of mpon",
+        "inform mpoo and mspo of registration confirmation",
+        "perform equipment acquisition and/or changes",
+        "inform go of failure or successful completion of process",
+        "confirm failure of assignment to mpon",
+        "assign mpon",
+        "confirm assignment to mpon",
+        "inform mpoo and mspo of failure or assignment of mpon",
+        "inform sp of assignment of mpon"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-3.5": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Collecting mail\n2. Sorting mail\n3. Distributing mail\n4. Opening and sorting mail\n5. Registering mail in a manual incoming Mail Register\n6. Quality checking mail\n7. Compiling a list of requisition for rejected mail\n8. Capturing matter details\n9. Taking applicable fees\n10. Putting receipt and copied documents into an envelope\n11. Posting envelope to party\n12. Capturing party details\n13. Printing physical court file",
+      "extracted": [
+        "collecting mail",
+        "sorting mail",
+        "distributing mail",
+        "opening and sorting mail",
+        "registering mail in a manual incoming mail register",
+        "quality checking mail",
+        "compiling a list of requisition for rejected mail",
+        "capturing matter details",
+        "taking applicable fees",
+        "putting receipt and copied documents into an envelope",
+        "posting envelope to party",
+        "capturing party details",
+        "printing physical court file"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Collecting mail from the party on a daily basis\n2. Sorting unopened mail into various business areas\n3. Distributing mail\n4. Opening and sorting mail into groups for distribution\n5. Registering mail in a manual incoming Mail Register\n6. Performing a quality check\n7. Compiling a list of requisition and sending it back to the party if mail is not compliant\n8. Capturing matter details and providing them to the Cashier\n9. Taking applicable fees attached to the mail\n10. Putting the receipt and copied documents into an envelope and posting it to the party\n11. Capturing Party Details\n12. Printing the Physical Court File",
+      "extracted": [
+        "collecting mail from the party on a daily basis",
+        "sorting unopened mail into various business areas",
+        "distributing mail",
+        "opening and sorting mail into groups for distribution",
+        "registering mail in a manual incoming mail register",
+        "performing a quality check",
+        "compiling a list of requisition and sending it back to the party if mail is not compliant",
+        "capturing matter details and providing them to the cashier",
+        "taking applicable fees attached to the mail",
+        "putting the receipt and copied documents into an envelope and posting it to the party",
+        "capturing party details",
+        "printing the physical court file"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.9": {
+    "T1-Raw": {
+      "raw answer": "Process Model Activities:\n1. Request Change\n2. Review Change Request\n3. Reject Change Request\n4. Confirm Change Request\n5. Perform Measuring Point Change\n6. Report Implementation\n7. Notify of Failure",
+      "extracted": [
+        "request change",
+        "review change request",
+        "reject change request",
+        "confirm change request",
+        "perform measuring point change",
+        "report implementation",
+        "notify of failure"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Request Change\n2. Review Change Request\n3. Reject Change Request\n4. Confirm Change Request\n5. Perform Measuring Point Change\n6. Report Implementation\n7. Notify of Failure",
+      "extracted": [
+        "request change",
+        "review change request",
+        "reject change request",
+        "confirm change request",
+        "perform measuring point change",
+        "report implementation",
+        "notify of failure"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.6": {
+    "T1-Raw": {
+      "raw answer": "1. MSPN sends dismissal to MSPO\n2. MSPO reviews dismissal\n3. MSPO rejects dismissal\n4. MSPO confirms dismissal",
+      "extracted": [
+        "mspn sends dismissal to mspo",
+        "mspo reviews dismissal",
+        "mspo rejects dismissal",
+        "mspo confirms dismissal"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "1. Send dismissal (MSPN)\n2. Review dismissal (MSPO)\n3. Reject dismissal (MSPO)\n4. Confirm dismissal (MSPO)",
+      "extracted": [
+        "send dismissal",
+        "review dismissal",
+        "reject dismissal",
+        "confirm dismissal"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-10.5": {
+    "T1-Raw": {
+      "raw answer": "1. MPON requests device takeover bid from MPOO\n2. MPOO sends tender for equipment takeover to MPON\n3. MPON places order at MPOO\n4. MPOO confirms order of MPON\n5. MPOO sends master data",
+      "extracted": [
+        "mpon requests device takeover bid from mpoo",
+        "mpoo sends tender for equipment takeover to mpon",
+        "mpon places order at mpoo",
+        "mpoo confirms order of mpon",
+        "mpoo sends master data"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Request Device Takeover Bid\n2. Send Tender for Equipment Takeover\n3. Place Order\n4. Confirm Order\n5. Send Master Data",
+      "extracted": [
+        "request device takeover bid",
+        "send tender for equipment takeover",
+        "place order",
+        "confirm order",
+        "send master data"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  },
+  "doc-9.5": {
+    "T1-Raw": {
+      "raw answer": "1. Receive Expense Report\n2. Create Account (if needed)\n3. Review Report for Automatic Approval\n4. Automatically Approve Amounts Under $200\n5. Require Supervisor Approval for Amounts Equal to or Over $200\n6. Send Rejection Notice (if applicable)\n7. Reimburse Employee (via Direct Deposit)\n8. Send Approval in Progress Email (if not completed in 7 days)\n9. Stop Process and Send Email Cancellation Notice (if not finished within 30 days)\n10. Re-Submit Expense Report (if applicable)",
+      "extracted": [
+        "receive expense report",
+        "create account",
+        "review report for automatic approval",
+        "automatically approve amounts under $200",
+        "require supervisor approval for amounts equal to or over $200",
+        "send rejection notice",
+        "reimburse employee",
+        "send approval in progress email",
+        "stop process and send email cancellation notice",
+        "re-submit expense report"
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "Process Model Activities:\n1. Receive Expense Report\n2. Create New Account (if needed)\n3. Review Report for Automatic Approval\n4. Automatically Approve Amounts Under $200\n5. Require Supervisor Approval for Amounts Equal to or Over $200\n6. Send Rejection Notice by Email (if applicable)\n7. Reimburse Employee via Direct Deposit Bank Account\n8. Send Approval in Progress Email (if not completed in 7 days)\n9. Stop Process and Send Email Cancellation Notice (if not finished within 30 days)\n10. Re-Submit Expense Report (if applicable)",
+      "extracted": [
+        "receive expense report",
+        "create new account",
+        "review report for automatic approval",
+        "automatically approve amounts under $200",
+        "require supervisor approval for amounts equal to or over $200",
+        "send rejection notice by email",
+        "reimburse employee via direct deposit bank account",
+        "send approval in progress email",
+        "stop process and send email cancellation notice",
+        "re-submit expense report"
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    }
+  }
+}

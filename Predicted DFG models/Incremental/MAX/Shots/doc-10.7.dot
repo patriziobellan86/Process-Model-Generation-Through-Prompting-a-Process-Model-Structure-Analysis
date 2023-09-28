@@ -1,0 +1,19 @@
+strict digraph "doc-10.7" {
+	graph [name="doc-10.7"];
+	"register the measurement"	[attrs="{'type': 'Activity', 'label': 'register the measurement'}"];
+	"examine the application"	[attrs="{'type': 'Activity', 'label': 'examine the application'}"];
+	"register the measurement" -> "examine the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject the application"	[attrs="{'type': 'Activity', 'label': 'reject the application'}"];
+	"examine the application" -> "reject the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the application"	[attrs="{'type': 'Activity', 'label': 'confirm the application'}"];
+	"examine the application" -> "confirm the application"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"assign the mspn"	[attrs="{'type': 'Activity', 'label': 'assign the mspn'}"];
+	"reject the application" -> "assign the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"confirm the application" -> "assign the mspn"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mspo"	[attrs="{'type': 'Activity', 'label': 'inform the mspo'}"];
+	"assign the mspn" -> "inform the mspo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the mpo"	[attrs="{'type': 'Activity', 'label': 'inform the mpo'}"];
+	"inform the mspo" -> "inform the mpo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the sp"	[attrs="{'type': 'Activity', 'label': 'inform the sp'}"];
+	"inform the mpo" -> "inform the sp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

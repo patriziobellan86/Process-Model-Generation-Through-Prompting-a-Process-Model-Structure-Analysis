@@ -1,0 +1,15 @@
+strict digraph "doc-8.2" {
+	graph [name="doc-8.2"];
+	"report a vacancy"	[attrs="{'type': 'Activity', 'label': 'report a vacancy'}"];
+	"create a job description"	[attrs="{'type': 'Activity', 'label': 'create a job description'}"];
+	"report a vacancy" -> "create a job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"submit the job description"	[attrs="{'type': 'Activity', 'label': 'submit the job description'}"];
+	"create a job description" -> "submit the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"approve or reject the job description"	[attrs="{'type': 'Activity', 'label': 'approve or reject the job description'}"];
+	"submit the job description" -> "approve or reject the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"post the job"	[attrs="{'type': 'Activity', 'label': 'post the job'}"];
+	"submit the job description" -> "post the job"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"correct the description"	[attrs="{'type': 'Activity', 'label': 'correct the description'}"];
+	"approve or reject the job description" -> "correct the description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"correct the description" -> "submit the job description"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

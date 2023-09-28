@@ -1,0 +1,14 @@
+strict digraph "doc-3.7" {
+	graph [name="doc-3.7"];
+	"search the police report"	[attrs="{'type': 'Activity', 'label': 'search the police report'}"];
+	"put in a file with the claim documentation"	[attrs="{'type': 'Activity', 'label': 'put in a file with the claim documentation'}"];
+	"search the police report" -> "put in a file with the claim documentation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"calculate an initial claim estimate"	[attrs="{'type': 'Activity', 'label': 'calculate an initial claim estimate'}"];
+	"put in a file with the claim documentation" -> "calculate an initial claim estimate"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"create an action plan"	[attrs="{'type': 'Activity', 'label': 'create an action plan'}"];
+	"calculate an initial claim estimate" -> "create an action plan"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"try to negotiate a settlement"	[attrs="{'type': 'Activity', 'label': 'try to negotiate a settlement'}"];
+	"create an action plan" -> "try to negotiate a settlement"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform the claimant of the outcome"	[attrs="{'type': 'Activity', 'label': 'inform the claimant of the outcome'}"];
+	"try to negotiate a settlement" -> "inform the claimant of the outcome"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

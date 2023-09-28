@@ -1,0 +1,1688 @@
+{
+  "doc-6.3": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'determine the necessary parts and quantities'\n'enter the information into the production planning system'\n'create a list of parts to be procured'\n'transfer the data manually'\n'decide whether any parts are missing'\n'receive a notice from the system'\n'take care of the implementation'\n'check the order for its quality'",
+      "extracted": [
+        "determine the necessary parts and quantities",
+        "enter the information into the production planning system",
+        "create a list of parts to be procured",
+        "transfer the data manually",
+        "decide whether any parts are missing",
+        "receive a notice from the system",
+        "take care of the implementation",
+        "check the order for its quality"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'determine the necessary parts and quantities'\n'enter the information into the production planning system'\n'optimize the production processes'\n'create a list of parts to be procured'\n'transfer the data manually'\n'decide whether any parts are missing'\n'receive a notice from the system'\n'take care of the implementation'\n'check the order for its quality'",
+      "extracted": [
+        "determine the necessary parts and quantities",
+        "enter the information into the production planning system",
+        "optimize the production processes",
+        "create a list of parts to be procured",
+        "transfer the data manually",
+        "decide whether any parts are missing",
+        "receive a notice from the system",
+        "take care of the implementation",
+        "check the order for its quality"
+      ]
+    }
+  },
+  "doc-10.1": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'send the dismissal'\n'review the dismissal'\n'oppose the dismissal'\n'confirm the dismissal'",
+      "extracted": [
+        "send the dismissal",
+        "review the dismissal",
+        "oppose the dismissal",
+        "confirm the dismissal"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'send the dismissal'\n'review the dismissal'\n'oppose the dismissal'\n'confirm the dismissal'",
+      "extracted": [
+        "send the dismissal",
+        "review the dismissal",
+        "oppose the dismissal",
+        "confirm the dismissal"
+      ]
+    }
+  },
+  "doc-6.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'place an order'\n'send the order'\n'process the order'\n'send an invoice'\n'receive the invoice'",
+      "extracted": [
+        "place an order",
+        "send the order",
+        "process the order",
+        "send an invoice",
+        "receive the invoice"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'place an order'\n'send the order'\n'process the order'\n'send an invoice'\n'receive the invoice'",
+      "extracted": [
+        "place an order",
+        "send the order",
+        "process the order",
+        "send an invoice",
+        "receive the invoice"
+      ]
+    }
+  },
+  "doc-3.3": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'register a claim'\n'examine the claim'\n'write a settlement recommendation'\n'check the recommendation'\n'mark the claim as OK or Not OK'\n'send back the claim'\n'repeat the recommendation'\n'proceed the claim handling process'",
+      "extracted": [
+        "register a claim",
+        "examine the claim",
+        "write a settlement recommendation",
+        "check the recommendation",
+        "mark the claim as ok or not ok",
+        "send back the claim",
+        "repeat the recommendation",
+        "proceed the claim handling process"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'register a claim'\n'examine the claim'\n'write a settlement recommendation'\n'check the recommendation'\n'mark the claim as OK or Not OK'\n'send back the claim'\n'repeat the recommendation'\n'proceed with the claim handling process'",
+      "extracted": [
+        "register a claim",
+        "examine the claim",
+        "write a settlement recommendation",
+        "check the recommendation",
+        "mark the claim as ok or not ok",
+        "send back the claim",
+        "repeat the recommendation",
+        "proceed with the claim handling process"
+      ]
+    }
+  },
+  "doc-8.3": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'detect personnel requirements'\n'report the vacancy'\n'wait to get the job description'\n'review the job description'\n'ask for corrections'\n'approve the job description'\n'ask questions about the tasks and requirements'\n'clarify'",
+      "extracted": [
+        "detect personnel requirements",
+        "report the vacancy",
+        "wait to get the job description",
+        "review the job description",
+        "ask for corrections",
+        "approve the job description",
+        "ask questions about the tasks and requirements",
+        "clarify"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'detect personnel requirements'\n'report the vacancy'\n'wait to get the job description'\n'review the job description'\n'ask for corrections'\n'approve the job description'\n'ask questions about the tasks and requirements'\n'clarify'",
+      "extracted": [
+        "detect personnel requirements",
+        "report the vacancy",
+        "wait to get the job description",
+        "review the job description",
+        "ask for corrections",
+        "approve the job description",
+        "ask questions about the tasks and requirements",
+        "clarify"
+      ]
+    }
+  },
+  "doc-3.8": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'submit a claim'\n'check the documents'\n'register the claim'\n'pick up the claim'\n'check the insurance'\n'perform an assessment'\n'authorise the repairs'\n'schedule the payment'\n'reject the claim'\n'send a letter'",
+      "extracted": [
+        "submit a claim",
+        "check the documents",
+        "register the claim",
+        "pick up the claim",
+        "check the insurance",
+        "perform an assessment",
+        "authorise the repairs",
+        "schedule the payment",
+        "reject the claim",
+        "send a letter"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'submit a claim'\n'send in relevant documentation'\n'check the documents'\n'register the claim'\n'pick up the claim'\n'check the insurance'\n'perform an assessment'\n'authorise the repairs'\n'schedule the payment'\n'reject the claim'\n'send a letter to the customer'",
+      "extracted": [
+        "submit a claim",
+        "send in relevant documentation",
+        "check the documents",
+        "register the claim",
+        "pick up the claim",
+        "check the insurance",
+        "perform an assessment",
+        "authorise the repairs",
+        "schedule the payment",
+        "reject the claim",
+        "send a letter to the customer"
+      ]
+    }
+  },
+  "doc-10.5": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'request a device takeover bid'\n'send a tender for the equipment takeover'\n'place an order'\n'confirm the order'\n'send the master data",
+      "extracted": [
+        "request a device takeover bid",
+        "send a tender for the equipment takeover",
+        "place an order",
+        "confirm the order",
+        "send the master data"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'request a device takeover bid'\n'send a tender for the equipment takeover'\n'place an order'\n'confirm the order'\n'send the master data",
+      "extracted": [
+        "request a device takeover bid",
+        "send a tender for the equipment takeover",
+        "place an order",
+        "confirm the order",
+        "send the master data"
+      ]
+    }
+  },
+  "doc-10.6": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'send a dismissal'\n'review the dismissal'\n'reject the dismissal'\n'confirm the dismissal'",
+      "extracted": [
+        "send a dismissal",
+        "review the dismissal",
+        "reject the dismissal",
+        "confirm the dismissal"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'send a dismissal'\n'review the dismissal'\n'reject the dismissal'\n'confirm the dismissal'",
+      "extracted": [
+        "send a dismissal",
+        "review the dismissal",
+        "reject the dismissal",
+        "confirm the dismissal"
+      ]
+    }
+  },
+  "doc-8.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'create a job description'\n'ask the Department'\n'submit the job description'\n'wait for the approval'\n'reject the description'\n'request a correction'\n'correct the description'\n'submit it again'\n'approve the description'\n'post the job'",
+      "extracted": [
+        "create a job description",
+        "ask the department",
+        "submit the job description",
+        "wait for the approval",
+        "reject the description",
+        "request a correction",
+        "correct the description",
+        "submit it again",
+        "approve the description",
+        "post the job"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'create a job description'\n'ask the Department'\n'submit the job description'\n'wait for the approval'\n'reject the description'\n'request a correction'\n'correct the description'\n'submit the description again'\n'approve the description'\n'post the job'",
+      "extracted": [
+        "create a job description",
+        "ask the department",
+        "submit the job description",
+        "wait for the approval",
+        "reject the description",
+        "request a correction",
+        "correct the description",
+        "submit the description again",
+        "approve the description",
+        "post the job"
+      ]
+    }
+  },
+  "doc-1.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'check the defect'\n'hand out a repair cost calculation'\n'check and repair the hardware'\n'check and configure the software'\n'test the proper system functionality'\n'execute another repair activity'\n'repair is finished'",
+      "extracted": [
+        "check the defect",
+        "hand out a repair cost calculation",
+        "check and repair the hardware",
+        "check and configure the software",
+        "test the proper system functionality",
+        "execute another repair activity",
+        "repair is finished"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'check the defect'\n'hand out a repair cost calculation'\n'check the costs'\n'check and repair the hardware'\n'check and configure the software'\n'test the system functionality'\n'execute another repair activity'\n'finish the repair'",
+      "extracted": [
+        "check the defect",
+        "hand out a repair cost calculation",
+        "check the costs",
+        "check and repair the hardware",
+        "check and configure the software",
+        "test the system functionality",
+        "execute another repair activity",
+        "finish the repair"
+      ]
+    }
+  },
+  "doc-1.1": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'manufacture customized bicycles'\n'receive an order'\n'create a new process instance'\n'reject or accept the order'\n'inform the storehouse and engineering department'\n'process the part list'\n'check the required quantity of each part'\n'reserve the part'\n'back-order the part'\n'repeat the procedure'\n'prepare everything for the assembling'\n'assemble the bicycle'\n'ship the bicycle'\n'finish the process instance'",
+      "extracted": [
+        "manufacture customized bicycles",
+        "receive an order",
+        "create a new process instance",
+        "reject or accept the order",
+        "inform the storehouse and engineering department",
+        "process the part list",
+        "check the required quantity of each part",
+        "reserve the part",
+        "back-order the part",
+        "repeat the procedure",
+        "prepare everything for the assembling",
+        "assemble the bicycle",
+        "ship the bicycle",
+        "finish the process instance"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'receive an order'\n'reject or accept the order'\n'inform the storehouse and engineering department'\n'process the part list'\n'check the required quantity of each part'\n'reserve the part'\n'back-order the part'\n'prepare for the assembling'\n'assemble the bicycle'\n'ship the bicycle'\n'finish the process instance'",
+      "extracted": [
+        "receive an order",
+        "reject or accept the order",
+        "inform the storehouse and engineering department",
+        "process the part list",
+        "check the required quantity of each part",
+        "reserve the part",
+        "back-order the part",
+        "prepare for the assembling",
+        "assemble the bicycle",
+        "ship the bicycle",
+        "finish the process instance"
+      ]
+    }
+  },
+  "doc-9.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'send a mortgage offer'\n'update the case details'\n'archive the work'\n'send back the completed offer documents'\n'move the case to administration'\n'generate a message'\n'request outstanding documents'\n'update the case details'\n'archive the case'\n'cancel the case'",
+      "extracted": [
+        "send a mortgage offer",
+        "update the case details",
+        "archive the work",
+        "send back the completed offer documents",
+        "move the case to administration",
+        "generate a message",
+        "request outstanding documents",
+        "update the case details",
+        "archive the case",
+        "cancel the case"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'send a mortgage offer'\n'update the case details'\n'archive the work'\n'send back the completed offer documents'\n'move the case to administration'\n'generate a message'\n'request outstanding documents'\n'update the case details'\n'archive the case'\n'cancel the case'",
+      "extracted": [
+        "send a mortgage offer",
+        "update the case details",
+        "archive the work",
+        "send back the completed offer documents",
+        "move the case to administration",
+        "generate a message",
+        "request outstanding documents",
+        "update the case details",
+        "archive the case",
+        "cancel the case"
+      ]
+    }
+  },
+  "doc-9.1": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'back up the database'\n'check the Account Defaulter table'\n'check the CRM system'\n'register all defaulting accounts and customers'\n'produce another table of defaulting accounts'\n'send to account management'\n'send an alert to the supervisor'\n'complete the new defaulting account report'\n'check the CRM system'\n'reconcile with the existing account defaulters table'\n'send a message to the supervisor'",
+      "extracted": [
+        "back up the database",
+        "check the account defaulter table",
+        "check the crm system",
+        "register all defaulting accounts and customers",
+        "produce another table of defaulting accounts",
+        "send to account management",
+        "send an alert to the supervisor",
+        "complete the new defaulting account report",
+        "check the crm system",
+        "reconcile with the existing account defaulters table",
+        "send a message to the supervisor"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'back up the database'\n'check the Account Defaulter table'\n'check the CRM system'\n'register all defaulting accounts and customers'\n'produce another table of defaulting accounts'\n'send to account management'\n'send an alert to the supervisor'\n'complete the new defaulting account report'\n'check the CRM system'\n'reconcile with the existing account defaulters table'\n'send a message to the supervisor'",
+      "extracted": [
+        "back up the database",
+        "check the account defaulter table",
+        "check the crm system",
+        "register all defaulting accounts and customers",
+        "produce another table of defaulting accounts",
+        "send to account management",
+        "send an alert to the supervisor",
+        "complete the new defaulting account report",
+        "check the crm system",
+        "reconcile with the existing account defaulters table",
+        "send a message to the supervisor"
+      ]
+    }
+  },
+  "doc-3.1": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'send a warrant possession request'\n'receive the request'\n'retrieve the SCT file'\n'forward the SCT Warrant Possession'\n'store the SCT physical file'\n'receive the report'\n'retrieve the SCT file'\n'attach the new SCT document'\n'store the expanded SCT physical file'\n'receive the physical SCT file'",
+      "extracted": [
+        "send a warrant possession request",
+        "receive the request",
+        "retrieve the sct file",
+        "forward the sct warrant possession",
+        "store the sct physical file",
+        "receive the report",
+        "retrieve the sct file",
+        "attach the new sct document",
+        "store the expanded sct physical file",
+        "receive the physical sct file"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'send a warrant possession request'\n'receive the request'\n'retrieve the SCT file'\n'forward the SCT Warrant Possession'\n'store the SCT physical file'\n'receive the report'\n'retrieve the SCT file'\n'attach the new SCT document'\n'store the expanded SCT physical file'\n'receive the physical SCT file'",
+      "extracted": [
+        "send a warrant possession request",
+        "receive the request",
+        "retrieve the sct file",
+        "forward the sct warrant possession",
+        "store the sct physical file",
+        "receive the report",
+        "retrieve the sct file",
+        "attach the new sct document",
+        "store the expanded sct physical file",
+        "receive the physical sct file"
+      ]
+    }
+  },
+  "doc-5.3": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'submit an office supply request'\n'receive the request'\n'approve or ask for a change'\n'reject the request'\n'review the comments for the change request'\n'go to the purchase department'\n'make quotations'\n'select a vendor'\n'choose a different vendor'\n'generate and send a purchase order'\n'wait for the product to be delivered'\n'wait for the invoice to be received'\n'send a notification'\n'send the user a notification'",
+      "extracted": [
+        "submit an office supply request",
+        "receive the request",
+        "approve or ask for a change",
+        "reject the request",
+        "review the comments for the change request",
+        "go to the purchase department",
+        "make quotations",
+        "select a vendor",
+        "choose a different vendor",
+        "generate and send a purchase order",
+        "wait for the product to be delivered",
+        "wait for the invoice to be received",
+        "send a notification",
+        "send the user a notification"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'submit an office supply request'\n'receive the request'\n'approve or ask for a change'\n'reject the request'\n'review the comments for the change request'\n'go to the purchase department'\n'make quotations'\n'select a vendor'\n'choose a different vendor'\n'generate and send a purchase order'\n'wait for the product to be delivered'\n'wait for the invoice to be received'\n'send a notification'\n'send the user a notification'",
+      "extracted": [
+        "submit an office supply request",
+        "receive the request",
+        "approve or ask for a change",
+        "reject the request",
+        "review the comments for the change request",
+        "go to the purchase department",
+        "make quotations",
+        "select a vendor",
+        "choose a different vendor",
+        "generate and send a purchase order",
+        "wait for the product to be delivered",
+        "wait for the invoice to be received",
+        "send a notification",
+        "send the user a notification"
+      ]
+    }
+  },
+  "doc-3.6": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'check if the claimant is insured'\n'inform the claimant if the claim must be rejected'\n'evaluate the severity of the claim'\n'send relevant forms to the claimant'\n'check the forms for completeness'\n'register the claim in the Claims Management system'\n'inform the claimant to update the forms'\n'check the updated forms'",
+      "extracted": [
+        "check if the claimant is insured",
+        "inform the claimant if the claim must be rejected",
+        "evaluate the severity of the claim",
+        "send relevant forms to the claimant",
+        "check the forms for completeness",
+        "register the claim in the claims management system",
+        "inform the claimant to update the forms",
+        "check the updated forms"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'check if the claimant is insured'\n'inform the claimant if the claim must be rejected'\n'evaluate the severity of the claim'\n'send relevant forms to the claimant'\n'check the forms for completeness'\n'register the claim in the Claims Management system'\n'inform the claimant to update the forms'\n'check the updated forms'",
+      "extracted": [
+        "check if the claimant is insured",
+        "inform the claimant if the claim must be rejected",
+        "evaluate the severity of the claim",
+        "send relevant forms to the claimant",
+        "check the forms for completeness",
+        "register the claim in the claims management system",
+        "inform the claimant to update the forms",
+        "check the updated forms"
+      ]
+    }
+  },
+  "doc-7.1": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'check the open leads'\n'select the top five leads'\n'tell the Sales Assistant to call the contact person'\n'call each customer'\n'send a note to the Manager'\n'process the lead'\n'call the next customer'",
+      "extracted": [
+        "check the open leads",
+        "select the top five leads",
+        "tell the sales assistant to call the contact person",
+        "call each customer",
+        "send a note to the manager",
+        "process the lead",
+        "call the next customer"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'check the open leads'\n'select the top five leads'\n'tell the Sales Assistant to call the contact person'\n'call each customer'\n'send a note to the Manager'\n'process the lead'\n'call the next customer'",
+      "extracted": [
+        "check the open leads",
+        "select the top five leads",
+        "tell the sales assistant to call the contact person",
+        "call each customer",
+        "send a note to the manager",
+        "process the lead",
+        "call the next customer"
+      ]
+    }
+  },
+  "doc-10.9": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'request changes'\n'review the change request'\n'reject the change'\n'confirm the request'\n'perform the measuring point change'\n'report the implementation'\n'notify the failure of the changes'",
+      "extracted": [
+        "request changes",
+        "review the change request",
+        "reject the change",
+        "confirm the request",
+        "perform the measuring point change",
+        "report the implementation",
+        "notify the failure of the changes"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'request changes'\n'review the change request'\n'reject the change'\n'confirm the request'\n'perform the measuring point change'\n'report the implementation'\n'notify the failure of the changes'",
+      "extracted": [
+        "request changes",
+        "review the change request",
+        "reject the change",
+        "confirm the request",
+        "perform the measuring point change",
+        "report the implementation",
+        "notify the failure of the changes"
+      ]
+    }
+  },
+  "doc-5.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'submit a vacation request'\n'receive the request'\n'approve or reject the request'\n'review the rejection reasons'\n'generate a notification'\n'complete the respective management procedures'",
+      "extracted": [
+        "submit a vacation request",
+        "receive the request",
+        "approve or reject the request",
+        "review the rejection reasons",
+        "generate a notification",
+        "complete the respective management procedures"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'submit a vacation request'\n'receive the request'\n'approve or reject the request'\n'review the rejection reasons'\n'generate a notification'\n'complete the respective management procedures'",
+      "extracted": [
+        "submit a vacation request",
+        "receive the request",
+        "approve or reject the request",
+        "review the rejection reasons",
+        "generate a notification",
+        "complete the respective management procedures"
+      ]
+    }
+  },
+  "doc-10.10": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'report a failure'\n'examine the failure'\n'reject the failure'\n'confirm the failure'\n'inform the GO and the MSP'\n'fix the fault'\n'share the results of the repairs'\n'inform the GO about the resolution'\n'inform the MSP about the resolution'",
+      "extracted": [
+        "report a failure",
+        "examine the failure",
+        "reject the failure",
+        "confirm the failure",
+        "inform the go and the msp",
+        "fix the fault",
+        "share the results of the repairs",
+        "inform the go about the resolution",
+        "inform the msp about the resolution"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'report a failure'\n'examine the failure'\n'reject the failure'\n'confirm the failure'\n'inform the GO and the MSP'\n'fix the fault'\n'share the results of the repairs'\n'inform the GO about the resolution'\n'inform the MSP about the resolution'",
+      "extracted": [
+        "report a failure",
+        "examine the failure",
+        "reject the failure",
+        "confirm the failure",
+        "inform the go and the msp",
+        "fix the fault",
+        "share the results of the repairs",
+        "inform the go about the resolution",
+        "inform the msp about the resolution"
+      ]
+    }
+  },
+  "doc-1.3": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'take down the order'\n'submit an order ticket'\n'give an order to the sommelier'\n'assign the order to the waiter'\n'ready a cart'\n'responsible for nonalcoholic drinks'\n'deliver the food, wine, and cart'\n'debit the guest's account'\n'wait to do the billing'",
+      "extracted": [
+        "take down the order",
+        "submit an order ticket",
+        "give an order to the sommelier",
+        "assign the order to the waiter",
+        "ready a cart",
+        "responsible for nonalcoholic drinks",
+        "deliver the food, wine, and cart",
+        "debit the guest's account",
+        "wait to do the billing"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'take down the order'\n'submit an order ticket'\n'give an order to the sommelier'\n'assign the order to the waiter'\n'ready a cart'\n'responsible for nonalcoholic drinks'\n'deliver the food, wine, and cart'\n'debit the guest's account'\n'wait to do the billing'",
+      "extracted": [
+        "take down the order",
+        "submit an order ticket",
+        "give an order to the sommelier",
+        "assign the order to the waiter",
+        "ready a cart",
+        "responsible for nonalcoholic drinks",
+        "deliver the food, wine, and cart",
+        "debit the guest's account",
+        "wait to do the billing"
+      ]
+    }
+  },
+  "doc-10.14": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'send the bill for the temporary continuation of the metering point operations'\n'examine the bill'\n'send the bill for the temporary continuation of the measurement'\n'send the bill for additional readings'\n'send the bill for the equipment acquisition'\n'examine the bill'\n'confirm the invoice with payment advice'\n'reject the invoice'",
+      "extracted": [
+        "send the bill for the temporary continuation of the metering point operations",
+        "examine the bill",
+        "send the bill for the temporary continuation of the measurement",
+        "send the bill for additional readings",
+        "send the bill for the equipment acquisition",
+        "examine the bill",
+        "confirm the invoice with payment advice",
+        "reject the invoice"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'send the bill for the temporary continuation of the metering point operations'\n'examine the bill'\n'send the bill for the temporary continuation of the measurement'\n'send the bill for additional readings'\n'send the bill for the equipment acquisition'\n'examine the bill'\n'confirm the invoice with payment advice'\n'reject the invoice'",
+      "extracted": [
+        "send the bill for the temporary continuation of the metering point operations",
+        "examine the bill",
+        "send the bill for the temporary continuation of the measurement",
+        "send the bill for additional readings",
+        "send the bill for the equipment acquisition",
+        "examine the bill",
+        "confirm the invoice with payment advice",
+        "reject the invoice"
+      ]
+    }
+  },
+  "doc-3.7": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'search the police report'\n'put in a file'\n'calculate an initial claim estimate'\n'create an action plan'\n'try to negotiate a settlement'\n'inform the claimant'",
+      "extracted": [
+        "search the police report",
+        "put in a file",
+        "calculate an initial claim estimate",
+        "create an action plan",
+        "try to negotiate a settlement",
+        "inform the claimant"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'search the police report'\n'put in a file'\n'calculate an initial claim estimate'\n'create an action plan'\n'try to negotiate a settlement'\n'inform the claimant'",
+      "extracted": [
+        "search the police report",
+        "put in a file",
+        "calculate an initial claim estimate",
+        "create an action plan",
+        "try to negotiate a settlement",
+        "inform the claimant"
+      ]
+    }
+  },
+  "doc-10.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'report the meter operation'\n'examine the application'\n'reject the application'\n'confirm the application'\n'inform the MPOO'\n'inform the MSPO'\n'perform the equipment acquisition and/or equipment changes'\n'inform the GO about the failure of the entire process'\n'inform the GO about the successful completion of the entire process'\n'confirm the failure of the assignment'\n'assign the MPON'\n'confirm the assignment'\n'inform the MPOO about the failure of the assignment'\n'inform the MSPO about the failure of the assignment'\n'inform the SP about the assignment'",
+      "extracted": [
+        "report the meter operation",
+        "examine the application",
+        "reject the application",
+        "confirm the application",
+        "inform the mpoo",
+        "inform the mspo",
+        "perform the equipment acquisition and/or equipment changes",
+        "inform the go about the failure of the entire process",
+        "inform the go about the successful completion of the entire process",
+        "confirm the failure of the assignment",
+        "assign the mpon",
+        "confirm the assignment",
+        "inform the mpoo about the failure of the assignment",
+        "inform the mspo about the failure of the assignment",
+        "inform the sp about the assignment"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'MPON reports the meter operation'\n'GO examines the application'\n'GO rejects the application'\n'GO confirms the application'\n'GO informs the MPOO'\n'GO informs the MSPO'\n'MPON and MPOO perform the equipment acquisition and/or equipment changes'\n'MPON informs the GO about the failure of the entire process'\n'MPON informs the GO about the successful completion of the entire process'\n'GO informs the MPON about the failure of the overall transaction'\n'GO confirms the failure of the assignment'\n'GO assigns the MPON'\n'GO confirms the assignment'\n'GO informs the MPOO about the failure of the assignment'\n'GO informs the MSPO about the failure of the assignment'\n'GO informs the SP about the assignment'",
+      "extracted": [
+        "mpon reports the meter operation",
+        "go examines the application",
+        "go rejects the application",
+        "go confirms the application",
+        "go informs the mpoo",
+        "go informs the mspo",
+        "mpon and mpoo perform the equipment acquisition and/or equipment changes",
+        "mpon informs the go about the failure of the entire process",
+        "mpon informs the go about the successful completion of the entire process",
+        "go informs the mpon about the failure of the overall transaction",
+        "go confirms the failure of the assignment",
+        "go assigns the mpon",
+        "go confirms the assignment",
+        "go informs the mpoo about the failure of the assignment",
+        "go informs the mspo about the failure of the assignment",
+        "go informs the sp about the assignment"
+      ]
+    }
+  },
+  "doc-3.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'check the files'\n'initiate a search'\n'physically track the files'\n'hand the files to the Associate'\n'distribute the Judgeis Lawlist'\n'conduct the directions hearings'",
+      "extracted": [
+        "check the files",
+        "initiate a search",
+        "physically track the files",
+        "hand the files to the associate",
+        "distribute the judgeis lawlist",
+        "conduct the directions hearings"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'check the files'\n'initiate a search'\n'physically track the files'\n'hand the files to the Associate'\n'distribute the Judgeis Lawlist'\n'conduct the directions hearings'",
+      "extracted": [
+        "check the files",
+        "initiate a search",
+        "physically track the files",
+        "hand the files to the associate",
+        "distribute the judgeis lawlist",
+        "conduct the directions hearings"
+      ]
+    }
+  },
+  "doc-10.8": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'deregister at the GO'\n'verify the deregistration'\n'reject the deregistration'\n'preliminarily confirm the deregistration'\n'assign the GO as MSP'\n'inform the MSPO about the end of the assignment'\n'inform the MSPO about the beginning of the assignment of the GO'\n'inform the MPO about the assignment of the GO'\n'inform the SP about the assignment of the GO'",
+      "extracted": [
+        "deregister at the go",
+        "verify the deregistration",
+        "reject the deregistration",
+        "preliminarily confirm the deregistration",
+        "assign the go as msp",
+        "inform the mspo about the end of the assignment",
+        "inform the mspo about the beginning of the assignment of the go",
+        "inform the mpo about the assignment of the go",
+        "inform the sp about the assignment of the go"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'deregister at the GO'\n'verify the deregistration'\n'reject the deregistration'\n'preliminarily confirm the deregistration'\n'assign the GO as MSP'\n'inform the MSPO about the end of the assignment'\n'inform the MSPO about the beginning of the assignment of the GO'\n'inform the MPO about the assignment of the GO'\n'inform the SP about the assignment of the GO'",
+      "extracted": [
+        "deregister at the go",
+        "verify the deregistration",
+        "reject the deregistration",
+        "preliminarily confirm the deregistration",
+        "assign the go as msp",
+        "inform the mspo about the end of the assignment",
+        "inform the mspo about the beginning of the assignment of the go",
+        "inform the mpo about the assignment of the go",
+        "inform the sp about the assignment of the go"
+      ]
+    }
+  },
+  "doc-2.2": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'switch-over request'\n'transmit data'\n'receive customer data'\n'enter customer data object'\n'compare with internal customer data base'\n'check for completeness and plausibility'\n'correct errors'\n'create a new customer object'\n'prepare the contract documents'\n'automated check of the contract documents'\n'analyze and resolve the causing issues'\n'send out a confirmation document'\n'send out a request to the grid operator'\n'check for supplier concurrence'\n'inform all involved suppliers'\n'terminate the sales agreement'\n'create a CIS contract'\n'check the contract details'\n'withdraw from the switch contract'\n'send a confirmation message'\n'transmit the power meter data'\n'compute the final billing'\n'create and send the final billing'\n'import the meter data'",
+      "extracted": [
+        "switch-over request",
+        "transmit data",
+        "receive customer data",
+        "enter customer data object",
+        "compare with internal customer data base",
+        "check for completeness and plausibility",
+        "correct errors",
+        "create a new customer object",
+        "prepare the contract documents",
+        "automated check of the contract documents",
+        "analyze and resolve the causing issues",
+        "send out a confirmation document",
+        "send out a request to the grid operator",
+        "check for supplier concurrence",
+        "inform all involved suppliers",
+        "terminate the sales agreement",
+        "create a cis contract",
+        "check the contract details",
+        "withdraw from the switch contract",
+        "send a confirmation message",
+        "transmit the power meter data",
+        "compute the final billing",
+        "create and send the final billing",
+        "import the meter data"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'switch-over request'\n'transmit customer data'\n'receive customer data'\n'enter customer data object'\n'compare with internal customer data base'\n'check for completeness and plausibility'\n'correct errors'\n'create a new customer object'\n'prepare the contract documents'\n'automated check of the contract documents'\n'analyze and resolve the causing issues'\n'generate the contract documents'\n'send out a confirmation document'\n'send out a request to the grid operator'\n'check for supplier concurrence'\n'inform all involved suppliers'\n'terminate the sales agreement'\n'create a CIS contract'\n'check the contract details'\n'withdraw from the switch contract'\n'confirm the switch contract'\n'transmit the power meter data'\n'compute the final billing'\n'send the final billing'\n'import the meter data'",
+      "extracted": [
+        "switch-over request",
+        "transmit customer data",
+        "receive customer data",
+        "enter customer data object",
+        "compare with internal customer data base",
+        "check for completeness and plausibility",
+        "correct errors",
+        "create a new customer object",
+        "prepare the contract documents",
+        "automated check of the contract documents",
+        "analyze and resolve the causing issues",
+        "generate the contract documents",
+        "send out a confirmation document",
+        "send out a request to the grid operator",
+        "check for supplier concurrence",
+        "inform all involved suppliers",
+        "terminate the sales agreement",
+        "create a cis contract",
+        "check the contract details",
+        "withdraw from the switch contract",
+        "confirm the switch contract",
+        "transmit the power meter data",
+        "compute the final billing",
+        "send the final billing",
+        "import the meter data"
+      ]
+    }
+  },
+  "doc-10.4": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'notify the MPOO'\n'announce self dismounting'\n'notify the MPON'\n'perform the final reading'\n'dismount the old equipment'\n'mount the new device'\n'read the meter count'\n'send the values of the final reading'\n'tell the GO'\n'notify the MSP'\n'device changes'\n'master data'\n'meter count at dismounting'\n'meter count at installation'",
+      "extracted": [
+        "notify the mpoo",
+        "announce self dismounting",
+        "notify the mpon",
+        "perform the final reading",
+        "dismount the old equipment",
+        "mount the new device",
+        "read the meter count",
+        "send the values of the final reading",
+        "tell the go",
+        "notify the msp",
+        "device changes",
+        "master data",
+        "meter count at dismounting",
+        "meter count at installation"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'notify the MPOO about equipment change intentions'\n'announce self dismounting'\n'notify the MPON about no self-dismounting'\n'perform the final reading'\n'dismount the old equipment'\n'mount the new device'\n'read the meter count'\n'send the values of the final reading'\n'tell the GO about the device changes'\n'notify the MSP about the device changes'\n'master data'\n'meter count at dismounting'\n'meter count at installation'",
+      "extracted": [
+        "notify the mpoo about equipment change intentions",
+        "announce self dismounting",
+        "notify the mpon about no self-dismounting",
+        "perform the final reading",
+        "dismount the old equipment",
+        "mount the new device",
+        "read the meter count",
+        "send the values of the final reading",
+        "tell the go about the device changes",
+        "notify the msp about the device changes",
+        "master data",
+        "meter count at dismounting",
+        "meter count at installation"
+      ]
+    }
+  },
+  "doc-9.4": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'finalize the dates'\n'update all group calendars'\n'create meeting folders'\n'ensure all appropriate documents are uploaded'\n'advise the committee members'\n'hold the meeting'\n'produce minutes'\n'conduct a QA check'\n'send the minutes'\n'update all departmental records'",
+      "extracted": [
+        "finalize the dates",
+        "update all group calendars",
+        "create meeting folders",
+        "ensure all appropriate documents are uploaded",
+        "advise the committee members",
+        "hold the meeting",
+        "produce minutes",
+        "conduct a qa check",
+        "send the minutes",
+        "update all departmental records"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'finalize the dates'\n'update all group calendars'\n'create meeting folders'\n'ensure all appropriate documents are uploaded'\n'advise the committee members'\n'hold the meeting'\n'produce minutes'\n'conduct a QA check'\n'send the minutes'\n'update all departmental records'",
+      "extracted": [
+        "finalize the dates",
+        "update all group calendars",
+        "create meeting folders",
+        "ensure all appropriate documents are uploaded",
+        "advise the committee members",
+        "hold the meeting",
+        "produce minutes",
+        "conduct a qa check",
+        "send the minutes",
+        "update all departmental records"
+      ]
+    }
+  },
+  "doc-9.3": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'draft a schedule of meetings'\n'add draft dates to all calendars'\n'check the dates'\n'suggest modifications'\n'recheck all dates'\n'look for potential conflicts'\n'send the final schedule of meeting dates'\n'check their diaries'\n'advise the Coordination Unit'",
+      "extracted": [
+        "draft a schedule of meetings",
+        "add draft dates to all calendars",
+        "check the dates",
+        "suggest modifications",
+        "recheck all dates",
+        "look for potential conflicts",
+        "send the final schedule of meeting dates",
+        "check their diaries",
+        "advise the coordination unit"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'draft a schedule of meetings'\n'add draft dates to all calendars'\n'check the dates'\n'suggest modifications'\n'recheck all dates'\n'look for potential conflicts'\n'send the final schedule of meeting dates'\n'check their diaries'\n'advise the Coordination Unit'",
+      "extracted": [
+        "draft a schedule of meetings",
+        "add draft dates to all calendars",
+        "check the dates",
+        "suggest modifications",
+        "recheck all dates",
+        "look for potential conflicts",
+        "send the final schedule of meeting dates",
+        "check their diaries",
+        "advise the coordination unit"
+      ]
+    }
+  },
+  "doc-10.12": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'tell the INQ about the change of the master data'\n'notify the IP of the change'\n'check whether the master data can be changed'\n'confirm the changes'\n'reject the changes'",
+      "extracted": [
+        "tell the inq about the change of the master data",
+        "notify the ip of the change",
+        "check whether the master data can be changed",
+        "confirm the changes",
+        "reject the changes"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'tell the INQ about the change of the master data'\n'notify the IP of the change'\n'check whether the master data can be changed'\n'confirm the changes'\n'reject the changes'",
+      "extracted": [
+        "tell the inq about the change of the master data",
+        "notify the ip of the change",
+        "check whether the master data can be changed",
+        "confirm the changes",
+        "reject the changes"
+      ]
+    }
+  },
+  "doc-6.4": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'determine contact details of potential customers'\n'buy details for cold calls'\n'marketing staff participates in exhibitions'\n'know somebody interested in the product'\n'start calling the customer'\n'determine the contact person'\n'determine the budget'\n'ask the customer whether he is generally interested'\n'head of development personally tries to acquire the customer'\n'detailed online presentation'\n'waiting for the customer to come back'\n'calling the customer'\n'creation of a quotation'",
+      "extracted": [
+        "determine contact details of potential customers",
+        "buy details for cold calls",
+        "marketing staff participates in exhibitions",
+        "know somebody interested in the product",
+        "start calling the customer",
+        "determine the contact person",
+        "determine the budget",
+        "ask the customer whether he is generally interested",
+        "head of development personally tries to acquire the customer",
+        "detailed online presentation",
+        "waiting for the customer to come back",
+        "calling the customer",
+        "creation of a quotation"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'determine contact details'\n'buy details for cold calls'\n'marketing staff participates in exhibitions'\n'know somebody interested in the product'\n'start calling the customer'\n'determine the contact person'\n'determine the budget'\n'ask the customer if he is interested'\n'head of development personally tries to acquire the customer'\n'detailed online presentation'\n'waiting for the customer to come back'\n'calling the customer'\n'creation of a quotation'",
+      "extracted": [
+        "determine contact details",
+        "buy details for cold calls",
+        "marketing staff participates in exhibitions",
+        "know somebody interested in the product",
+        "start calling the customer",
+        "determine the contact person",
+        "determine the budget",
+        "ask the customer if he is interested",
+        "head of development personally tries to acquire the customer",
+        "detailed online presentation",
+        "waiting for the customer to come back",
+        "calling the customer",
+        "creation of a quotation"
+      ]
+    }
+  },
+  "doc-10.11": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'request measurements'\n'check the received request'\n'deny the request'\n'perform the measurement'\n'inform the GO about the failure'\n'transmit the measured values'\n'process the measured values'\n'send the changed values'\n'transmit the readings'",
+      "extracted": [
+        "request measurements",
+        "check the received request",
+        "deny the request",
+        "perform the measurement",
+        "inform the go about the failure",
+        "transmit the measured values",
+        "process the measured values",
+        "send the changed values",
+        "transmit the readings"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'request measurements'\n'check the received request'\n'deny the request'\n'perform the measurement'\n'inform the GO about the failure'\n'transmit the measured values'\n'process the measured values'\n'send the changed values'\n'transmit the readings'",
+      "extracted": [
+        "request measurements",
+        "check the received request",
+        "deny the request",
+        "perform the measurement",
+        "inform the go about the failure",
+        "transmit the measured values",
+        "process the measured values",
+        "send the changed values",
+        "transmit the readings"
+      ]
+    }
+  },
+  "doc-5.1": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'receive a customer request'\n'invoke the risk assessment web service'\n'approve the loan'\n'deny the loan'\n'send the request to the approver web service'\n'receive feedback from the assessor or approver",
+      "extracted": [
+        "receive a customer request",
+        "invoke the risk assessment web service",
+        "approve the loan",
+        "deny the loan",
+        "send the request to the approver web service",
+        "receive feedback from the assessor or approver"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'receive a customer request'\n'invoke the risk assessment web service'\n'assess the request'\n'approve the loan'\n'deny the loan'\n'send the request to the approver web service'\n'receive feedback from the assessor or approver'",
+      "extracted": [
+        "receive a customer request",
+        "invoke the risk assessment web service",
+        "assess the request",
+        "approve the loan",
+        "deny the loan",
+        "send the request to the approver web service",
+        "receive feedback from the assessor or approver"
+      ]
+    }
+  },
+  "doc-3.5": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'collect mail'\n'sort the unopened mail'\n'distribute the mail'\n'open and sort the mail'\n'register the mail'\n'perform a quality check'\n'compile a list of requisition'\n'capture the matter details'\n'take the applicable fees'\n'put the receipt and copied documents into an envelope'\n'post the envelope'\n'capture the party details'\n'print the physical court file'",
+      "extracted": [
+        "collect mail",
+        "sort the unopened mail",
+        "distribute the mail",
+        "open and sort the mail",
+        "register the mail",
+        "perform a quality check",
+        "compile a list of requisition",
+        "capture the matter details",
+        "take the applicable fees",
+        "put the receipt and copied documents into an envelope",
+        "post the envelope",
+        "capture the party details",
+        "print the physical court file"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'collect mail'\n'sort the unopened mail'\n'distribute the mail'\n'open and sort the mail'\n'register the mail'\n'perform a quality check'\n'compile a list of requisition'\n'capture the matter details'\n'take the applicable fees'\n'put the receipt and copied documents into an envelope'\n'post the envelope'\n'capture the party details'\n'print the physical court file'",
+      "extracted": [
+        "collect mail",
+        "sort the unopened mail",
+        "distribute the mail",
+        "open and sort the mail",
+        "register the mail",
+        "perform a quality check",
+        "compile a list of requisition",
+        "capture the matter details",
+        "take the applicable fees",
+        "put the receipt and copied documents into an envelope",
+        "post the envelope",
+        "capture the party details",
+        "print the physical court file"
+      ]
+    }
+  },
+  "doc-10.7": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'register the measurement'\n'examine the application'\n'reject the application'\n'confirm the application'\n'assign the MSPN'\n'inform the MSPO'\n'inform the MPO'\n'inform the SP'",
+      "extracted": [
+        "register the measurement",
+        "examine the application",
+        "reject the application",
+        "confirm the application",
+        "assign the mspn",
+        "inform the mspo",
+        "inform the mpo",
+        "inform the sp"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'register the measurement'\n'examine the application'\n'reject the application'\n'confirm the application'\n'assign the MSPN'\n'inform the MSPO'\n'inform the MPO'\n'inform the SP'",
+      "extracted": [
+        "register the measurement",
+        "examine the application",
+        "reject the application",
+        "confirm the application",
+        "assign the mspn",
+        "inform the mspo",
+        "inform the mpo",
+        "inform the sp"
+      ]
+    }
+  },
+  "doc-9.5": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'create a new account'\n'review the report'\n'automatically approve'\n'receive a rejection notice'\n'reimbursement goes to the employees direct deposit bank account'\n'receive an approval in progress email'\n'stop the process'\n'receive an email cancellation notice'\n're-submit the expense report'",
+      "extracted": [
+        "create a new account",
+        "review the report",
+        "automatically approve",
+        "receive a rejection notice",
+        "reimbursement goes to the employees direct deposit bank account",
+        "receive an approval in progress email",
+        "stop the process",
+        "receive an email cancellation notice",
+        "re-submit the expense report"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'create a new account'\n'review the report'\n'automatically approve'\n'require approval of the supervisor'\n'receive a rejection notice'\n'reimbursement goes to the employees direct deposit bank account'\n'receive an approval in progress email'\n'stop the process'\n'receive an email cancellation notice'\n're-submit the expense report'",
+      "extracted": [
+        "create a new account",
+        "review the report",
+        "automatically approve",
+        "require approval of the supervisor",
+        "receive a rejection notice",
+        "reimbursement goes to the employees direct deposit bank account",
+        "receive an approval in progress email",
+        "stop the process",
+        "receive an email cancellation notice",
+        "re-submit the expense report"
+      ]
+    }
+  },
+  "doc-6.1": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'receive invoices'\n'forward to an accounting employee'\n'identify the charging suppliers'\n'create a new instance'\n'check the invoice items'\n'note the corresponding cost center'\n'review the content'\n'note the code'\n'pass the copy of the invoice'\n'mark all items as accurate'\n'reject the AP'\n'clarify with the vendor'\n'consult the cost center managers'\n'send the copy of the invoice'\n'forward the copy of the invoice'\n'make the commercial audit'\n'issue the approval for payment'\n'check again'\n'move back to the accounting employee'\n'resolve the complaint'\n'give payment instructions'\n'close the instance'",
+      "extracted": [
+        "receive invoices",
+        "forward to an accounting employee",
+        "identify the charging suppliers",
+        "create a new instance",
+        "check the invoice items",
+        "note the corresponding cost center",
+        "review the content",
+        "note the code",
+        "pass the copy of the invoice",
+        "mark all items as accurate",
+        "reject the ap",
+        "clarify with the vendor",
+        "consult the cost center managers",
+        "send the copy of the invoice",
+        "forward the copy of the invoice",
+        "make the commercial audit",
+        "issue the approval for payment",
+        "check again",
+        "move back to the accounting employee",
+        "resolve the complaint",
+        "give payment instructions",
+        "close the instance"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'receive invoices'\n'forward to an accounting employee'\n'identify the charging suppliers'\n'create a new instance'\n'check the invoice items'\n'note the corresponding cost center'\n'review the content'\n'note the code'\n'pass the copy of the invoice'\n'mark all items as correct'\n'reject the AP'\n'clarification with the vendor'\n'send the copy of the invoice'\n'forward the copy of the invoice'\n'make the commercial audit'\n'issue the approval for payment'\n'check again'\n'move back to the accounting employee'\n'resolve the complaint'\n'give payment instructions'\n'close the instance'",
+      "extracted": [
+        "receive invoices",
+        "forward to an accounting employee",
+        "identify the charging suppliers",
+        "create a new instance",
+        "check the invoice items",
+        "note the corresponding cost center",
+        "review the content",
+        "note the code",
+        "pass the copy of the invoice",
+        "mark all items as correct",
+        "reject the ap",
+        "clarification with the vendor",
+        "send the copy of the invoice",
+        "forward the copy of the invoice",
+        "make the commercial audit",
+        "issue the approval for payment",
+        "check again",
+        "move back to the accounting employee",
+        "resolve the complaint",
+        "give payment instructions",
+        "close the instance"
+      ]
+    }
+  },
+  "doc-10.3": {
+    "T1-Raw": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-RawContext": {
+      "raw answer": "",
+      "extracted": [
+        ""
+      ]
+    },
+    "T1-Shots": {
+      "raw answer": "'deregister at the GO'\n'verify the deregistration'\n'reject the deregistration'\n'preliminarily confirm the deregistration'\n'prepare the readmission'\n'oblige the MPOO to continue the operations'\n'confirm the continuation'\n'perform the equipment acquisition'\n'perform the equipment changes'\n'assign the GO as MPO'\n'inform the MPOO about the end of the assignment of the MPOO'\n'inform the MPOO about the beginning of the assignment of the GO'\n'inform the MSPO about the assignment of the GO'\n'inform the SP about the assignment of the GO'",
+      "extracted": [
+        "deregister at the go",
+        "verify the deregistration",
+        "reject the deregistration",
+        "preliminarily confirm the deregistration",
+        "prepare the readmission",
+        "oblige the mpoo to continue the operations",
+        "confirm the continuation",
+        "perform the equipment acquisition",
+        "perform the equipment changes",
+        "assign the go as mpo",
+        "inform the mpoo about the end of the assignment of the mpoo",
+        "inform the mpoo about the beginning of the assignment of the go",
+        "inform the mspo about the assignment of the go",
+        "inform the sp about the assignment of the go"
+      ]
+    },
+    "T1-ShotsContext": {
+      "raw answer": "'deregister at the GO'\n'verify the deregistration'\n'reject the deregistration'\n'preliminarily confirm the deregistration'\n'prepare the readmission'\n'oblige the MPOO to continue the operations'\n'confirm the continuation'\n'perform the equipment acquisition'\n'perform the equipment changes'\n'assign the GO as MPO'\n'inform the MPOO about the end of the assignment of the MPOO'\n'inform the MPOO about the beginning of the assignment of the GO'\n'inform the MSPO about the assignment of the GO'\n'inform the SP about the assignment of the GO'",
+      "extracted": [
+        "deregister at the go",
+        "verify the deregistration",
+        "reject the deregistration",
+        "preliminarily confirm the deregistration",
+        "prepare the readmission",
+        "oblige the mpoo to continue the operations",
+        "confirm the continuation",
+        "perform the equipment acquisition",
+        "perform the equipment changes",
+        "assign the go as mpo",
+        "inform the mpoo about the end of the assignment of the mpoo",
+        "inform the mpoo about the beginning of the assignment of the go",
+        "inform the mspo about the assignment of the go",
+        "inform the sp about the assignment of the go"
+      ]
+    }
+  }
+}

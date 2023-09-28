@@ -1,0 +1,23 @@
+strict digraph "doc-10.4" {
+	graph [name="doc-10.4"];
+	"notify the mpoo about equipment change intentions"	[attrs="{'type': 'Activity', 'label': 'notify the mpoo about equipment change intentions'}"];
+	"announce self dismounting to the mpon"	[attrs="{'type': 'Activity', 'label': 'announce self dismounting to the mpon'}"];
+	"notify the mpoo about equipment change intentions" -> "announce self dismounting to the mpon"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"notify the mpon about no self-dismounting of the mpoo"	[attrs="{'type': 'Activity', 'label': 'notify the mpon about no self-dismounting of the mpoo'}"];
+	"announce self dismounting to the mpon" -> "notify the mpon about no self-dismounting of the mpoo"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"perform the final reading"	[attrs="{'type': 'Activity', 'label': 'perform the final reading'}"];
+	"notify the mpon about no self-dismounting of the mpoo" -> "perform the final reading"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"dismount the old equipment"	[attrs="{'type': 'Activity', 'label': 'dismount the old equipment'}"];
+	"perform the final reading" -> "dismount the old equipment"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"mount the new device"	[attrs="{'type': 'Activity', 'label': 'mount the new device'}"];
+	"dismount the old equipment" -> "mount the new device"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"read the meter count from the installed meter"	[attrs="{'type': 'Activity', 'label': 'read the meter count from the installed meter'}"];
+	"mount the new device" -> "read the meter count from the installed meter"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"send the values of the final reading to the go"	[attrs="{'type': 'Activity', 'label': 'send the values of the final reading to the go'}"];
+	"read the meter count from the installed meter" -> "send the values of the final reading to the go"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"tell the go about the device changes, the master data and the meter count at installation"	[attrs="{'type': 'Activity', 'label': 'tell the go about the device changes, the master data and the meter count at installation'}"];
+	"send the values of the final reading to the go" -> "tell the go about the device changes, the master data and the meter count at installation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"notify the msp about the device changes, the master data, the meter count at dismounting, and the meter count at installation"	[attrs="{'type': 'Activity', 'label': 'notify the msp about the device changes, the master data, the meter count at dismounting, and the \
+meter count at installation'}"];
+	"tell the go about the device changes, the master data and the meter count at installation" -> "notify the msp about the device changes, the master data, the meter count at dismounting, and the meter count at installation"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}

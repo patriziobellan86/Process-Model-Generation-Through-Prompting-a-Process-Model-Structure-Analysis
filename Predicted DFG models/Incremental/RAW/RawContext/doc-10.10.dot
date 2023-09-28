@@ -1,0 +1,18 @@
+strict digraph "doc-10.10" {
+	graph [name="doc-10.10"];
+	"report failure"	[attrs="{'type': 'Activity', 'label': 'report failure'}"];
+	"examine failure"	[attrs="{'type': 'Activity', 'label': 'examine failure'}"];
+	"report failure" -> "examine failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"reject/confirm failure"	[attrs="{'type': 'Activity', 'label': 'reject/confirm failure'}"];
+	"examine failure" -> "reject/confirm failure"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform go and msp"	[attrs="{'type': 'Activity', 'label': 'inform go and msp'}"];
+	"reject/confirm failure" -> "inform go and msp"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"fix fault"	[attrs="{'type': 'Activity', 'label': 'fix fault'}"];
+	"inform go and msp" -> "fix fault"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"share results of repairs"	[attrs="{'type': 'Activity', 'label': 'share results of repairs'}"];
+	"fix fault" -> "share results of repairs"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform go about resolution"	[attrs="{'type': 'Activity', 'label': 'inform go about resolution'}"];
+	"share results of repairs" -> "inform go about resolution"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+	"inform msp about resolution"	[attrs="{'type': 'Activity', 'label': 'inform msp about resolution'}"];
+	"inform go about resolution" -> "inform msp about resolution"	[attrs="{'type': 'flow', 'label': 'flow'}"];
+}
