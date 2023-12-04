@@ -1,36 +1,36 @@
-Process Model Generation Through Prompting: a Graph Structure Analysis
+Process Model Knowledge Graph Generation Through Generative AI: a Structure Analysis
 =====================================================================
 
-In this repository we provide the material related to this research article.
+In this repository, we provide the material related to this research article.
 
 We adopt the following conventions:
 - Filenames correspond to the PET documents
-- Folder in UPPERCASE correspond to the prompt template (parameter 1) used in experiments.
+- Folder in UPPERCASE corresponds to the prompt template (parameter 1) used in experiments.
 
-The file *activitylabels normalized.json* contains the list of the activity labels normalized.
-The file has the following data-structure:
+The file *activity labels normalized.json* contains the list of the activity labels normalized.
+The file has the following data structure:
 ```json
     {DOC-NAME:
             {ACTIVITY-COORDINATE: activity label normalized,
             }
     }
 ```
-where, *DOC-NAME* is the name of the corresponding PET document and *ACTIVITY-COORDINATE* indicate the sentence number and the index of the word within the sentence of the corresponding activty annotated in the PET dataset.
+where *DOC-NAME* is the name of the corresponding PET document and *ACTIVITY-COORDINATE* indicates the sentence number and the index of the word within the sentence of the corresponding activity annotated in the PET dataset.
 N.B. Sentence number indexes and word indexes start from 0.
 For example,  coordinate (5 7) means sentence number 5, word number 7.
 
-The folder *GoldStandard DFG models* contain the gold-standard DFG process models we created starting from the PET dataset annotations.
+The folder *GoldStandard DFG models* contains the gold-standard DFG process models we created starting from the PET dataset annotations.
 In folder *Predicted DFG models* we provide the DFG process models predicted by the LLM in both settings (Incremental  and Gold Standard).
 
 The prompt templates we experiment with are provided in the folder *Prompts*.
-Here we adopt the following name convention:
+Here, we adopt the following name convention:
 - **RAW** is the baseline prompt template;
 - **RAW CONTEXT** is the baseline prompt template enhanced with problem-context information;
-- **SHOTS** is the in-context learning prompt template we custominze with MIN, MAX, and COV training sets;
+- **SHOTS** is the in-context learning prompt template we customize with MIN, MAX, and COV training sets;
 - **SHOTS CONTEXT** is the **SHOTS** prompt template enhanced with problem-context information.
 
 The folder *Results* contains the predictions.
-In task T1, the files has the following data-structure:
+In task T1, the files have the following data structure:
 ```json
     {doc-name:
         prompt-template-name:
@@ -40,7 +40,7 @@ In task T1, the files has the following data-structure:
             }
     }
 ```    
-For task T2, files have the following data-structure:
+For task T2, files have the following data structure:
 ```json
     {doc-name:
         {building strategy setting:
